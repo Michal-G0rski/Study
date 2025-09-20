@@ -1,10 +1,33 @@
-# Curriculum with Prerequisites
+<div align="center" style="text-align: center">
+  <img src="images/learning-path-logo.webp" alt="Learning Path Logo"/>
+  <h3>My Security & Development Learning Path</h3>
+  <p>
+    Path to a free, self-taught education in programming, web development, and security!
+  </p>
+  <p>
+    <a href="https://github.com/ossu/computer-science">
+      <img alt="Inspired by OSSU" src="https://img.shields.io/badge/Inspired%20by-OSSU-green.svg">
+    </a>
+    <a href="https://github.com/my-org/my-project">
+      <img alt="Learning Path" src="https://img.shields.io/badge/Learning-Path-blue.svg">
+    </a>
+  </p>
+</div>
 
-## Legend
-- ➡️ = must complete before starting  
-- 🔑 = prerequisite knowledge required  
+# Summary
+This curriculum is my **personal roadmap** to:
+- Learn programming and computer science fundamentals.  
+- Build skills to work as a **remote developer**.  
+- Transition into **web application security, pentesting, and cloud security**.  
+
+It is based on [OSSU Computer Science](https://github.com/ossu/computer-science) but adapted with:
+- **Python-first focus**  
+- More emphasis on **security, web apps, and cloud**  
+- A **shorter, career-oriented path** (2–3 years)  
 
 ---
+
+# Curriculum
 
 ## Intro
 
@@ -57,46 +80,4 @@
 
 | Course | Duration | Effort | Prerequisites |
 |--------|----------|--------|---------------|
-| [Core Theory (Discrete Math, Algorithms, etc.)](https://github.com/ossu/computer-science#core-theory) | ~4–6 months | 8–10 hrs/wk | Calculus, Linear Algebra |
-| [Theory of Computation](https://www.coursera.org/learn/automata) | 6 weeks | 8–10 hrs/wk | Core Theory |
-
----
-
-### Security
-
-| Course | Duration | Effort | Prerequisites |
-|--------|----------|--------|---------------|
-| [Core Security](https://github.com/ossu/computer-science#core-security) | ~3–4 months | 8–10 hrs/wk | Networking, OS |
-| [Advanced Information Security](https://github.com/ossu/computer-science#advanced-information-security) | ~4 months | 8–10 hrs/wk | Core Security |
-| [Web Security Academy](https://portswigger.net/web-security) | ~6–8 weeks | 5 hrs/wk | Core Security |
-| [OWASP Top 10](https://owasp.org/Top10/) | ~2 weeks | 3–4 hrs/wk | Core Security |
-| [TryHackMe](https://tryhackme.com/) | Ongoing | 3–5 hrs/wk | Networking, OS |
-| [HackTheBox](https://www.hackthebox.com/) | Ongoing | 3–5 hrs/wk | Networking, OS |
-
----
-
-### Applications
-
-| Course | Duration | Effort | Prerequisites |
-|--------|----------|--------|---------------|
-| [Databases](https://lagunita.stanford.edu/courses/DB/2014/SelfPaced/about) | 12 weeks | 8–10 hrs/wk | Core Programming |
-| [Compilers](https://www.edx.org/course/compilers) | 10 weeks | 8–10 hrs/wk | Crafting Interpreters |
-| [Software Engineering: Introduction](https://www.edx.org/course/software-engineering-introduction) | 6 weeks | 8–10 hrs/wk | Software Architecture |
-
----
-
-## Advanced
-
-| Course | Duration | Effort | Prerequisites |
-|--------|----------|--------|---------------|
-| [Advanced Math](https://github.com/ossu/computer-science#advanced-math) | ~3–4 months | 8–10 hrs/wk | Core Math |
-| [Cloud Fundamentals](https://explore.skillbuilder.aws/learn) | 4–6 weeks | 5–6 hrs/wk | Networking, OS |
-
----
-
-## Final Project
-
-| Project | Duration | Effort | Prerequisites |
-|---------|----------|--------|---------------|
-| [Fullstackopen](https://fullstackopen.com/en/) | 12 weeks | 12–15 hrs/wk | Databases, Core Programming |
-
+| [Core Theory (Discrete]()
