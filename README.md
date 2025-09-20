@@ -1,4 +1,4 @@
-Of course. Here is the revised version with a tone that is more consistent with the OSSU repository's style.
+Of course. Here is the updated study plan, including the estimated total time commitment at the top and the additional security training resources.
 
 <div align="center" style="text-align: center">
 <img src="images/ossu-logo.webp" alt="Open Source Society logo"/>
@@ -29,11 +29,16 @@ Of course. Here is the revised version with a tone that is more consistent with 
   - [Core security](#core-security)
   - [Core applications](#core-applications)
 - [Final project](#final-project)
+- [Hands-on Practice](#hands-on-practice)
 - [Team](#team)
 
 # Summary
 
-This document outlines a specialized study plan derived from the OSSU curriculum, focusing on web applications, security testing, and cloud computing. It retains OSSU's course structure, duration, and effort estimates, and includes official prerequisites for each course. To track your progress, fork the repository and mark completed items with a ✅.
+This document outlines a specialized study plan derived from the OSSU curriculum, focusing on web applications, security testing, and cloud computing. It retains OSSU's course structure, duration, and effort estimates, and includes official prerequisites for each course.
+
+**Estimated Total Time:** Completing the core curriculum requires a significant time commitment, estimated to be **1.5 to 3 years**, depending on your weekly study pace (based on 10-20 hours per week).
+
+To track your progress, fork the repository and mark completed items with a ✅.
 
 ---
 
@@ -123,6 +128,19 @@ A final project is recommended to solidify and demonstrate acquired skills. The 
 Courses | Duration | Effort | Prerequisites
 :-- | :--: | :--: | :--:
 [Fullstack Open](https://fullstackopen.com/en/) | 12 weeks | 15 hours/week | programming
+
+---
+
+## Hands-on Practice
+
+After completing the core curriculum, or in parallel with the Core Security section, it is highly recommended to engage with practical, hands-on platforms to apply your knowledge.
+
+Courses | Duration | Effort | Prerequisites
+:-- | :--: | :--: | :--:
+[Web Security Academy (PortSwigger)](https://portswigger.net/web-security) | ~6–8 weeks | 5 hrs/wk | Core Security
+[OWASP Top 10](https://owasp.org/www-project-top-ten/) | ~2 weeks | 3–4 hrs/wk | Core Security
+[TryHackMe](https://tryhackme.com/) | Ongoing | 3–5 hrs/wk | Networking, OS
+[HackTheBox](https://www.hackthebox.com/) | Ongoing | 3–5 hrs/wk | Networking, OS
 
 ---
 
