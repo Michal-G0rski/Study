@@ -1,7 +1,3 @@
-Of course. Here is the updated study plan, including the estimated total time commitment at the top and the additional security training resources.
-
-<div align="center" style="text-align: center">
-<img src="images/ossu-logo.webp" alt="Open Source Society logo"/>
 <h3>Open Source Society University — Custom Path</h3>
 <p>
   A tailored study plan for web application development, security testing, and cloud technologies. This path is designed for aspiring remote developers and penetration testers.
