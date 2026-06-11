@@ -1,4 +1,4 @@
-# Study — Plan nauki: Inżynier ds. technicznego audytu systemów / AppSec
+Chciałem przepisać ten projekt tak jak w fazie 0 ale słabo mi to idzie i nie wiem czy jest sens kontynuowac, Fable 5 mi zdrafował ten plan nauki może zle to zrozumiałem # Study — Plan nauki: Inżynier ds. technicznego audytu systemów / AppSec
 
 > **Cel:** pivot z roli IAM/analityka do technicznej roli audytowo-inżynierskiej (audyt techniczny, AppSec, security engineering), z otwartą furtką do dev.
 > **Zasada nr 1:** praktyka jest głównym curriculum, teoria dochodzi *just-in-time* — wtedy, gdy konkretny problem jej wymaga.
@@ -13,6 +13,7 @@
 |---|---|---|
 | Faza 0 — Domknięcie | 🔄 W trakcie | ░░░░░░░░░░ 0% |
 | Faza 1 — Fundament narzędziowy | ⬜ Nie rozpoczęte | ░░░░░░░░░░ 0% |
+| Faza 1.5 — Projekt-pomost (Django + audyt) | ⬜ Nie rozpoczęte | ░░░░░░░░░░ 0% |
 | Faza 2 — Główny tor: praktyka audytowa | ⬜ Nie rozpoczęte | ░░░░░░░░░░ 0% |
 | Faza 3 — Teoria w tle (równolegle) | ⬜ Nie rozpoczęte | ░░░░░░░░░░ 0% |
 | Faza 4 — Certyfikat + portfolio | ⬜ Nie rozpoczęte | ░░░░░░░░░░ 0% |
@@ -48,8 +49,37 @@ Legenda: ✅ Ukończone · 🔄 W trakcie · ⬜ Nie rozpoczęte · ⏸️ Wstrz
 | Prosty skaner portów / narzędzie sieciowe | sockets, podstawy sieci | ⬜ |
 | Klient do wybranego API (requests) | HTTP, JSON, autoryzacja | ⬜ |
 | Automatyzacja z pracy przeniesiona z Power Platform na Pythona | pandas, API — nauka na firmowym czasie, wpis do CV | ⬜ |
+| **Mini-backend (FastAPI/Flask):** API z rejestracją, logowaniem, sesjami i jednym zasobem (np. notatki) | jak backend działa od środka: auth, sesje, walidacja, baza — perspektywa budującego, nie tylko audytującego | ⬜ |
+
+> **Granica zakresu:** backend bez frontendu (albo minimalny HTML). Żadnego Reacta, CSS, deploymentu — to nie nauka web devu, tylko zrozumienie mechanizmów, które potem audytuję.
 
 > **Zasada pracy:** każdy projekt piszę najpierw sam z dokumentacją. Dopiero po skończeniu pytam LLM: "co zrobiłem źle, co bym poprawił". Odwrócenie ról: z generatora na nauczyciela.
+
+### Definition of Done — każdy projekt (higiena od dnia 1, nie osobna faza)
+
+- [ ] **Testy w pytest:** happy path + 2–3 złośliwe edge case'y (pusty input, zły typ, za duży rozmiar). Nie celuję w pokrycie — celuję w pytanie "gdzie to się łamie?". To trening myślenia audytora, nie tylko dobra praktyka.
+- [ ] **Git:** sensowne, małe commity z opisami (nie jeden commit "final version").
+- [ ] **README:** co robi, jak uruchomić, czego się nauczyłem.
+- [ ] **Struktura:** venv + requirements.txt, kod w funkcjach, nie jeden płaski skrypt.
+
+> Nawyk testowania przenoszę wprost z SPD — przepis HtDF (przykłady przed implementacją) to ta sama filozofia co pytest. Bez ortodoksji: garść świadomych testów > 100% pokrycia dla metryki.
+
+---
+
+## Faza 1.5 — Projekt-pomost: zbuduj aplikację, którą potem zaudytujesz (3–4 tygodnie)
+
+> Most między "piszę kod" a "audytuję kod". Buduję małą aplikację webową od środka, żeby zrozumieć, **gdzie mieszkają podatności** — bo sam podejmuję decyzje o auth, sesjach, ORM i formularzach.
+
+| Zadanie | Zakres | Status |
+|---|---|---|
+| Mała aplikacja w **Django** (np. tracker z logowaniem i 2–3 rolami użytkowników) | modele, widoki, auth, ORM, formularze, CSRF — **batteries included** | ⬜ |
+| Frontend: **tylko szablony Django** (bez React/CSS-polish — najniższy ROI dla celu audytowego) | minimalny interfejs, nie produkt | ⬜ |
+| Świadomie wprowadzić klasyczne podatności (IDOR, brak autoryzacji na endpoincie, niezabezpieczony upload) | "jak powstaje błąd", od strony autora | ⬜ |
+| Zaudytować własną aplikację: znaleźć te podatności od zewnątrz → wskazać je w źródłach → naprawić | domyka pętlę z Fazą 2 pkt 3 | ⬜ |
+| Wrzucić do repo parę "dziurawa → naprawiona" (osobne commity/branche) | gotowy wpis do portfolio | ⬜ |
+
+> **Skala:** jedna mała aplikacja, nie SaaS. Chodzi o zrozumienie warstw, nie o produkt.
+> **Frontend w React** dodaję tylko, jeśli przechylam się ku opcji pivot dev — wtedy cienki frontend jako wpis do CV. Nie wcześniej.
 
 ---
 
@@ -61,6 +91,7 @@ Legenda: ✅ Ukończone · 🔄 W trakcie · ⬜ Nie rozpoczęte · ⏸️ Wstrz
 | TryHackMe → HackTheBox | maszyny, konfiguracje, sieci — umiejętności pokazywalne na rozmowie | 1 maszyna/tydz. | ⬜ |
 | [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/) / DVWA | **czytanie kodu pod kątem usterek**: znajdź podatność z zewnątrz → znajdź ją w źródłach | 1 ćwiczenie/2 tyg. | ⬜ |
 | Publiczne CVE w projektach open source na GitHubie | commit naprawiający + kod sprzed naprawy = lekcja "jak wygląda błąd w naturze" | 1–2/mies. | ⬜ |
+| **Audyt własnego mini-backendu** (z Fazy 1): zaatakuj technikami z PortSwiggera, znajdź swoje błędy, napraw, opisz w README; opcjonalnie branch z celowymi podatnościami "przed/po" | obie strony lustra naraz — projekt portfolio "zbudowałem → zaatakowałem → naprawiłem" | jednorazowo, po zbudowaniu | ⬜ |
 
 > Punkt 3 i 4 to most między audytem a dev — mało kto to ćwiczy, a to dokładnie profil "audytor, który czyta i pisze kod".
 
