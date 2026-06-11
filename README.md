@@ -1,5 +1,3 @@
-Chciałem przepisać ten projekt tak jak w fazie 0 ale słabo mi to idzie i nie wiem czy jest sens kontynuowac, Fable 5 mi zdrafował ten plan nauki może zle to zrozumiałem # Study — Plan nauki: Inżynier ds. technicznego audytu systemów / AppSec
-
 > **Cel:** pivot z roli IAM/analityka do technicznej roli audytowo-inżynierskiej (audyt techniczny, AppSec, security engineering), z otwartą furtką do dev.
 > **Zasada nr 1:** praktyka jest głównym curriculum, teoria dochodzi *just-in-time* — wtedy, gdy konkretny problem jej wymaga.
 > **Zasada nr 2:** najpierw piszę sam (z dokumentacją, bez LLM), potem LLM jako recenzent kodu.
