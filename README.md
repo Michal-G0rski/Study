@@ -61,8 +61,8 @@ To track progress, mark completed items with a ✅.
 Courses | Duration | Effort | Prerequisites
 :-- | :--: | :--: | :--:
 [Systematic Program Design](https://github.com/ossu/computer-science/blob/master/coursepages/spd/README.md) ✅ | 13 weeks | 8–10 hours/week | none
-[Modern C — Jens Gustedt (free PDF)](https://inria.hal.science/hal-02383654) | 8 weeks | 10–12 hours/week | Systematic Program Design
-[Effective C, 2nd ed. — Robert C. Seacord](https://nostarch.com/Effective_C_2E) *(alternative or complement to Modern C)* | 6 weeks | 8–10 hours/week | basic C
+[Modern C — Jens Gustedt (free PDF)](https://gustedt.gitlabpages.inria.fr/modern-c/) | 8 weeks | 10–12 hours/week | Systematic Program Design
+[Effective C, 2nd ed. — Robert C. Seacord](https://nostarch.com/effective-c-2nd-edition) *(alternative or complement to Modern C)* | 6 weeks | 8–10 hours/week | basic C
 [Beej's Guide to C Programming](https://beej.us/guide/bgc/) *(reference, read alongside)* | ongoing | 2 hours/week | none
 [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) | 2 weeks | 10–12 hours/week | none
 [Mathematics for Computer Science (MIT OL)](https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/about) | 13 weeks | 5 hours/week | high school math
@@ -92,9 +92,9 @@ Courses | Duration | Effort | Prerequisites
 :-- | :--: | :--: | :--:
 [OpenSecurityTraining2 — Architecture 1001: x86-64 Assembly](https://ost2.fyi/Arch1001) | 6 weeks | 6–8 hours/week | C, CS:APP
 [OpenSecurityTraining2 — Architecture 2001: x86-64 OS Internals](https://ost2.fyi/Arch2001) | 6 weeks | 6–8 hours/week | Arch1001
-[OpenSecurityTraining2 — ARM assembly track](https://ost2.fyi/) | 4 weeks | 6–8 hours/week | Arch1001
+[Azeria Labs — ARM assembly and ARM exploitation](https://azeria-labs.com/writing-arm-assembly-part-1/) | 4 weeks | 6–8 hours/week | Arch1001
 [Reverse Engineering 101 — Malware Unicorn](https://malwareunicorn.org/workshops/re101.html) | 2 weeks | 8 hours/week | assembly
-[Ghidra](https://ghidra-sre.org/) ([source](https://github.com/NationalSecurityAgency/ghidra)) — tooling, scripting, own plugins | 4 weeks | 6–8 hours/week | assembly
+[OpenSecurityTraining2 — Debuggers 1102: Introductory Ghidra](https://ost2.fyi/Dbg1102), then scripting and your own [Ghidra](https://github.com/NationalSecurityAgency/ghidra) plugins | 4 weeks | 6–8 hours/week | assembly
 [Practical Malware Analysis](https://nostarch.com/malware) | 8 weeks | 6–8 hours/week | assembly, Ghidra
 [Practical Binary Analysis](https://nostarch.com/binaryanalysis) *(optional, deeper tooling)* | 6 weeks | 6–8 hours/week | assembly, C
 [crackmes.one](https://crackmes.one/) — graded RE practice | ongoing | 3–5 hours/week | Ghidra basics
@@ -129,7 +129,7 @@ UART / SPI / I²C / JTAG / SWD in practice — sniff and drive real buses | 4 we
 [Practical IoT Hacking](https://nostarch.com/practical-iot-hacking) | 5 weeks | 6–8 hours/week | networking, Linux
 [OWASP Firmware Security Testing Methodology](https://github.com/scriptingxss/owasp-fstm) + [binwalk](https://github.com/ReFirmLabs/binwalk) + [EMBA](https://github.com/e-m-b-a/emba) — dump and analyze firmware from a cheap router or IP camera | 4 weeks | 8 hours/week | Linux, RE basics
 [Microcorruption](https://microcorruption.com/) — embedded (MSP430) exploitation CTF | 3 weeks | 4–6 hours/week | assembly
-[ChipWhisperer](https://chipwhisperer.readthedocs.io/en/latest/) — side-channel analysis and fault injection ([tutorials](https://learn.chipwhisperer.io/)) | 4 weeks | 6–8 hours/week | MCU basics, Python
+[ChipWhisperer](https://chipwhisperer.readthedocs.io/en/latest/) — side-channel analysis and fault injection ([Jupyter tutorials](https://github.com/newaetech/chipwhisperer-jupyter)) | 4 weeks | 6–8 hours/week | MCU basics, Python
 
 > This is where "hardware" becomes something you can actually do at home. A ChipWhisperer-Nano plus a used router is a complete physical-attack lab for the price of a mid-range keyboard.
 
@@ -153,7 +153,7 @@ Run these in parallel with the curriculum, not after it. From Stage 3 onward, at
 
 Platform | When to start | Effort | Prerequisites
 :-- | :--: | :--: | :--:
-[picoCTF](https://picoctf.org/) | Stage 2 | 3–5 hours/week | basic Linux
+[picoCTF / CyLab Security Academy](https://cylabacademy.org) | Stage 2 | 3–5 hours/week | basic Linux
 [crackmes.one](https://crackmes.one/) | Stage 3 | 3–5 hours/week | Ghidra basics
 [pwn.college](https://pwn.college/) | Stage 3–4 | 10–15 hours/week | C, assembly
 [Web Security Academy (PortSwigger)](https://portswigger.net/web-security) | Stage 4 | 5 hours/week | HTTP basics
@@ -179,7 +179,7 @@ First [CVE request submitted](https://www.cve.org/ResourcesSupport/ReportRequest
 
 > Cheap IoT firmware is full of real bugs. A first CVE is a realistic goal inside this plan, not an aspiration for later.
 
-**Companies that hire remotely in this space** (worth tracking from month 12): [Securitum](https://securitum.pl/), [AFINE](https://afine.com/), [Trail of Bits](https://www.trailofbits.com/careers), [Doyensec](https://doyensec.com/careers.html), [Include Security](https://www.includesecurity.com/careers/), [NCC Group](https://www.nccgroup.com/). Expect the first job to be hybrid; full remote usually comes with experience.
+**Companies that hire remotely in this space** (worth tracking from month 12): [Securitum](https://securitum.pl/), [AFINE](https://afine.com/), [Trail of Bits](https://www.trailofbits.com/careers), [Doyensec](https://doyensec.com/careers.html), [Include Security](https://includesecurity.com/#careers), [NCC Group](https://www.nccgroup.com/). Expect the first job to be hybrid; full remote usually comes with experience.
 
 ---
 
@@ -189,7 +189,7 @@ Secondary to portfolio, but they still open doors in PL/EU recruiting.
 
 Certification | When | Cost tier | Why
 :-- | :--: | :--: | :--
-[eJPT (INE)](https://security.ine.com/certifications/ejpt-certification/) | as Stage 4 starts | low | cheap warm-up, proves basic methodology
+[eJPT (INE)](https://ine.com/security/certifications/ejpt-certification/) | as Stage 4 starts | low | cheap warm-up, proves basic methodology
 [OSCP / PEN-200 (OffSec)](https://www.offsec.com/courses/pen-200/) | around month 14–18 | high | still the shortest route to an interview in PL/EU
 [OSED / EXP-301 (OffSec)](https://www.offsec.com/courses/exp-301/) | after OSCP | high | only worth it once you are committed to exploit dev
 
@@ -208,7 +208,7 @@ USB–UART adapter (CP2102 / FT232) | 15–40 PLN | serial console on almost any
 ST-Link V2 clone or [J-Link EDU Mini](https://www.segger.com/products/debug-probes/j-link/models/j-link-edu-mini/) | 20–100 PLN | SWD/JTAG debugging and flash dumping
 CH341A programmer + SOIC-8 clip + [flashrom](https://www.flashrom.org/) | 40–80 PLN | read SPI flash straight off the board
 Used router / IP camera (marketplace) | 20–60 PLN | the actual target — buy two, one will die
-[ChipWhisperer-Nano](https://www.newae.com/chipwhisperer) | ~250–400 PLN | side-channel and fault injection at home
+[ChipWhisperer-Nano](https://www.newae.com/product-page/chipwhisperer-nano) | ~250–400 PLN | side-channel and fault injection at home
 Soldering iron ([Pinecil](https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/) or similar) + multimeter | 150–300 PLN | test points, headers, desoldering flash chips
 [RTL-SDR](https://www.rtl-sdr.com/) *(optional)* | ~120 PLN | wireless protocols, if RF turns out to interest you
 
