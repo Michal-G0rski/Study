@@ -327,3 +327,5 @@ Please update this section with your personal details.
 5. Publish something after every stage, starting in Stage 2. The blog is part of the curriculum, not an extra.
 6. Stop at the [employability checkpoint](#employability-checkpoint--months-910) and actually apply. Carrying on studying is the comfortable option, not the right one.
 7. Revisit [Deliberately skipped](#deliberately-skipped) once a year; some of it becomes worth doing after the first job.
+
+Week-by-week schedules live in [`plans/`](plans/), starting with [week 1 — 5–11 October 2026](plans/2026-10-week-01.md). The stages say what to learn; the weekly plans say what to do on a given morning.
