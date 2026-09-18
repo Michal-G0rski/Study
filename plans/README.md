@@ -26,5 +26,6 @@ Month | Stage | The month in one line
 [November 2026](2026-11.md) | 1 — Foundations | Modern C finished; first binary-format work
 [December 2026](2026-12.md) | 1 + 2 opens | networking starts, the blog goes live
 [January 2027](2027-01.md) | 1 closes + 2 | networking through the link layer, mathematics into graphs, Stage 1 ends
+[February 2027](2027-02.md) | 2 + employability | the networking book finishes, nand2tetris starts, PortSwigger opens
 
-February 2027 opens month 5: the [employability track](../README.md#stage-2--systems) starts, using the five hours a week that mathematics gives back.
+March 2027 opens month 6: Nand to Tetris runs to its end and [eJPT](../README.md#certifications) gets a date.

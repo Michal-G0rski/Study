@@ -330,4 +330,4 @@ Please update this section with your personal details.
 
 Month-by-month scope lives in [`plans/`](plans/). The stages say what to learn across eighteen months; a monthly plan says what has to be worked through in a given week, and nothing else.
 
-Stage 1 is written out in full: [October 2026](plans/2026-10.md), [November](plans/2026-11.md), [December](plans/2026-12.md), [January 2027](plans/2027-01.md). The rest arrives a month at a time, because what December looks like depends on how November went.
+Written so far: [October 2026](plans/2026-10.md), [November](plans/2026-11.md), [December](plans/2026-12.md), [January](plans/2027-01.md) — all of Stage 1 — and [February 2027](plans/2027-02.md), where the employability track opens. The rest arrives a month at a time, because what a month looks like depends on how the one before it went.
