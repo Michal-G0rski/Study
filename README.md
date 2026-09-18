@@ -328,4 +328,6 @@ Please update this section with your personal details.
 6. Stop at the [employability checkpoint](#employability-checkpoint--months-910) and actually apply. Carrying on studying is the comfortable option, not the right one.
 7. Revisit [Deliberately skipped](#deliberately-skipped) once a year; some of it becomes worth doing after the first job.
 
-Month-by-month scope lives in [`plans/`](plans/), starting with [October 2026](plans/2026-10.md). The stages say what to learn across eighteen months; a monthly plan says what has to be worked through in a given week, and nothing else.
+Month-by-month scope lives in [`plans/`](plans/). The stages say what to learn across eighteen months; a monthly plan says what has to be worked through in a given week, and nothing else.
+
+Stage 1 is written out in full: [October 2026](plans/2026-10.md), [November](plans/2026-11.md), [December](plans/2026-12.md), [January 2027](plans/2027-01.md). The rest arrives a month at a time, because what December looks like depends on how November went.
