@@ -24,6 +24,7 @@
   - [Extras (optional)](#extras-optional)
 - [Hands-on Practice](#hands-on-practice)
 - [Target roles](#target-roles)
+- [Market snapshot (September 2026)](#market-snapshot-september-2026)
 - [Portfolio and visibility](#portfolio-and-visibility)
 - [Certifications](#certifications)
 - [Home lab hardware](#home-lab-hardware)
@@ -184,6 +185,31 @@ Automotive Cybersecurity Engineer | Stage 5 (+ ISO/SAE 21434, UN R155) | hybrid 
 Hardware Security Consultant | Stage 5 + portfolio | remote + travel | paid audits of other people's devices
 
 > The remote gradient is the point: the closer a role sits to physical hardware, the less remote it is. Reverse engineering, vulnerability research and firmware analysis are the remote-friendly end, which is why Stage 5 comes last — the hardware stays your home lab and your writeup material, not your commute.
+
+---
+
+## Market snapshot (September 2026)
+
+Measured on **2026-09-18**, so it can be compared against later. Counts come from a single board ([justjoin.it](https://justjoin.it/)), which keeps the columns comparable but is not a census of the market — nofluffjobs, theprotocol.it and pracuj.pl block automated reading, and a pracuj.pl spot-check turned up a Rzeszów opening that justjoin.it did not list.
+
+Live offers | Security (this plan) | JavaScript (previous plan) | DevOps / cloud
+:-- | --: | --: | --:
+Poland, all | **845** | 716 | 1 376
+Remote | **484** | 481 | 872
+Kraków | **144** | 115 | 228
+Rzeszów | 2 | 9 | 10
+Junior, Poland | 24 | 37 | 44
+Junior, remote | 5 | 30 | 16
+
+Three things this data says, none of them obvious:
+
+1. **Security is not a niche hiding from the web market — it is larger.** More openings nationally than JavaScript, and effectively tied on remote roles.
+2. **Those 845 security roles are mostly infrastructure, IAM, GRC and SOC.** The low-level slice this plan targets is single digits nationally at any moment: roughly 3 vulnerability research, 4 embedded/firmware security, 3 reverse engineering. Narrow, but close to uncontested, and remote is the norm there.
+3. **The binding constraint is the entry gap, not demand.** Junior offensive or low-level openings in all of Poland: **two**. Zero junior firmware security, zero junior RE, zero junior malware analyst — every vulnerability-research and RE title found was mid, senior, principal or expert. For comparison, a junior frontend opening draws about 146 applications, against an all-IT average of 47.
+
+Trend context: the Polish IT market fell from about 175 600 ads in 2022 to 99 400 in 2024, recovered 8.4% in 2025, and January–May 2026 ran roughly 70% above the same months of 2025. The recovery is not in frontend, whose share of all ads slid from 5% (2024) to 3.4% (H1 2026). Cybersecurity sits in the top three deficit competencies reported by Polish employers.
+
+> This is why [Target roles](#target-roles) starts at Stage 2 with a non-security job title, and why [Portfolio and visibility](#portfolio-and-visibility) is not optional. There is no junior queue to join in this niche — you arrive either sideways through embedded work, or with published proof.
 
 ---
 
