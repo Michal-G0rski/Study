@@ -23,6 +23,7 @@
   - [Stage 5 — Embedded and hardware](#stage-5--embedded-and-hardware)
   - [Extras (optional)](#extras-optional)
 - [Hands-on Practice](#hands-on-practice)
+- [Target roles](#target-roles)
 - [Portfolio and visibility](#portfolio-and-visibility)
 - [Certifications](#certifications)
 - [Home lab hardware](#home-lab-hardware)
@@ -160,6 +161,29 @@ Platform | When to start | Effort | Prerequisites
 [HackTheBox](https://www.hackthebox.com/) | Stage 4 | 3–5 hours/week | networking, OS
 [TryHackMe](https://tryhackme.com/) | Stage 4 | 3–5 hours/week | networking, OS
 [Microcorruption](https://microcorruption.com/) | Stage 5 | 4–6 hours/week | assembly
+
+---
+
+## Target roles
+
+The stages are ordered so that each one opens a door before the plan is finished. You do not have to reach Stage 5 to be employable — Stage 4 already qualifies you for the roles that fund the rest.
+
+Role title (as it appears in job ads) | Unlocked after | Remote in PL? | Notes
+:-- | :--: | :--: | :--
+Embedded Software Engineer (C) | Stage 2 | hybrid | not a security role, but the widest side door — you get paid while finishing the plan
+Malware Analyst / Threat Intelligence Analyst | Stage 3 | usually remote | RE skills are the whole job; juniors do get hired
+Junior Penetration Tester | Stage 4 (+ eJPT) | usually remote | broadest entry point into security in PL/EU
+Application Security Engineer | Stage 4 | usually remote | PortSwigger track plus your own built-and-broken app
+Reverse Engineer | Stage 3–4 + portfolio | remote is standard | writeups and crackmes count more than certificates here
+Exploit Developer | Stage 4 (+ OSED) | remote is standard | narrow market, high pay, portfolio-gated
+Vulnerability Researcher | Stage 4–5 | remote is standard | the role this plan is really aimed at
+Firmware Security Engineer | Stage 5 | often remote | firmware analysis, secure boot, chain of trust
+Embedded / IoT Security Engineer | Stage 5 | hybrid | device audits and threat modeling; the lab is in the office
+Product Security Engineer / PSIRT | Stage 5 | remote or hybrid | vendor side: triage and fix what researchers report
+Automotive Cybersecurity Engineer | Stage 5 (+ ISO/SAE 21434, UN R155) | hybrid | large employer base in southern Poland
+Hardware Security Consultant | Stage 5 + portfolio | remote + travel | paid audits of other people's devices
+
+> The remote gradient is the point: the closer a role sits to physical hardware, the less remote it is. Reverse engineering, vulnerability research and firmware analysis are the remote-friendly end, which is why Stage 5 comes last — the hardware stays your home lab and your writeup material, not your commute.
 
 ---
 
