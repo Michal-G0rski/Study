@@ -24,7 +24,9 @@
   - [Extras (optional)](#extras-optional)
 - [Hands-on Practice](#hands-on-practice)
 - [Target roles](#target-roles)
+  - [Early checkpoint — month 4](#early-checkpoint--month-4)
   - [Employability checkpoint — months 9–10](#employability-checkpoint--months-910)
+  - [The SOC fallback](#the-soc-fallback)
 - [Market snapshot (September 2026)](#market-snapshot-september-2026)
 - [Portfolio and visibility](#portfolio-and-visibility)
 - [Certifications](#certifications)
@@ -58,7 +60,7 @@ Two tracks run alongside the stages rather than inside them, because this niche 
 | Employability | months 5–10 | web security track, then eJPT — something to apply with long before Stage 5 |
 | Portfolio | from month 3 | one public artifact per stage, starting with a CS:APP lab writeup |
 
-Both feed the [employability checkpoint](#employability-checkpoint--months-910) at months 9–10: the planned point to start applying, roughly halfway through.
+Both feed the [employability checkpoint](#employability-checkpoint--months-910) at months 9–10: the planned point to start applying, roughly halfway through — plus a narrower, optional opening at month 4, see [Early checkpoint](#early-checkpoint--month-4).
 
 To track progress, mark completed items with a ✅.
 
@@ -187,7 +189,7 @@ The stages are ordered so that each one opens a door before the plan is finished
 Role title (as it appears in job ads) | Unlocked after | Remote in PL? | Notes
 :-- | :--: | :--: | :--
 Embedded Software Engineer (C) | Stage 2 | hybrid | not a security role, but the widest side door — you get paid while finishing the plan
-Malware Analyst / Threat Intelligence Analyst | Stage 3 | usually remote | RE skills are the whole job; juniors do get hired
+Malware Analyst / Threat Intelligence Analyst | Stage 3 + portfolio | usually remote | portfolio-gated like RE; dedicated listings barely exist in PL, CTI titles start at Mid
 Junior Penetration Tester | Stage 4 (+ eJPT) | usually remote | broadest entry point into security in PL/EU
 Application Security Engineer | Stage 4 | usually remote | PortSwigger track plus your own built-and-broken app
 Reverse Engineer | Stage 3–4 + portfolio | remote is standard | writeups and crackmes count more than certificates here
@@ -201,6 +203,16 @@ Hardware Security Consultant | Stage 5 + portfolio | remote + travel | paid audi
 
 > The remote gradient is the point: the closer a role sits to physical hardware, the less remote it is. Reverse engineering, vulnerability research and firmware analysis are the remote-friendly end, which is why Stage 5 comes last — the hardware stays your home lab and your writeup material, not your commute.
 
+### Early checkpoint — month 4
+
+Embedded Software Engineer (C) is the largest single row in the table above — 576 openings nationally — and the only one that needs no security knowledge, just solid C. Stage 1 (months 1–4: Systematic Program Design, Modern C, the Missing Semester, discrete math) closes at the end of January 2027, exactly where that bar is cleared. The plan's other checkpoint sits at months 9–10, waiting on PortSwigger and eJPT; that leaves this door unused for five months for no reason tied to the C work itself.
+
+Apply for | Why it fits at month 4 | Format
+:-- | :-- | :--:
+Embedded Software Engineer (C) | 576 openings nationally, no security background required, and solid C is the entire bar | hybrid
+
+> This is optional and runs alongside the plan, not instead of it — it does not require pausing Stage 2, and it changes nothing about the syllabus or the 15 h/week budget. What backs it is [January's own deliverable](plans/2027-01.md): a concurrent TCP server, a DNS resolver and a traceroute, three protocol programs built from raw sockets up, plus the Stage 1 review. That is what would go in front of an interviewer here — not a new artifact. If nothing comes of it, Stage 2 continues exactly as written.
+
 ### Employability checkpoint — months 9–10
 
 Roughly halfway. By this point you hold C, networking, the CS:APP labs, the PortSwigger track, eJPT and two or three published writeups — a hirable profile already. This is the planned moment to start sending applications, not the end of Stage 5.
@@ -212,6 +224,14 @@ Junior Penetration Tester | eJPT plus a finished PortSwigger track is the expect
 SOC / Detection Engineer (L1) | the largest genuinely junior slice of the security market | remote or hybrid
 
 > The case for the checkpoint is arithmetic, not ambition. Getting hired here turns the remaining eight months from unpaid study into paid study, puts real systems in front of you, and removes the worst failure mode of an 18-month plan — finishing it with no work history. If nothing lands, nothing is lost: you continue into Stage 4 exactly as written.
+
+### The SOC fallback
+
+The [checkpoint table above](#employability-checkpoint--months-910) already names SOC / Detection Engineer (L1) as the largest genuinely junior slice of the security market, and the September 2026 count backs it up: 27 junior security openings in Poland, most of them SOC or GRC rather than anything low-level. The plan does not teach that stack on purpose — the route to month 9 runs C, networking, CS:APP, then assembly, not SIEM dashboards and alert queues. The networking foundation (Kurose, Beej, Stage 1–2) and the Linux and toolchain grounding (the Missing Semester) are already in place either way; what is missing is hands-on time with one SIEM and the vocabulary a triage seat runs on.
+
+If a checkpoint — month 4 or month 9–10 — does not turn into an offer, the gap is narrow and specific: the free [Microsoft Sentinel learning path](https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/) on Microsoft Learn (configuring a workspace, then creating detections), plus MITRE ATT&CK and basic alert classification for vocabulary. Call it one to two weeks of self-directed study.
+
+> This is a fallback, not a third program of study — it only starts if a checkpoint fails to land, and it does not belong in any month's 15 h/week budget. No monthly file has spare hours to give it.
 
 ---
 
