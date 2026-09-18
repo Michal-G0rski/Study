@@ -44,10 +44,12 @@ The reasoning behind the switch: classic hardware work (PCB, bring-up, FPGA, emb
 | Stage | Focus | Calendar |
 | :-- | :-- | :--: |
 | 1 — Foundations | C, tooling, discrete math | months 1–4 |
-| 2 — Systems | networks, nand2tetris, CS:APP, OS | months 3–9 |
-| 3 — Low-level and assembly | x86-64, ARM, reverse engineering | months 8–12 |
-| 4 — Offense | pwn.college, ROP, kernel exploitation, CTFs | months 10–16 |
-| 5 — Embedded and hardware | MCUs, firmware extraction, side-channel | months 13–18 |
+| 2 — Systems | networks, nand2tetris, CS:APP, OS | months 3–11 |
+| 3 — Low-level and assembly | x86-64, ARM, reverse engineering | months 11–13 |
+| 4 — Offense | pwn.college, ROP, kernel exploitation, CTFs | months 13–17 |
+| 5 — Embedded and hardware | MCUs, firmware extraction, side-channel | months 15–18 |
+
+> These are the calendar's real numbers, not the syllabus's original ones — CS:APP alone pushes Stage 2 three months past where a stage-by-stage read of the curriculum would put it. The [full arithmetic](plans/README.md#what-eighteen-months-actually-holds) is in the plans folder; this table is kept in sync with it rather than with the untrimmed curriculum above.
 
 Two tracks run alongside the stages rather than inside them, because this niche has no junior queue to wait in — see [Market snapshot](#market-snapshot-september-2026).
 
