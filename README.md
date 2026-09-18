@@ -24,6 +24,7 @@
   - [Extras (optional)](#extras-optional)
 - [Hands-on Practice](#hands-on-practice)
 - [Target roles](#target-roles)
+  - [Employability checkpoint — months 9–10](#employability-checkpoint--months-910)
 - [Market snapshot (September 2026)](#market-snapshot-september-2026)
 - [Portfolio and visibility](#portfolio-and-visibility)
 - [Certifications](#certifications)
@@ -45,8 +46,17 @@ The reasoning behind the switch: classic hardware work (PCB, bring-up, FPGA, emb
 | 1 — Foundations | C, tooling, discrete math | months 1–4 |
 | 2 — Systems | networks, nand2tetris, CS:APP, OS | months 3–9 |
 | 3 — Low-level and assembly | x86-64, ARM, reverse engineering | months 8–12 |
-| 4 — Offense | pwn.college, web, CTFs | months 10–16 |
+| 4 — Offense | pwn.college, ROP, kernel exploitation, CTFs | months 10–16 |
 | 5 — Embedded and hardware | MCUs, firmware extraction, side-channel | months 13–18 |
+
+Two tracks run alongside the stages rather than inside them, because this niche has no junior queue to wait in — see [Market snapshot](#market-snapshot-september-2026).
+
+| Parallel track | Runs | Purpose |
+| :-- | :--: | :-- |
+| Employability | months 5–10 | web security track, then eJPT — something to apply with long before Stage 5 |
+| Portfolio | from month 3 | one public artifact per stage, starting with a CS:APP lab writeup |
+
+Both feed the [employability checkpoint](#employability-checkpoint--months-910) at months 9–10: the planned point to start applying, roughly halfway through.
 
 To track progress, mark completed items with a ✅.
 
@@ -74,7 +84,7 @@ Courses | Duration | Effort | Prerequisites
 
 ### Stage 2 — Systems
 
-**Topics covered**: networking, computer architecture from NAND up, the machine-level view of a program, operating systems.
+**Topics covered**: networking, computer architecture from NAND up, the machine-level view of a program, operating systems, web attack surface.
 
 Courses | Duration | Effort | Additional Text / Assignments | Prerequisites
 :-- | :--: | :--: | :--: | :--:
@@ -83,8 +93,11 @@ Courses | Duration | Effort | Additional Text / Assignments | Prerequisites
 [Nand to Tetris Part II (Coursera)](https://www.coursera.org/learn/nand2tetris2) | 6 weeks | 12–18 hours/week | - | Nand to Tetris Part I
 [Computer Systems: A Programmer's Perspective + CMU 15-213](https://www.cs.cmu.edu/~213/) | 12 weeks | 10–15 hours/week | [self-study guide](http://csapp.cs.cmu.edu/3e/students.html), [labs](http://csapp.cs.cmu.edu/3e/labs.html) — do **Data Lab, Bomb Lab, Attack Lab, Malloc Lab** | solid C
 [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) ([OSSU page](https://github.com/ossu/computer-science/blob/master/coursepages/ostep/README.md)) | 10–12 weeks | 6–10 hours/week | - | Nand to Tetris Part II
+[Web Security Academy (PortSwigger)](https://portswigger.net/web-security) *(employability track, months 5–7)* | 6–8 weeks | 5 hours/week | [OWASP Top 10](https://owasp.org/www-project-top-ten/) | HTTP basics
 
 > Networking moved to the front of this stage: it is the base layer for firmware, IoT and web work alike. CS:APP with the CMU labs is the single highest-leverage addition to the old plan — Bomb Lab and Attack Lab are, in practice, a first course in reverse engineering and memory-corruption exploitation.
+
+> The web security track sits here instead of in Stage 4 for one reason: it is the only part of this plan that maps onto a job title someone will hire a beginner for. Five hours a week from month 5, closed out with [eJPT](#certifications) around month 7, and the checkpoint at month 9–10 has something to stand on. It takes nothing away from the low-level work — that is the part with no competition, and it keeps its full depth.
 
 ### Stage 3 — Low-level and assembly
 
@@ -105,7 +118,7 @@ Courses | Duration | Effort | Prerequisites
 
 ### Stage 4 — Offense
 
-**Topics covered**: memory corruption, ROP, kernel exploitation, web attack surface.
+**Topics covered**: memory corruption, ROP, kernel exploitation, attacking an application you built yourself.
 
 Courses | Duration | Effort | Prerequisites
 :-- | :--: | :--: | :--:
@@ -113,11 +126,11 @@ Courses | Duration | Effort | Prerequisites
 [Nightmare — binary exploitation course](https://guyinatuxedo.github.io/) | 6 weeks | 5–8 hours/week | assembly, gdb
 [ROP Emporium](https://ropemporium.com/) | 3 weeks | 5 hours/week | stack overflows
 [exploit.education](https://exploit.education/) | 4 weeks | 5 hours/week | C, assembly
-[Web Security Academy (PortSwigger)](https://portswigger.net/web-security) | 6–8 weeks | 5 hours/week | HTTP basics
-[OWASP Top 10](https://owasp.org/www-project-top-ten/) | 2 weeks | 3–4 hours/week | none
-Own web application (one project, any stack) — build it, then attack it | 4 weeks | 8 hours/week | programming
+Own web application (one project, any stack) — build it, then attack it | 4 weeks | 8 hours/week | programming, [PortSwigger track](#stage-2--systems)
 
 > pwn.college replaces the entire old "Core security" section. The own-app project replaces Fullstack Open: you need to understand how web apps are built, but you are not training to be a web developer.
+
+> The PortSwigger Academy and the OWASP Top 10 used to sit in this stage; they now run in Stage 2 as the employability track. By the time you get here they are finished, which turns the own-app project into the place you apply them rather than the place you first meet them.
 
 ### Stage 5 — Embedded and hardware
 
@@ -156,11 +169,11 @@ Run these in parallel with the curriculum, not after it. From Stage 3 onward, at
 Platform | When to start | Effort | Prerequisites
 :-- | :--: | :--: | :--:
 [picoCTF / CyLab Security Academy](https://cylabacademy.org) | Stage 2 | 3–5 hours/week | basic Linux
+[Web Security Academy (PortSwigger)](https://portswigger.net/web-security) | Stage 2 | 5 hours/week | HTTP basics
+[TryHackMe](https://tryhackme.com/) | Stage 2–3 | 3–5 hours/week | networking, OS
 [crackmes.one](https://crackmes.one/) | Stage 3 | 3–5 hours/week | Ghidra basics
 [pwn.college](https://pwn.college/) | Stage 3–4 | 10–15 hours/week | C, assembly
-[Web Security Academy (PortSwigger)](https://portswigger.net/web-security) | Stage 4 | 5 hours/week | HTTP basics
 [HackTheBox](https://www.hackthebox.com/) | Stage 4 | 3–5 hours/week | networking, OS
-[TryHackMe](https://tryhackme.com/) | Stage 4 | 3–5 hours/week | networking, OS
 [Microcorruption](https://microcorruption.com/) | Stage 5 | 4–6 hours/week | assembly
 
 ---
@@ -185,6 +198,18 @@ Automotive Cybersecurity Engineer | Stage 5 (+ ISO/SAE 21434, UN R155) | hybrid 
 Hardware Security Consultant | Stage 5 + portfolio | remote + travel | paid audits of other people's devices
 
 > The remote gradient is the point: the closer a role sits to physical hardware, the less remote it is. Reverse engineering, vulnerability research and firmware analysis are the remote-friendly end, which is why Stage 5 comes last — the hardware stays your home lab and your writeup material, not your commute.
+
+### Employability checkpoint — months 9–10
+
+Roughly halfway. By this point you hold C, networking, the CS:APP labs, the PortSwigger track, eJPT and two or three published writeups — a hirable profile already. This is the planned moment to start sending applications, not the end of Stage 5.
+
+Apply for | Why it fits at month 9 | Format
+:-- | :-- | :--:
+Embedded Software Engineer (C) | 576 openings nationally, 103 in Kraków, and no security experience required | hybrid
+Junior Penetration Tester | eJPT plus a finished PortSwigger track is the expected junior profile | usually remote
+SOC / Detection Engineer (L1) | the largest genuinely junior slice of the security market | remote or hybrid
+
+> The case for the checkpoint is arithmetic, not ambition. Getting hired here turns the remaining eight months from unpaid study into paid study, puts real systems in front of you, and removes the worst failure mode of an 18-month plan — finishing it with no work history. If nothing lands, nothing is lost: you continue into Stage 4 exactly as written.
 
 ---
 
@@ -215,11 +240,12 @@ Trend context: the Polish IT market fell from about 175 600 ads in 2022 to 99 40
 
 ## Portfolio and visibility
 
-Portfolio beats certificates in this field. Every milestone below is a public artifact — a blog post, a repo, or an advisory. Set the blog up early ([GitHub Pages](https://pages.github.com/) is enough) and write as you go.
+Portfolio beats certificates in this field. Every milestone below is a public artifact — a blog post, a repo, or an advisory. The blog goes up in Stage 2, around month 3 ([GitHub Pages](https://pages.github.com/) is enough), and the first post is a lab writeup rather than an introduction. In a niche with no junior openings, publishing *is* the application.
 
 Milestone | Target stage | What it proves
 :-- | :--: | :--
-First CTF writeup published | Stage 2–3 | you can explain, not just solve
+Blog live, first Bomb Lab or Attack Lab writeup published | Stage 2 | you can read a binary and explain what it does
+First CTF writeup published | Stage 2 | you can explain, not just solve
 First own [Ghidra](https://github.com/NationalSecurityAgency/ghidra) script or plugin | Stage 3 | tooling, not just tool use
 Ten crackmes solved and documented | Stage 3 | sustained RE practice
 Full pwn.college module chain completed | Stage 4 | exploitation depth
@@ -229,7 +255,7 @@ First [CVE request submitted](https://www.cve.org/ResourcesSupport/ReportRequest
 
 > Cheap IoT firmware is full of real bugs. A first CVE is a realistic goal inside this plan, not an aspiration for later.
 
-**Companies that hire remotely in this space** (worth tracking from month 12): [Securitum](https://securitum.pl/), [AFINE](https://afine.com/), [Trail of Bits](https://www.trailofbits.com/careers), [Doyensec](https://doyensec.com/careers.html), [Include Security](https://includesecurity.com/#careers), [NCC Group](https://www.nccgroup.com/). Expect the first job to be hybrid; full remote usually comes with experience.
+**Companies that hire remotely in this space** (worth tracking from month 9, the [checkpoint](#employability-checkpoint--months-910)): [Securitum](https://securitum.pl/), [AFINE](https://afine.com/), [Trail of Bits](https://www.trailofbits.com/careers), [Doyensec](https://doyensec.com/careers.html), [Include Security](https://includesecurity.com/#careers), [NCC Group](https://www.nccgroup.com/). Expect the first job to be hybrid; full remote usually comes with experience.
 
 ---
 
@@ -239,7 +265,7 @@ Secondary to portfolio, but they still open doors in PL/EU recruiting.
 
 Certification | When | Cost tier | Why
 :-- | :--: | :--: | :--
-[eJPT (INE)](https://ine.com/security/certifications/ejpt-certification/) | as Stage 4 starts | low | cheap warm-up, proves basic methodology
+[eJPT (INE)](https://ine.com/security/certifications/ejpt-certification/) | months 6–7, alongside Stage 2 | low | cheap and fast, and the one credential the month 9–10 checkpoint leans on
 [OSCP / PEN-200 (OffSec)](https://www.offsec.com/courses/pen-200/) | around month 14–18 | high | still the shortest route to an interview in PL/EU
 [OSED / EXP-301 (OffSec)](https://www.offsec.com/courses/exp-301/) | after OSCP | high | only worth it once you are committed to exploit dev
 
@@ -295,7 +321,9 @@ Please update this section with your personal details.
 ## How to use
 
 1. Work through the stages in order; the overlap between them is expected and planned for (see the calendar table in [Summary](#summary)).
-2. Mark finished items with ✅ directly in the tables.
-3. From Stage 3 on, keep at least a third of your time hands-on — reading about exploitation does not transfer.
-4. Publish something after every stage. The blog is part of the curriculum, not an extra.
-5. Revisit [Deliberately skipped](#deliberately-skipped) once a year; some of it becomes worth doing after the first job.
+2. Run the employability track — PortSwigger, then eJPT — alongside Stage 2. It costs about 5 hours a week, and it is the whole reason the month 9–10 checkpoint is possible.
+3. Mark finished items with ✅ directly in the tables.
+4. From Stage 3 on, keep at least a third of your time hands-on — reading about exploitation does not transfer.
+5. Publish something after every stage, starting in Stage 2. The blog is part of the curriculum, not an extra.
+6. Stop at the [employability checkpoint](#employability-checkpoint--months-910) and actually apply. Carrying on studying is the comfortable option, not the right one.
+7. Revisit [Deliberately skipped](#deliberately-skipped) once a year; some of it becomes worth doing after the first job.
