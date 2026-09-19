@@ -18,6 +18,7 @@ Fifteen hours: **2.5 h a day, Monday to Saturday, Sunday off.** Sunday is the ch
 - Do not run ahead. Work scheduled for Thursday that you reach on Tuesday gets *read* on Tuesday and *done* on Thursday.
 - One commit per study day. An empty day is visible in `git log` and that is the point.
 - **The source's own order wins** — for the backlog material in the [main plan](../README.md#after-the-checkpoint) too, whenever you get to it: where a course's internal sequence disagrees with your plans, follow the course. Belts are earned sequentially on pwn.college, Arch1001's chapters are ordered, PortSwigger topics build on each other.
+- **Job-search networking runs from month 1, outside the 15 hours: 15–20 minutes a day.** Comment usefully on posts from people actually working in the target roles before you ever message any of them; from month 4, send connection requests that reference something specific and real about the recipient's work — never a template — and if one goes unanswered, follow up once after 3–5 days, then stop. It lives outside the study budget on purpose, so it never competes with the programs for hours, and it starts in month 1 rather than at month 4 because the arithmetic is lopsided: cold applications convert at 0.1–2%, referrals at roughly 30%, with interviews at 10–20 times the rate. The [main plan](../README.md#how-people-actually-get-hired) carries the full numbers and the reasoning.
 
 ## Index
 

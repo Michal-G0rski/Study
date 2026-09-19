@@ -25,6 +25,7 @@
 - [Hands-on Practice](#hands-on-practice)
 - [Target roles](#target-roles)
   - [Early checkpoint — month 4](#early-checkpoint--month-4)
+  - [How people actually get hired](#how-people-actually-get-hired)
   - [Employability checkpoint — month 9](#employability-checkpoint--month-9)
   - [If the checkpoint itself doesn't land](#if-the-checkpoint-itself-doesnt-land)
 - [Market snapshot (September 2026)](#market-snapshot-september-2026)
@@ -52,11 +53,12 @@ The [market research](#market-snapshot-september-2026) forced a second structura
 
 The deep material that used to be Stages 3, 4 and 5 is no longer calendar stages. It lives in [After the checkpoint](#after-the-checkpoint), unscheduled, with its effort estimates intact.
 
-One track runs alongside Stage 2 rather than inside it — the employability content is now the *main* content of Stage 2, not a side track:
+Two tracks run alongside the stages rather than inside them — the employability content is now the *main* content of Stage 2, not a side track:
 
 | Parallel track | Runs | Purpose |
 | :-- | :--: | :-- |
 | Portfolio | from month 3 | one public artifact per stage, starting with the ELF parser writeup |
+| Networking | from month 1, outside the 15 h/week | the referral path — see [How people actually get hired](#how-people-actually-get-hired) |
 
 Both feed the [employability checkpoint](#employability-checkpoint--month-9) at month 9: the planned point to start applying — plus a narrower, optional opening at month 4, see [Early checkpoint](#early-checkpoint--month-4).
 
@@ -206,7 +208,7 @@ Platform | When to start | Effort | Prerequisites
 The fixed schedule is ordered so that each month opens a door. The deep roles below are reachable, but through the backlog and a portfolio, not through the calendar.
 
 Role title (as it appears in job ads) | Unlocked after | Remote in PL? | Notes
-:-- | :--: | :--: | :--
+:-- | :--: | :--: | :--:
 Embedded Software Engineer (C) | [Early checkpoint (month 4)](#early-checkpoint--month-4) | hybrid | not a security role, but the widest side door — you get paid while working the backlog
 SOC / Detection Engineer (L1) | [Checkpoint (month 9)](#employability-checkpoint--month-9) | remote or hybrid | the largest genuinely junior slice of the security market
 Junior Penetration Tester | [Checkpoint (month 9)](#employability-checkpoint--month-9) | usually remote | eJPT plus a finished PortSwigger track is the expected junior profile
@@ -231,11 +233,25 @@ Apply for | Why it fits at month 4 | Format
 :-- | :-- | :--:
 Embedded Software Engineer (C) | 576 openings nationally, no security background required, and solid C is the entire bar | hybrid
 
-> This is optional and runs alongside the plan, not instead of it — it does not require pausing Stage 2, and it changes nothing about the syllabus or the 15 h/week budget. What backs it is [January's own deliverable](plans/2027-01.md): a concurrent TCP server, a DNS resolver and a traceroute, three protocol programs built from raw sockets up, plus the Stage 1 review. That is what would go in front of an interviewer here — not a new artifact. If nothing comes of it, Stage 2 continues exactly as written.
+> This is optional and runs alongside the plan, not instead of it — it does not require pausing Stage 2, and it changes nothing about the syllabus or the 15 h/week budget. What backs it is [January's own deliverable](plans/2027-01.md): a concurrent TCP server, a DNS resolver and a traceroute, three protocol programs built from raw sockets up, plus the Stage 1 review. That is what would go in front of an interviewer here — not a new artifact. If nothing comes of it, Stage 2 continues exactly as written. What the application travels through matters as much as what is in it — see [How people actually get hired](#how-people-actually-get-hired).
+
+### How people actually get hired
+
+The checkpoints say when to start applying. The hiring research is blunt about what applying is worth: cold applications are not the primary path in — referrals and warm contacts are — and that, not optimism, is why the networking habit starts in month 1, not at month 4.
+
+The numbers are industry benchmarks rather than a census, but they agree on the shape. Cold applications convert at **0.1–2%**: most software engineers send 50–200 applications before an offer, and entry-level candidates often need 80–150 or more. A referral converts at roughly **30%** — referrals get interviews at 10–20 times the rate of a cold application, one is worth about forty cold ones, and an interview that comes from a referral is ~35% more likely to end in an offer. The structural numbers are blunter still: around 85% of jobs are filled through networking rather than job boards, and some 70% of those are never publicly posted. The queue you join by applying cold is not where most hiring happens.
+
+The habit itself is a [standing rule](plans/README.md#standing-rules): 15–20 minutes a day, outside the 15 h/week budget, so it never competes with the programs for hours. Every part of it is what the outreach benchmarks say works:
+
+- **Engage before you message.** Comment usefully on posts from people working in the target roles, long before you contact any of them. A first message to someone whose content you have engaged with gets roughly twice the reply rate of a cold one (8% → 14%).
+- **Personalize, specifically.** A connection request that references something real about the recipient's work gets ~9–10% replies against 5–6% for a generic one; outreach built on specific shared context reaches ~27%.
+- **Follow up once, then stop.** One follow-up after 3–5 days roughly triples the reply rate on an unanswered message (5% → 14%). A second follow-up is not in the data; it is just noise.
+
+No hire percentage is promised here. That number is set by hiring managers, the economy and interview performance, not by a study plan. What the evidence supports is narrower and still large: the referral path converts at 5–40 times the cold path, which makes this the highest-leverage lever in the plan that costs no study hours. The Polish market is also moving the right way — junior competition has been easing for two years, [see the trend in the market snapshot](#market-snapshot-september-2026).
 
 ### Employability checkpoint — month 9
 
-June 2027. The fixed curriculum is finished by the end of this month: C, networking end to end, the PortSwigger track, eJPT, an own application you built and then broke, and the SOC basics. This is the planned moment to start sending applications, not the end of the backlog.
+June 2027. The fixed curriculum is finished by the end of this month: C, networking end to end, the PortSwigger track, eJPT, an own application you built and then broke, and the SOC basics. This is the planned moment to start sending applications, not the end of the backlog. By June the [networking habit](#how-people-actually-get-hired) has eight months behind it: the people a referral would come from have been seeing your name since October, long before you had anything to ask of them.
 
 Apply for | Why it fits at month 9 | Format
 :-- | :-- | :--:
@@ -272,6 +288,8 @@ Three things this data says, none of them obvious:
 3. **The binding constraint is the entry gap, not demand.** Junior offensive or low-level openings in all of Poland: **two**. Zero junior firmware security, zero junior RE, zero junior malware analyst — every vulnerability-research and RE title found was mid, senior, principal or expert. For comparison, a junior frontend opening draws about 146 applications, against an all-IT average of 47.
 
 Trend context: the Polish IT market fell from about 175 600 ads in 2022 to 99 400 in 2024, recovered 8.4% in 2025, and January–May 2026 ran roughly 70% above the same months of 2025. The recovery is not in frontend, whose share of all ads slid from 5% (2024) to 3.4% (H1 2026). Cybersecurity sits in the top three deficit competencies reported by Polish employers.
+
+Junior competition, measured as a multi-year series rather than on the snapshot date: on Just Join IT data, the average number of applications per junior IT posting fell from 44 (2024) to 24 (2025) to 21 (H1 2026). Competition for junior roles is easing, not worsening — fewer applicants per opening at the same time as there are more openings. The series and the single-day counts above are different measurements and both stand: 21 is a half-year junior average, 146 is what one popular junior frontend opening draws. The direction of the series is the part worth keeping.
 
 > This is why [Target roles](#target-roles) starts at month 4 with a non-security job title, why the fixed schedule is cut to the minimum junior-market curriculum, and why [Portfolio and visibility](#portfolio-and-visibility) is not optional. There is no junior queue to join in the low-level niche — you arrive either sideways through embedded work, or with published proof.
 
