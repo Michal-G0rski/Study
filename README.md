@@ -48,7 +48,7 @@ The [market research](#market-snapshot-september-2026) forced a second structura
 
 | Stage | Focus | Calendar |
 | :-- | :-- | :--: |
-| 1 — Foundations | C, tooling, discrete math | months 1–4 |
+| 1 — Foundations | C and the UNIX toolchain | months 1–4 |
 | 2 — Networking and employability | Kurose/Beej, PortSwigger, eJPT, own app, SOC basics | months 3–9 |
 
 The deep material that used to be Stages 3, 4 and 5 is no longer calendar stages. It lives in [After the checkpoint](#after-the-checkpoint), unscheduled, with its effort estimates intact.
@@ -72,7 +72,7 @@ To track progress, mark completed items with a ✅.
 
 ### Stage 1 — Foundations
 
-**Topics covered**: C and the memory model, the UNIX toolchain, discrete math and number theory.
+**Topics covered**: C and the memory model, the UNIX toolchain.
 
 Courses | Duration | Effort | Prerequisites
 :-- | :--: | :--: | :--:
@@ -81,10 +81,10 @@ Courses | Duration | Effort | Prerequisites
 [Effective C, 2nd ed. — Robert C. Seacord](https://nostarch.com/effective-c-2nd-edition) *(alternative or complement to Modern C)* | 6 weeks | 8–10 hours/week | basic C
 [Beej's Guide to C Programming](https://beej.us/guide/bgc/) *(reference, read alongside)* | ongoing | 2 hours/week | none
 [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) | 2 weeks | 10–12 hours/week | none
-[Mathematics for Computer Science (MIT OL)](https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/about) | 13 weeks | 5 hours/week | high school math
-[The Rust Programming Language](https://doc.rust-lang.org/book/) + [Rustlings](https://github.com/rust-lang/rustlings) | 6 weeks | 8–10 hours/week | C; best started after the checkpoint
 
 > Why C first: every later stage — CS:APP labs, pwn.college, Ghidra output, MCU firmware — assumes you read C the way you read your native language. This is the one prerequisite with no workaround.
+
+> Mathematics for Computer Science and Rust used to sit in this table. Neither is named by any junior posting this plan targets — not SOC, not pentest, not embedded C — so both moved to [Extras](#extras-optional): Mathematics with a note on where it still earns its keep, Rust exactly where its own prerequisite already said to put it, after the checkpoint. The roughly 5 hours/week Mathematics took go straight to Modern C instead — every exercise worked, not a sample, and more room on the chapters that need it.
 
 ### Stage 2 — Networking and employability
 
@@ -167,11 +167,15 @@ Kept because they are short and genuinely useful, not because the path depends o
 
 Courses | Duration | Effort | Prerequisites
 :-- | :--: | :--: | :--:
+[Mathematics for Computer Science (MIT OL)](https://openlearninglibrary.mit.edu/courses/course-v1:OCW+6.042J+2T2019/about) | 13 weeks | 5 hours/week | high school math
+[The Rust Programming Language](https://doc.rust-lang.org/book/) + [Rustlings](https://github.com/rust-lang/rustlings) | 6 weeks | 8–10 hours/week | C; best started after the checkpoint
 [Divide and Conquer, Sorting and Searching (Coursera)](https://www.coursera.org/learn/algorithms-divide-conquer) | 4 weeks | 4–8 hours/week | any language, Mathematics for CS
 [Graph Search, Shortest Paths, and Data Structures (Coursera)](https://www.coursera.org/learn/algorithms-graphs-data-structures) | 4 weeks | 4–8 hours/week | Divide & Conquer
 [Cryptopals Crypto Challenges](https://cryptopals.com/) | ongoing | 3–5 hours/week | any language
 [Databases: Modeling and Theory (edX)](https://www.edx.org/learn/databases/stanford-university-databases-modeling-and-theory) | 2 weeks | 10 hours/week | programming
 [Databases: Relational Databases and SQL (edX)](https://www.edx.org/learn/relational-databases/stanford-university-databases-relational-databases-and-sql) | 2 weeks | 10 hours/week | programming
+
+> Mathematics for CS is not dead weight even out of the fixed schedule — it is the natural prerequisite sitting right above it in this table, and the number-theory unit is what used to let February's networking month prove RSA rather than take it on faith. Pick it up before the algorithms pair, or whenever a role asks for it.
 
 ### The order to pick them up in
 
@@ -205,12 +209,12 @@ Platform | When to start | Effort | Prerequisites
 
 ## Target roles
 
-The fixed schedule is ordered so that each month opens a door. The deep roles below are reachable, but through the backlog and a portfolio, not through the calendar.
+The fixed schedule is ordered so that each month opens a door. The deep roles below are reachable, but through the backlog and a portfolio, not through the calendar. Among the month 9 checkpoint's roles, SOC / Detection Engineer (L1) is the one to lead with — see [Employability checkpoint](#employability-checkpoint--month-9) for why; the others stay live targets, just not the first door to knock on.
 
 Role title (as it appears in job ads) | Unlocked after | Remote in PL? | Notes
 :-- | :--: | :--: | :--:
 Embedded Software Engineer (C) | [Early checkpoint (month 4)](#early-checkpoint--month-4) | hybrid | not a security role, but the widest side door — you get paid while working the backlog
-SOC / Detection Engineer (L1) | [Checkpoint (month 9)](#employability-checkpoint--month-9) | remote or hybrid | the largest genuinely junior slice of the security market
+SOC / Detection Engineer (L1) | [Checkpoint (month 9)](#employability-checkpoint--month-9) | remote or hybrid | **the checkpoint's primary target** — the largest genuinely junior slice of the security market, with live, zero-experience postings right now
 Junior Penetration Tester | [Checkpoint (month 9)](#employability-checkpoint--month-9) | usually remote | eJPT plus a finished PortSwigger track is the expected junior profile
 Application Security Engineer | [Checkpoint (month 9)](#employability-checkpoint--month-9) | usually remote | PortSwigger track plus your own built-and-broken app, both in the fixed schedule
 Malware Analyst / Threat Intelligence Analyst | backlog — after the checkpoint | usually remote | portfolio-gated like RE; dedicated listings barely exist in PL, CTI titles start at Mid
@@ -253,12 +257,14 @@ No hire percentage is promised here. That number is set by hiring managers, the 
 
 June 2027. The fixed curriculum is finished by the end of this month: C, networking end to end, the PortSwigger track, eJPT, an own application you built and then broke, and the SOC basics. This is the planned moment to start sending applications, not the end of the backlog. By June the [networking habit](#how-people-actually-get-hired) has eight months behind it: the people a referral would come from have been seeing your name since October, long before you had anything to ask of them.
 
+**Lead with SOC / Detection Engineer (L1).** BNP Paribas and Aon both have live Kraków postings for it right now that explicitly say no experience is needed and training is provided; Hitachi's Kraków Penetration Tester posting, by contrast, asks for 2+ years. That is not a claim that SOC is the better job — it is a claim that it is the wider door at the exact moment this plan reaches the checkpoint. Apply everywhere below in parallel; just don't let Pentester or AppSec's narrower doors be the first application you send. (BNP Paribas, Aon, Hitachi career postings, September 2026.)
+
 Apply for | Why it fits at month 9 | Format
 :-- | :-- | :--:
+SOC / Detection Engineer (L1) | the largest genuinely junior slice of the security market, live zero-experience postings, and the scheduled Sentinel/ATT&CK unit covers its vocabulary | remote or hybrid
 Embedded Software Engineer (C) | 576 openings nationally, 103 in Kraków, and no security experience required | hybrid
-Junior Penetration Tester | eJPT plus a finished PortSwigger track is the expected junior profile | usually remote
 Application Security Engineer | the PortSwigger track plus an own built-and-broken app with a published writeup | usually remote
-SOC / Detection Engineer (L1) | the largest genuinely junior slice of the security market, and the scheduled Sentinel/ATT&CK unit covers its vocabulary | remote or hybrid
+Junior Penetration Tester | eJPT plus a finished PortSwigger track is the expected junior profile, though postings here skew toward wanting prior experience | usually remote
 
 > The case for the checkpoint is arithmetic, not ambition. Getting hired here turns the remaining backlog from unpaid study into paid study, puts real systems in front of you, and removes the worst failure mode of a fixed plan — reaching the end of it with no work history. If nothing lands, nothing is lost: you continue into the [backlog](#after-the-checkpoint) exactly as written, on your own schedule now.
 

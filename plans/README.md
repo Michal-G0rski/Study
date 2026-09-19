@@ -24,10 +24,10 @@ Fifteen hours: **2.5 h a day, Monday to Saturday, Sunday off.** Sunday is the ch
 
 Month | Stage | The month in one line
 :-- | :-- | :--
-[October 2026](2026-10.md) | 1 — Foundations | Modern C through Level 2, Missing Semester, mathematics starts
+[October 2026](2026-10.md) | 1 — Foundations | Modern C through Level 2, Missing Semester finished
 [November 2026](2026-11.md) | 1 — Foundations | Modern C finished; first binary-format work
 [December 2026](2026-12.md) | 1 + 2 opens | networking starts, the blog goes live
-[January 2027](2027-01.md) | 1 closes + 2 | networking through the link layer, mathematics into graphs, Stage 1 ends
+[January 2027](2027-01.md) | 1 closes + 2 | networking through the link layer, Stage 1 ends
 [February 2027](2027-02.md) | 2 | the networking book finishes; PortSwigger opens at full width
 [March 2027](2027-03.md) | 2 | the PortSwigger track closes
 [April 2027](2027-04.md) | 2 | the eJPT exam sat
@@ -44,7 +44,7 @@ The [main plan](../README.md) is a curriculum. This is a calendar. They do not f
 
 The fixed schedule runs from October 2026 to the end of June 2027: nine calendar months, at 2.5 hours a day, six days a week, minus the public holidays that land on study days (two December days, 1 January, 6 January, Easter Monday, 1 May, 3 and 27 May, 6 June). That comes to roughly **645 study hours**.
 
-What has to fit in them: all of Modern C and the Stage 1 programs (done in ~325 hours over the first four months, exactly as originally planned), the rest of Kurose and Beej with three protocol programs, the mathematics tail, the full beginner-to-intermediate PortSwigger track, eJPT preparation and the exam itself, an own web application built and then broken with a published writeup, the SOC basics unit, and the checkpoint month's CV, market re-measurement and first applications. That fits — with the slack the old plan never had, because Nand to Tetris, CS:APP and OSTEP are no longer competing for the same hours.
+What has to fit in them: all of Modern C and the Stage 1 programs (done in ~325 hours over the first four months, exactly as originally planned), the rest of Kurose and Beej with three protocol programs, the full beginner-to-intermediate PortSwigger track, eJPT preparation and the exam itself, an own web application built and then broken with a published writeup, the SOC basics unit, and the checkpoint month's CV, market re-measurement and first applications. That fits — with the slack the old plan never had, because Nand to Tetris, CS:APP and OSTEP are no longer competing for the same hours.
 
 The deep curriculum that does **not** fit — because it was never going to, and because the market research says it has no junior queue to wait in — is the [backlog](../README.md#after-the-checkpoint): roughly 1,050–1,200 hours of material even after aggressive trimming.
 
@@ -52,6 +52,7 @@ The deep curriculum that does **not** fit — because it was never going to, and
 
 Nothing here was dropped by accident. Each is a decision with a reason, and each is picked up after the checkpoint, driven by the job.
 
+- **Mathematics for Computer Science (MIT 6.042J)** — deferred from Stage 1. None of the target junior postings (SOC, pentest, embedded C) name discrete math or number theory, so the roughly 5 hours/week it used to take go to Modern C instead. It is not gone — the algorithms extras still assume it, and February's TLS material now teaches RSA straight from Kurose instead of leaning on a proof already done.
 - **Nand to Tetris Part I and II** — deferred from Stage 2. Part I is the highest-value single backlog item for embedded-C roles; Part II (compiler and OS) further still, since its stack-machine payoff is met in CS:APP chapter 3.
 - **CS:APP with the four labs** — deferred, and it is the default first pick from the backlog. It is the single largest thing the old plan carried and everything in the exploitation and RE sections assumes it.
 - **OSTEP** — deferred; the operating-systems material is met in CS:APP chapters 8, 9, 10 and 12.
