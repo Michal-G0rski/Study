@@ -4,7 +4,7 @@ One file per calendar month. Each file says **what has to be worked through**, w
 
 What these files deliberately do not contain: environment setup, toolchain installation, editor configuration, shell commands, links to open. That belongs to whatever you use to start a session, not to the plan.
 
-The [main plan](../README.md) says what to learn across eighteen months and why. These files say what to do this week.
+The [main plan](../README.md) says what to learn and why. These files say what to do this week.
 
 ## How a week runs
 
@@ -12,12 +12,12 @@ Fifteen hours: **2.5 h a day, Monday to Saturday, Sunday off.** Sunday is the ch
 
 ## Standing rules
 
-- The C track never slips two days running. In Stage 1 it is Modern C; after that it is whatever C work the month carries. It is the one prerequisite in this plan with no workaround.
-- When a week is short, the order things get dropped is: lectures first, then second-pass reading, then mathematics. **Never the programs.** Reading about this transfers badly; writing it transfers.
+- The C track never slips two days running. In Stage 1 it is Modern C; from Stage 2 on it is the networking and security work the month carries. It is the one prerequisite in this plan with no workaround.
+- When a week is short, the order things get dropped is: lectures first, then second-pass reading. **Never the programs.** Reading about this transfers badly; writing it transfers.
 - A missed day moves to Sunday, at most once a month.
 - Do not run ahead. Work scheduled for Thursday that you reach on Tuesday gets *read* on Tuesday and *done* on Thursday.
 - One commit per study day. An empty day is visible in `git log` and that is the point.
-- From Stage 3 on, the source's own order wins. Where a day row and a course disagree about sequence, follow the course; the day rows are the workload, not a re-ordering of it.
+- **The source's own order wins** — for the backlog material in the [main plan](../README.md#after-the-checkpoint) too, whenever you get to it: where a course's internal sequence disagrees with your plans, follow the course. Belts are earned sequentially on pwn.college, Arch1001's chapters are ordered, PortSwigger topics build on each other.
 
 ## Index
 
@@ -27,66 +27,44 @@ Month | Stage | The month in one line
 [November 2026](2026-11.md) | 1 — Foundations | Modern C finished; first binary-format work
 [December 2026](2026-12.md) | 1 + 2 opens | networking starts, the blog goes live
 [January 2027](2027-01.md) | 1 closes + 2 | networking through the link layer, mathematics into graphs, Stage 1 ends
-[February 2027](2027-02.md) | 2 + employability | the networking book finishes, nand2tetris starts, PortSwigger opens
-[March 2027](2027-03.md) | 2 — Systems | Nand to Tetris Part I finished; PortSwigger deepens; eJPT booked
-[April 2027](2027-04.md) | 2 + employability | CS:APP opens with the Data Lab; the eJPT exam sat
-[May 2027](2027-05.md) | 2 — Systems | CS:APP chapter 3 and the Bomb Lab; the PortSwigger track closes
-[June 2027](2027-06.md) | 2 + checkpoint | CS:APP chapter 7 and the Attack Lab; the checkpoint opens, first applications sent
-[July 2027](2027-07.md) | 2 + checkpoint | virtual memory and the Malloc Lab; the first CTF writeup
-[August 2027](2027-08.md) | 2 closes, 3 opens | CS:APP finishes; Arch1001 opens
-[September 2027](2027-09.md) | 3 — Low-level | Arch1001 finished; your own x86-64 reference
-[October 2027](2027-10.md) | 3 + 4 opens | Ghidra and the first script; pwn.college opens
-[November 2027](2027-11.md) | 4 — Offense | ARM; the first pwn.college belt; ten crackmes
-[December 2027](2027-12.md) | 4 + 5 opens | Program Security and RE101; the ESP32 arrives
-[January 2028](2028-01.md) | 4 + 5 | ROP for real; the first firmware extraction; the OSCP decision
-[February 2028](2028-02.md) | 4 + 5 | the second belt; firmware analysis; Microcorruption
-[March 2028](2028-03.md) | 5 — the last month | build it and break it; a teardown, a CVE attempt, the review
+[February 2027](2027-02.md) | 2 | the networking book finishes; PortSwigger opens at full width
+[March 2027](2027-03.md) | 2 | the PortSwigger track closes
+[April 2027](2027-04.md) | 2 | the eJPT exam sat
+[May 2027](2027-05.md) | 2 | the own app built, then broken
+[June 2027](2027-06.md) | 2 + checkpoint | SOC basics; **the checkpoint opens, first applications sent**
 
-The plan ends in March 2028 mid-curriculum, and on purpose. The arithmetic below says why, and records everything that was deferred to make eighteen months fit fifteen hours a week.
+The plan's fixed schedule ends with June 2027 and the checkpoint. There are no monthly files after that, on purpose — what comes next is the [backlog](../README.md#after-the-checkpoint), and it is driven by the job you land, not by a calendar someone wrote in advance.
 
-## What eighteen months actually holds
+## What the fixed schedule holds
 
 The [main plan](../README.md) is a curriculum. This is a calendar. They do not fit each other, and this section is the honest accounting of the gap rather than a pretence that there isn't one.
 
 ### The arithmetic
 
-The thirteen months from March 2027 to March 2028 supply, after every public holiday is deducted, **830 study hours** — 2.5 hours a day, six days a week, minus the days the calendar takes back. The five months before them add roughly 325 more. Call it **1,150 hours** across the whole eighteen.
+The fixed schedule runs from October 2026 to the end of June 2027: nine calendar months, at 2.5 hours a day, six days a week, minus the public holidays that land on study days (two December days, 1 January, 6 January, Easter Monday, 1 May, 3 and 27 May, 6 June). That comes to roughly **645 study hours**.
 
-The sources the main plan names, worked at the depth they deserve, come to somewhere between **1,050 and 1,200 hours after trimming** — and that trimming is already aggressive. Nand to Tetris is two courses. CS:APP is a semester with seven labs. pwn.college is four belts, each a course in itself. OST2 is three courses. Stage 5 is three books, two hardware platforms and a firmware methodology. Add the certifications, the portfolio, and the applications, and the untrimmed total is closer to double the hours available.
+What has to fit in them: all of Modern C and the Stage 1 programs (done in ~325 hours over the first four months, exactly as originally planned), the rest of Kurose and Beej with three protocol programs, the mathematics tail, the full beginner-to-intermediate PortSwigger track, eJPT preparation and the exam itself, an own web application built and then broken with a published writeup, the SOC basics unit, and the checkpoint month's CV, market re-measurement and first applications. That fits — with the slack the old plan never had, because Nand to Tetris, CS:APP and OSTEP are no longer competing for the same hours.
 
-So the curriculum does not fit, it was never going to fit, and the plan's own answer is the [employability checkpoint at months 9–10](../README.md#employability-checkpoint--months-910): **get hired mid-plan, and the second half becomes paid study instead of a race to finish a syllabus.** By month 18 the intended outcome is a job and a portfolio, not a completed curriculum. That is not the plan falling short of its goal. That is the goal.
-
-### What that costs in timing
-
-Because the hours are real, the stages land later than the main plan's published bands:
-
-- **Stage 3 opens in month 11 (August 2027)**, not month 8. CS:APP is the reason — it is the largest single thing in the plan and it earns its months.
-- **Stage 4 opens in month 13 (October 2027)**, not month 10, once Ghidra is in hand.
-- **Stage 5 opens in month 15 (December 2027)** — inside its month 13–18 band, but at reduced depth, and it closes the plan rather than completing itself.
-
-This is stated so it is not discovered. A plan that silently runs three months behind its own headings is worse than one that says where it stands.
+The deep curriculum that does **not** fit — because it was never going to, and because the market research says it has no junior queue to wait in — is the [backlog](../README.md#after-the-checkpoint): roughly 1,050–1,200 hours of material even after aggressive trimming.
 
 ### What was deferred, and why
 
-Nothing here was dropped by accident. Each of these is a decision with a reason, and each is a candidate for the months after month 18.
+Nothing here was dropped by accident. Each is a decision with a reason, and each is picked up after the checkpoint, driven by the job.
 
-- **Nand to Tetris Part II** (the compiler and OS half) — deferred entirely. The stack-machine and translation payoff is met in CS:APP chapter 3 and again across Stage 4. Part I, the hardware half, is kept and finishes in March 2027.
-- **OSTEP** — deferred with Part II, since it followed it. The operating-systems material is relocated into CS:APP chapters 8, 9, 10 and 12, which the plan reads in full.
-- **CS:APP chapter 4** (processor architecture) — not scheduled. Nand to Tetris project 5 builds a CPU, and CMU no longer lectures the chapter.
-- **CS:APP chapter 5** (optimising performance) — not scheduled. A genuine trade, not a duplicate: it is about making code fast, and this path is about making code do what it was not meant to.
-- **CS:APP chapter 11** (network programming) — not scheduled. Done the hard way already in December–January: Kurose and Beej, plus a TCP server, a DNS resolver that builds its own packets, and a traceroute that reads ICMP.
-- **The Cache Lab** — dropped; its reading, sections 6.4–6.7, is kept in full. It is a performance lab, and the cache *reading* is what the Stage 5 side-channel work needs, not the matrix-transpose optimisation.
-- **The PortSwigger advanced track** — insecure deserialization, web cache poisoning, GraphQL, NoSQL, race conditions, WebSockets, clickjacking, CORS, web LLM attacks, API testing — deliberately not closed. None is on the path to the target roles; each stays free and is a week's work if a posting ever asks.
-- **OST2 Arch2001** (x86-64 OS internals) — not scheduled anywhere. Its published sub-lessons carry question counts in the hundreds; it is far heavier than its chapter count suggests, and its subject is met in CS:APP chapter 9 and in pwn.college's kernel modules. Its prerequisite, Arch1001, is done, so it is ready to pick up first after month 18 if kernel work is the direction.
-- **Practical Malware Analysis** — reduced to the RE101 workshop in December, which covers the primer in the hours available. The full book is post-plan.
-- **exploit.education** — deferred; it overlaps pwn.college's early modules, which are scheduled instead.
-- **Practical Binary Analysis** — already optional in the main plan; left optional.
-- **OSCP / PEN-200** — not scheduled, and made an explicit [decision point in January 2028](2028-01.md). PEN-200 is a roughly three-month full-load commitment with a 24-hour exam; it cannot share a calendar with a live Stage 4 and Stage 5 at fifteen hours a week. The decision — go, defer, or drop — is driven by the re-measured market and by whether a job has landed.
-- **pwn.college System Security's later belts** (kernel security, microarchitecture exploitation, system exploitation) — opened in February, not finished. Among the deepest material on the platform, and post-plan by design.
-- **ChipWhisperer fault injection** and the trace-based side-channel labs — post-plan. SCA101's simulated power-analysis labs are done in March; the hardware-bound work needs the board and the hours the plan does not have.
+- **Nand to Tetris Part I and II** — deferred from Stage 2. Part I is the highest-value single backlog item for embedded-C roles; Part II (compiler and OS) further still, since its stack-machine payoff is met in CS:APP chapter 3.
+- **CS:APP with the four labs** — deferred, and it is the default first pick from the backlog. It is the single largest thing the old plan carried and everything in the exploitation and RE sections assumes it.
+- **OSTEP** — deferred; the operating-systems material is met in CS:APP chapters 8, 9, 10 and 12.
+- **The whole of the old Stage 3** — Arch1001, Arch2001, ARM, RE101, Ghidra, Practical Malware Analysis, crackmes. Junior RE openings measured at zero nationally in September 2026; this material is portfolio-gated, not schedule-gated.
+- **The whole of the old Stage 4** minus the own-app project, which moved *up* into the fixed schedule (month 8) because it is the one offense item with junior market value. pwn.college, Nightmare, ROP Emporium and exploit.education are backlog.
+- **The whole of the old Stage 5** — ESP32, buses, the Hardware Hacking Handbook, Practical IoT Hacking, OWASP FSTM, Microcorruption, ChipWhisperer. Junior firmware openings measured at zero.
+- **The PortSwigger advanced track** — insecure deserialization, web cache poisoning, GraphQL, NoSQL, race conditions, WebSockets, clickjacking, CORS, web LLM attacks, API testing — deliberately not closed. Each stays free and is a week's work if a posting ever asks.
+- **OSCP / PEN-200** — a decision, not a schedule item. It is a full-load commitment with a 24-hour exam; it cannot share a calendar with anything. Decide with a job and a re-measured market in front of you.
+- **pwn.college's deeper belts** (System Security's kernel and microarchitecture modules) — among the deepest material on the platform, post-backlog-entry by design.
+- **ChipWhisperer fault injection** and the hardware-bound side-channel labs — SCA101's simulated labs are the entry point; the rest needs the board and dedicated hours.
+- **Practical Binary Analysis, exploit.education** — already optional in the old plan; still optional.
 
 ### The order to pick them up in
 
-After month 18, if study continues, the sequence that wastes the least: **finish the pwn.college belts** (System Security, then Software Exploitation) because they are already open and sequential; **Arch2001** if the work is going kernel-wards; **OSCP** if it was deferred and the market rewards it; **ChipWhisperer fault injection** if the work is going hardware-wards; and the **PortSwigger advanced topics** one at a time, on demand, when a role names one.
+After the checkpoint, the job picks. The reasoning and the role-by-role order are in the [main plan](../README.md#the-order-to-pick-them-up-in); the one default worth repeating here: if nothing has landed and you want the single most-leveraged item, it is **CS:APP with the labs**.
 
-It is not an unfinished plan. It is the start of the next one.
+It is not an unfinished plan. It is a nine-month plan that ends in applications, and a backlog that begins with a job.
