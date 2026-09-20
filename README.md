@@ -1,7 +1,8 @@
 <h3>Low-Level Security Path — from OSSU to firmware, RE and exploitation</h3>
 <p>
-  A tailored study plan for embedded / firmware security, reverse engineering and binary exploitation.
-  Built for someone who wants deep low-level skills, remote work, and a job adjacent to offensive security.
+  A nine-month, market-measured run to a first job in security operations (SOC / Detection Engineer L1),
+  on a foundation of C, UNIX and networking — with the embedded / firmware security, reverse engineering
+  and binary exploitation career kept in full as the backlog that follows the hire.
 </p>
 <p>
   <a href="https://github.com/ossu/computer-science">
@@ -43,14 +44,14 @@ This plan replaces the previous OSSU-derived web/cloud path. The target is **emb
 
 The reasoning behind the switch: classic hardware work (PCB, bring-up, FPGA, embedded development) is lab work and rarely remote, especially at entry level. Low-level *security* keeps the hardware mindset but the actual work happens on binaries, firmware images and protocols — which is done remotely. And the reason this niche resists automation is not "hardware": it is that the ground truth lives in memory state, on a logic analyzer, or in an undocumented protocol, not in plausible-looking high-level code.
 
-The [market research](#market-snapshot-september-2026) forced a second structural decision: the original target roles — Reverse Engineer, Malware Analyst, Vulnerability Researcher — have effectively **zero junior openings** (two junior offensive/low-level roles in all of Poland; every RE/VR/malware title found was mid, senior, principal or expert). So the fixed, scheduled curriculum is cut to the minimum that has real junior market demand — **C, networking, PortSwigger, eJPT, an own built-and-broken web app, and SOC basics** — and it ends at the [checkpoint in month 9](#employability-checkpoint--month-9), not month 18. Everything deeper (assembly, reverse engineering, exploitation, embedded and firmware work) still exists in this repo, as an [unscheduled backlog](#after-the-checkpoint) you drive by whatever job you actually land, not by a calendar.
+The [market research](#market-snapshot-september-2026) forced a second structural decision: the original target roles — Reverse Engineer, Malware Analyst, Vulnerability Researcher — have effectively **zero junior openings** (two junior offensive/low-level roles in all of Poland; every RE/VR/malware title found was mid, senior, principal or expert). So the fixed, scheduled curriculum was cut to the minimum that has real junior market demand. A third decision, made in September 2026 on fresh measurement, goes further: **one entry path, chosen on data — SOC / Detection Engineer (L1)**, the only door in security with a measured junior queue (24 junior security openings on the snapshot date, live zero-experience SOC postings; junior pentest measured at zero openings in 45 live offers). The fixed schedule is therefore **C, UNIX and networking (the foundation), Windows and Active Directory fundamentals, a SIEM with MITRE ATT&CK and triage practice, the SC-200 certificate, and an own web application built, attacked and then detected** — and it ends at the [checkpoint in month 9](#employability-checkpoint--month-9), not month 18. The full PortSwigger track, eJPT and everything deeper (assembly, reverse engineering, exploitation, embedded and firmware work) still exist in this repo, as an [unscheduled backlog](#after-the-checkpoint) you drive by whatever job you actually land, not by a calendar. If the SOC queue closes instead, the measured fallback is junior QA — see [If the checkpoint itself doesn't land](#if-the-checkpoint-itself-doesnt-land).
 
 **Assumed pace:** 15 hours/week. **Fixed schedule: 9 months (October 2026 – end of June 2027).**
 
 | Stage | Focus | Calendar |
 | :-- | :-- | :--: |
 | 1 — Foundations | C and the UNIX toolchain | months 1–4 |
-| 2 — Networking and employability | Kurose/Beej, PortSwigger, eJPT, own app, SOC basics | months 3–9 |
+| 2 — Networking and employability | Kurose/Beej, Windows/AD, Sentinel and triage, SC-200, own app build-attack-detect | months 3–9 |
 
 The deep material that used to be Stages 3, 4 and 5 is no longer calendar stages. It lives in [After the checkpoint](#after-the-checkpoint), unscheduled, with its effort estimates intact.
 
@@ -89,19 +90,21 @@ Courses | Duration | Effort | Prerequisites
 
 ### Stage 2 — Networking and employability
 
-**Topics covered**: the network stack end to end, web attack surface, a first certificate, an application you build and then break yourself, and the SOC vocabulary.
+**Topics covered**: the network stack end to end, Windows and Active Directory fundamentals, a SIEM, MITRE ATT&CK and the alert-triage vocabulary, one certificate, and an application you build, attack and then write detections for — the whole stage aimed at one door, [SOC / Detection Engineer (L1)](#target-roles), the role the September 2026 market measured as the only genuinely junior one in security.
 
 Courses | Duration | Effort | Additional Text / Assignments | Prerequisites
 :-- | :--: | :--: | :--: | :--:
 [Computer Networking: a Top-Down Approach (online lectures)](https://gaia.cs.umass.edu/kurose_ross/online_lectures.htm) | 8 weeks | 4–12 hours/week | [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/) | basic CS, algebra
-[Web Security Academy (PortSwigger)](https://portswigger.net/web-security) | ~12 weeks | 5–12.5 hours/week | [OWASP Top 10](https://owasp.org/www-project-top-ten/) | HTTP basics
-[eJPT (INE)](https://ine.com/security/certifications/ejpt-certification/) — the exam, month 7 | ~2 weeks focused | 10–15 hours/week | the PortSwigger track as grounding | networking, PortSwigger
-Own web application (one project, any stack) — build it, then attack it | 4 weeks | 8–12 hours/week | — | programming, [PortSwigger track](#stage-2--networking-and-employability)
-SOC basics — [Microsoft Sentinel learning path](https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/), MITRE ATT&CK, alert triage vocabulary | 1–2 weeks | 10–15 hours/week | — | networking, Linux
+Windows and Active Directory fundamentals — [TryHackMe](https://www.tryhackme.com/) Windows Fundamentals 1–3 and Active Directory Basics (or TCM Security's free Windows & AD Fundamentals course) | 3 weeks | 5–10 hours/week | the Windows event-log vocabulary, written from your own VM | Linux comfort, networking
+SOC operations — [Microsoft Sentinel learning path](https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/), MITRE ATT&CK, alert triage | ~3 weeks | 8–12 hours/week | [LetsDefend](https://letsdefend.io/) free labs; the [TryHackMe](https://www.tryhackme.com/) SOC Level 1 path alongside, February–May, 3–5 hours/week | networking, Windows basics
+[SC-200 — Microsoft Security Operations Analyst](https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-200/) — the exam, month 7 | ~2 weeks focused | 10–15 hours/week | the Microsoft Learn SC-200 study paths | Sentinel, Windows/AD
+Own web application (one project, any stack) — build it, attack it, then write the detections for the attacks | 4 weeks | 8–12 hours/week | — | programming, networking, a SIEM
 
-> Networking moved to the front of this stage: it is the base layer for firmware, IoT and web work alike, and it is assumed by both eJPT and every security role in the [target table](#target-roles).
+> Networking moved to the front of this stage: it is the base layer for every security role in the [target table](#target-roles), and a SOC L1 interview is a networking interview wearing a badge.
 
-> The own-app project used to sit at the end of the old Stage 4. It now runs in month 8, directly after PortSwigger and eJPT: it is where the Academy's skills get applied rather than rehearsed, it makes Application Security Engineer reachable at the checkpoint, and its writeup is the portfolio piece an appsec employer reads to the end.
+> Why SC-200 and not eJPT: the September 2026 measurement again. Junior pentest openings — zero in 45 live pentest offers, every title mid or senior. The junior queue that actually exists — 24 junior security openings on the snapshot date, with live zero-experience SOC postings in Kraków — is on the operations side, and SC-200 is its certificate. eJPT is not dropped: it moves to the [backlog](#after-the-checkpoint) with the junior-pentester plan, and costs nothing to take after the hire.
+
+> The own-app project is the stage's flagship artifact now, not an appsec play: build it, attack it, and then write the detections that would have caught you. "Built, attacked, detected" in one writeup is the portfolio piece a SOC hiring manager reads twice.
 
 ---
 
@@ -141,12 +144,14 @@ Courses | Duration | Effort | Prerequisites
 
 Courses | Duration | Effort | Prerequisites
 :-- | :--: | :--: | :--:
+[Web Security Academy (PortSwigger)](https://portswigger.net/web-security) — the full beginner-to-intermediate track | ~12 weeks | 5–12.5 hours/week | HTTP basics
+[eJPT (INE)](https://ine.com/security/certifications/ejpt-certification/) — the junior pentest credential | ~2 weeks focused | 10–15 hours/week | the PortSwigger track, networking
 [pwn.college](https://pwn.college/) — full track, from shell basics to kernel exploitation | 16 weeks | 10–15 hours/week | C, assembly, Linux
 [Nightmare — binary exploitation course](https://guyinatuxedo.github.io/) | 6 weeks | 5–8 hours/week | assembly, gdb
 [ROP Emporium](https://ropemporium.com/) | 3 weeks | 5 hours/week | stack overflows
 [exploit.education](https://exploit.education/) | 4 weeks | 5 hours/week | C, assembly
 
-> pwn.college's Core Material must be earned belt-by-belt, in order — you cannot skip to the exploitation dojos because the early ones look easy. **ROP Emporium** ships in x86, x86-64, ARMv5 and MIPS: do the full eight-rung ladder (ret2win → ret2csu) in x86-64, then repeat the early rungs on ARMv5 and MIPS — and note that **ret2csu has no 32-bit x86 build**, so the full ladder only exists in 64-bit. **Dynamic Allocator Misuse** in pwn.college assumes you built an allocator: keep your Malloc Lab source open next to it. The own web application moved out of this section into Stage 2 — it is the one offense item with junior market value.
+> pwn.college's Core Material must be earned belt-by-belt, in order — you cannot skip to the exploitation dojos because the early ones look easy. **ROP Emporium** ships in x86, x86-64, ARMv5 and MIPS: do the full eight-rung ladder (ret2win → ret2csu) in x86-64, then repeat the early rungs on ARMv5 and MIPS — and note that **ret2csu has no 32-bit x86 build**, so the full ladder only exists in 64-bit. **Dynamic Allocator Misuse** in pwn.college assumes you built an allocator: keep your Malloc Lab source open next to it. The own web application moved out of this section into Stage 2 — not as offense material but as the built-attacked-detected artifact the SOC checkpoint leans on. The PortSwigger track and eJPT moved *into* this section in September 2026: they are the junior-pentester move, and that move is second, after the hire.
 
 ### Embedded and hardware
 
@@ -198,9 +203,10 @@ Run these in parallel with the curriculum, not after it.
 
 Platform | When to start | Effort | Prerequisites
 :-- | :--: | :--: | :--:
-[picoCTF / CyLab Security Academy](https://cylabacademy.org) | Stage 2, alongside eJPT prep | 3–5 hours/week | basic Linux
-[Web Security Academy (PortSwigger)](https://portswigger.net/web-security) | Stage 2 | 5–12.5 hours/week | HTTP basics
-[TryHackMe](https://www.tryhackme.com/) | Stage 2, alongside eJPT prep | 3–5 hours/week | networking, OS
+[TryHackMe](https://www.tryhackme.com/) — Windows Fundamentals 1–3, Active Directory Basics, then the SOC Level 1 path | Stage 2 (fixed), from February | 3–5 hours/week | networking, OS
+[LetsDefend](https://letsdefend.io/) / [CyberDefenders](https://cyberdefenders.org/) — blue-team incident practice | Stage 2 (fixed), from March | 3–5 hours/week | SOC vocabulary
+[picoCTF / CyLab Security Academy](https://cylabacademy.org) | backlog | 3–5 hours/week | basic Linux
+[Web Security Academy (PortSwigger)](https://portswigger.net/web-security) | backlog — with the [junior pentester move](#offense-and-exploitation) | 5–12.5 hours/week | HTTP basics
 [crackmes.one](https://crackmes.one/) | backlog | 3–5 hours/week | Ghidra basics
 [pwn.college](https://pwn.college/) | backlog | 10–15 hours/week | C, assembly
 [HackTheBox](https://www.hackthebox.com/) | backlog | 3–5 hours/week | networking, OS
@@ -210,14 +216,15 @@ Platform | When to start | Effort | Prerequisites
 
 ## Target roles
 
-The fixed schedule is ordered so that each month opens a door. The deep roles below are reachable, but through the backlog and a portfolio, not through the calendar. Among the month 9 checkpoint's roles, SOC / Detection Engineer (L1) is the one to lead with — see [Employability checkpoint](#employability-checkpoint--month-9) for why; the others stay live targets, just not the first door to knock on.
+The fixed schedule is ordered so that each month opens a door. Since the September 2026 decision it opens exactly one: SOC / Detection Engineer (L1), the primary target below. The measured fallback is junior QA; the optional side door out of Stage 1 is embedded C. The deep roles are reachable, but through the backlog and a portfolio, not through the calendar — see [Employability checkpoint](#employability-checkpoint--month-9) for the ordering.
 
 Role title (as it appears in job ads) | Unlocked after | Remote in PL? | Notes
 :-- | :--: | :--: | :--:
-Embedded Software Engineer (C) | [Early checkpoint (month 4)](#early-checkpoint--month-4) | hybrid | not a security role, but the widest side door — you get paid while working the backlog
-SOC / Detection Engineer (L1) | [Checkpoint (month 9)](#employability-checkpoint--month-9) | remote or hybrid | **the checkpoint's primary target** — the largest genuinely junior slice of the security market, with live, zero-experience postings right now
-Junior Penetration Tester | [Checkpoint (month 9)](#employability-checkpoint--month-9) | usually remote | eJPT plus a finished PortSwigger track is the expected junior profile
-Application Security Engineer | [Checkpoint (month 9)](#employability-checkpoint--month-9) | usually remote | PortSwigger track plus your own built-and-broken app, both in the fixed schedule
+Embedded Software Engineer (C) | [Early checkpoint (month 4)](#early-checkpoint--month-4) | hybrid | optional side door, unchanged — solid C is the entire bar, and C is in the foundation
+SOC Analyst / Detection Engineer (L1) | [Checkpoint (month 9)](#employability-checkpoint--month-9) | remote or hybrid | **the plan's single primary target** — the one genuinely junior door the September 2026 market measured in security; job ads call it Junior SOC Analyst, Cyber Security Analyst (SOC L1), CSIRT Analyst, Cybersecurity Operations Analyst
+Junior QA / Software Tester (security flavour) | [Checkpoint (month 9)](#employability-checkpoint--month-9) — the measured fallback | hybrid or remote | the widening door if the SOC queue closes: the most junior openings in all of IT, and the foundation covers most of the bar
+Junior Penetration Tester | backlog — after the checkpoint | usually remote | eJPT plus a full PortSwigger track, both in the backlog now; zero junior openings measured on 45 live pentest offers
+Application Security Engineer | backlog — after the checkpoint | usually remote | portfolio-gated; the own app from the fixed schedule is its seed
 Malware Analyst / Threat Intelligence Analyst | backlog — after the checkpoint | usually remote | portfolio-gated like RE; dedicated listings barely exist in PL, CTI titles start at Mid
 Reverse Engineer | backlog — after the checkpoint | remote is standard | writeups and crackmes count more than certificates here
 Exploit Developer | backlog — after the checkpoint | remote is standard | narrow market, high pay, portfolio-gated
@@ -232,7 +239,7 @@ Hardware Security Consultant | backlog — after the checkpoint + portfolio | re
 
 ### Early checkpoint — month 4
 
-Embedded Software Engineer (C) is the largest single row in the table above — 576 openings nationally — and the only one that needs no security knowledge, just solid C. Stage 1 (months 1–4: Systematic Program Design, Modern C, the Missing Semester, discrete math) closes at the end of January 2027, exactly where that bar is cleared. The plan's other checkpoint sits at month 9, waiting on PortSwigger and eJPT; that leaves this door unused for five months for no reason tied to the C work itself.
+Embedded Software Engineer (C) is the largest single row in the table above — 576 openings nationally — and the only one that needs no security knowledge, just solid C. Stage 1 (months 1–4: Systematic Program Design, Modern C, the Missing Semester) closes at the end of January 2027, exactly where that bar is cleared. The plan's other checkpoint sits at month 9, waiting on PortSwigger and eJPT; that leaves this door unused for five months for no reason tied to the C work itself.
 
 Apply for | Why it fits at month 4 | Format
 :-- | :-- | :--:
@@ -256,16 +263,15 @@ No hire percentage is promised here. That number is set by hiring managers, the 
 
 ### Employability checkpoint — month 9
 
-June 2027. The fixed curriculum is finished by the end of this month: C, networking end to end, the PortSwigger track, eJPT, an own application you built and then broke, and the SOC basics. This is the planned moment to start sending applications, not the end of the backlog. By June the [networking habit](#how-people-actually-get-hired) has eight months behind it: the people a referral would come from have been seeing your name since October, long before you had anything to ask of them.
+June 2027. The fixed curriculum is finished by the end of this month: C, networking end to end, Windows and AD fundamentals, the Sentinel and triage track, SC-200, and an own application you built, attacked and detected. This is the planned moment to start sending applications, not the end of the backlog. By June the [networking habit](#how-people-actually-get-hired) has eight months behind it: the people a referral would come from have been seeing your name since October, long before you had anything to ask of them.
 
-**Lead with SOC / Detection Engineer (L1).** BNP Paribas and Aon both have live Kraków postings for it right now that explicitly say no experience is needed and training is provided; Hitachi's Kraków Penetration Tester posting, by contrast, asks for 2+ years. That is not a claim that SOC is the better job — it is a claim that it is the wider door at the exact moment this plan reaches the checkpoint. Apply everywhere below in parallel; just don't let Pentester or AppSec's narrower doors be the first application you send. (BNP Paribas, Aon, Hitachi career postings, September 2026.)
+**Lead with SOC / Detection Engineer (L1) — and only that.** This is no longer one option among four: it is the door the whole fixed schedule was rebuilt around (the September 2026 decision, [data in the snapshot](#market-snapshot-september-2026)). BNP Paribas and Aon both have live Kraków postings for it right now that explicitly say no experience is needed and training is provided; PwC runs SOC L1 seats in Kraków; 24/7 SOC operations hire juniors for shift triage because that is the seat seniors do not want. (BNP Paribas, Aon, PwC career postings, September 2026.) The fallback row below comes into play only if the market re-measured in week 3 says the junior SOC queue has closed.
 
 Apply for | Why it fits at month 9 | Format
 :-- | :-- | :--:
-SOC / Detection Engineer (L1) | the largest genuinely junior slice of the security market, live zero-experience postings, and the scheduled Sentinel/ATT&CK unit covers its vocabulary | remote or hybrid
-Embedded Software Engineer (C) | 576 openings nationally, 103 in Kraków, and no security experience required | hybrid
-Application Security Engineer | the PortSwigger track plus an own built-and-broken app with a published writeup | usually remote
-Junior Penetration Tester | eJPT plus a finished PortSwigger track is the expected junior profile, though postings here skew toward wanting prior experience | usually remote
+SOC Analyst / Detection Engineer (L1) — every title variant: Junior SOC Analyst, Cyber Security Analyst (SOC L1), CSIRT Analyst, Cybersecurity Operations Analyst | the plan's primary target: live zero-experience postings, and the Sentinel/ATT&CK/SC-200 track is its exact shape — shift seats are the most junior-shaped in the country | remote or hybrid
+Junior QA / Software Tester (security flavour) — the measured fallback | the widest junior door in all of IT if SOC is shut; the foundation (HTTP, Linux, scripting, a built-attacked-detected app) covers most of its bar | hybrid or remote
+Embedded Software Engineer (C) — the side door | 576 openings nationally, no security background required, and the Stage 1 protocol programs are the interview material | hybrid
 
 > The case for the checkpoint is arithmetic, not ambition. Getting hired here turns the remaining backlog from unpaid study into paid study, puts real systems in front of you, and removes the worst failure mode of a fixed plan — reaching the end of it with no work history. If nothing lands, nothing is lost: you continue into the [backlog](#after-the-checkpoint) exactly as written, on your own schedule now.
 
@@ -313,8 +319,8 @@ Junior competition, measured as a multi-year series rather than on the snapshot 
 
 The thesis this plan runs on, stated plainly: **when the priority is fast employment, the safer strategy is a strong, specialization-agnostic operational foundation — a T-shaped profile — with the deep niche deferred until a job is paying for it.** The market data above is what forces it. What each part means here:
 
-- **The horizontal bar — the agnostic operational foundation.** C and the UNIX toolchain, networking end to end, Linux, HTTP and the web stack, debugging, written English, published work. Every checkpoint role draws on it, and so do the fallback titles ([QA with a security flavour](#if-the-checkpoint-itself-doesnt-land), junior sysadmin, backend C). It is also the layer AI fakes worst: recruiters report candidates leaning on AI tools getting disqualified for missing fundamentals, while agentic AI multiplies the output of experienced engineers and leaves juniors with marginal gains for now. The durable junior asset is the foundation, not the framework of the month.
-- **The vertical bar — the legible specialization.** PortSwigger plus the built-and-broken app plus eJPT: security-tilted, on purpose. Cybersecurity is the [#1 deficit competency](#market-snapshot-september-2026) in the Polish market with regulatory underpinning (NIS2, DORA), so the tilt is a bet on where the horizontal bar reads best — not a return to the niche-first strategy the market research killed. It is a revisitable decision in the spirit of [Deliberately skipped](#deliberately-skipped): if the re-measured market at the checkpoint points elsewhere, the vertical re-aims cheaply because the horizontal bar transfers whole.
+- **The horizontal bar — the agnostic operational foundation.** C and the UNIX toolchain, networking end to end, Linux and Windows, HTTP and the web stack, logs, debugging, written English, published work. Every checkpoint role draws on it, and so do the fallback titles ([QA with a security flavour](#if-the-checkpoint-itself-doesnt-land), junior sysadmin, backend C). It is also the layer AI fakes worst: recruiters report candidates leaning on AI tools getting disqualified for missing fundamentals, while agentic AI multiplies the output of experienced engineers and leaves juniors with marginal gains for now. The durable junior asset is the foundation, not the framework of the month.
+- **The vertical bar — the legible specialization.** SOC operations: Windows and AD, Sentinel, MITRE ATT&CK, triage practice, SC-200, and the built-attacked-detected app — blue-team-tilted, on purpose. Cybersecurity is the [#1 deficit competency](#market-snapshot-september-2026) in the Polish market with regulatory underpinning (NIS2, DORA), and the September 2026 measurement says the junior queue exists on the operations side only. It is a revisitable decision in the spirit of [Deliberately skipped](#deliberately-skipped): if the re-measured market at the checkpoint points elsewhere, the vertical re-aims cheaply because the horizontal bar transfers whole.
 - **Agnostic is not generic.** Juniors are hired into specific slots — SOC L1, junior QA, junior backend in a named stack — against ~47 competing applications. The horizontal bar without a readable vertical enters that queue with no story. The T is both bars, or it is nothing.
 - **"Safer" does not mean "safe", and the schedule owns one real tension.** Four months of pure C before the first market-facing employability content is expensive under a literal fast-employment priority. The defense is the [early checkpoint](#early-checkpoint--month-4): embedded C is the widest side door (576 openings), and C is the one prerequisite this plan treats as having no workaround. The tension is accepted deliberately, not hidden.
 - **The fastest lever costs no study hours.** Referrals convert at 5–40× cold applications; the [networking habit](#how-people-actually-get-hired) is the operational foundation of the strategy in a stricter sense than any syllabus item. No curriculum choice compensates for skipping it.
@@ -332,8 +338,9 @@ Milestone | Where | What it proves
 Blog live, ELF parser writeup published | fixed plan, month 3 | you can read a binary format field by field
 DNS resolver writeup published | fixed plan, month 4 | you can build a protocol, not just consume a library
 Traceroute writeup published | fixed plan, month 5 | you can explain, not just solve
-eJPT passed | fixed plan, month 7 | the certificate the checkpoint leans on
-**Own app built and broken, writeup published** | fixed plan, month 8 | you work both sides — the clearest single artifact for appsec roles
+LetsDefend incident report published | fixed plan, month 6 | you can run a triage end to end and write it up so a stranger can follow it
+SC-200 passed | fixed plan, month 7 | the certificate the checkpoint leans on
+**Own app built, attacked, detected — writeup published** | fixed plan, month 8 | build → attack → detect: you work both sides and can write the rule that catches you — the clearest single artifact for SOC L1
 First CTF writeup published | backlog | you can explain an exploit, not just run one
 First Bomb Lab or Attack Lab writeup | backlog (CS:APP) | you can read a binary you did not write
 First own [Ghidra](https://github.com/NationalSecurityAgency/ghidra) script or plugin | backlog | tooling, not just tool use
@@ -355,7 +362,9 @@ Secondary to portfolio, but they still open doors in PL/EU recruiting.
 
 Certification | When | Cost tier | Why
 :-- | :--: | :--: | :--
-[eJPT (INE)](https://ine.com/security/certifications/ejpt-certification/) | month 7, in the fixed schedule | low | cheap and fast, and the one credential the month 9 checkpoint leans on
+[SC-200 — Microsoft Security Operations Analyst](https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-200/) | month 7, in the fixed schedule | mid | the certificate the SOC L1 checkpoint leans on; Sentinel is its core, and the March–April track is its preparation
+[SC-900 — Microsoft Security, Compliance, and Identity Fundamentals](https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-900/) *(optional)* | month 6, as a warm-up if wanted | low | cheap vocabulary credential; skip it if the SC-200 prep is on track
+[eJPT (INE)](https://ine.com/security/certifications/ejpt-certification/) | backlog — with the junior pentester move | low | cheap and fast, and the junior pentest credential — for the second move, after the hire
 [OSCP / PEN-200 (OffSec)](https://www.offsec.com/courses/pen-200/) | backlog — after hire, market-driven | high | still the shortest route to an interview in PL/EU; a full-load ~3-month course with a 24-hour exam, so it shares a calendar with nothing
 [OSED / EXP-301 (OffSec)](https://www.offsec.com/courses/exp-301/) | backlog — after OSCP, exploit-dev direction only | high | only worth it once you are committed to exploit dev
 
@@ -398,7 +407,8 @@ Item | Why it was cut
 [Identifying Security Vulnerabilities (Coursera)](https://www.coursera.org/learn/identifying-security-vulnerabilities) | Same; its C/C++ variant is replaced by actually writing and breaking C.
 [Greedy Algorithms, MST, Dynamic Programming (Coursera)](https://www.coursera.org/learn/algorithms-greedy) | Deferred to interview preparation.
 [Shortest Paths Revisited, NP-Complete Problems (Coursera)](https://www.coursera.org/learn/algorithms-npcomplete) | Deferred to interview preparation.
-[Fullstack Open](https://fullstackopen.com/en/) | 12 weeks × 15 h to become a web developer. Reduced to one self-built app plus the PortSwigger Academy.
+[Fullstack Open](https://fullstackopen.com/en/) | 12 weeks × 15 h to become a web developer. Reduced to the one self-built app of the fixed schedule.
+The pentest-first Stage 2 (full PortSwigger track + eJPT in the fixed schedule) | The September 2026 measurement: zero junior pentest openings in 45 live offers, while the junior security queue that does exist — 24 openings — is SOC operations. Not dropped: moved to the [backlog](#after-the-checkpoint) as the second move, after the hire.
 
 ---
 
@@ -413,7 +423,7 @@ Please update this section with your personal details.
 ## How to use
 
 1. Work through Stage 1, then Stage 2, in order. The fixed schedule ends in month 9 — that is deliberate.
-2. The employability content *is* Stage 2: PortSwigger, eJPT, the own app, the SOC unit. It costs the bulk of the five months after Stage 1, and it is the whole reason the month 9 checkpoint is possible.
+2. The employability content *is* Stage 2: Windows and AD, the SIEM and triage track, SC-200, and the own app. It costs the bulk of the five months after Stage 1, and it is the whole reason the month 9 checkpoint is possible.
 3. Mark finished items with ✅ directly in the tables.
 4. Publishing is part of the curriculum, not an extra — the blog post in month 3, the own-app writeup in month 8.
 5. Stop at the [employability checkpoint](#employability-checkpoint--month-9) and actually apply. Carrying on studying is the comfortable option, not the right one.
@@ -422,4 +432,4 @@ Please update this section with your personal details.
 
 Month-by-month scope lives in [`plans/`](plans/). Stage 1: [October 2026](plans/2026-10.md), [November](plans/2026-11.md), [December](plans/2026-12.md), [January 2027](plans/2027-01.md). Stage 2 and the run to the checkpoint: [February](plans/2027-02.md), [March](plans/2027-03.md), [April](plans/2027-04.md), [May](plans/2027-05.md), and the checkpoint month itself, [June 2027](plans/2027-06.md). The fixed schedule ends there.
 
-The deep material — architecture, reverse engineering, exploitation, embedded and firmware work — is unscheduled, and [`plans/README.md`](plans/README.md#what-the-fixed-schedule-holds) does the accounting: nine months at fifteen hours a week hold roughly 645 study hours, the minimum junior-market curriculum fits in them with room for the programs and the blog, and everything deeper is deferred with reasons and a pickup order. The aim of the fixed schedule is a job and a portfolio. The backlog is the career.
+The deep material — architecture, reverse engineering, exploitation, embedded and firmware work — is unscheduled, and [`plans/README.md`](plans/README.md#what-the-fixed-schedule-holds) does the accounting: nine months at fifteen hours a week hold roughly 570 study hours, the minimum junior-market curriculum fits in them with room for the programs and the blog, and everything deeper is deferred with reasons and a pickup order. The aim of the fixed schedule is a job and a portfolio. The backlog is the career.

@@ -28,11 +28,11 @@ Month | Stage | The month in one line
 [November 2026](2026-11.md) | 1 — Foundations | Modern C finished; first binary-format work
 [December 2026](2026-12.md) | 1 + 2 opens | networking starts, the blog goes live
 [January 2027](2027-01.md) | 1 closes + 2 | networking through the link layer, Stage 1 ends
-[February 2027](2027-02.md) | 2 | the networking book finishes; PortSwigger opens at full width
-[March 2027](2027-03.md) | 2 | the PortSwigger track closes
-[April 2027](2027-04.md) | 2 | the eJPT exam sat
-[May 2027](2027-05.md) | 2 | the own app built, then broken
-[June 2027](2027-06.md) | 2 + checkpoint | SOC basics; **the checkpoint opens, first applications sent**
+[February 2027](2027-02.md) | 2 | the networking book finishes; Windows and AD fundamentals open
+[March 2027](2027-03.md) | 2 | Sentinel, MITRE ATT&CK, the SOC Level 1 path opens
+[April 2027](2027-04.md) | 2 | the SC-200 exam sat
+[May 2027](2027-05.md) | 2 | the own app built, attacked, detected
+[June 2027](2027-06.md) | 2 + checkpoint | triage practice and interview vocabulary; **the checkpoint opens, first applications sent**
 
 The plan's fixed schedule ends with June 2027 and the checkpoint. There are no monthly files after that, on purpose — what comes next is the [backlog](../README.md#after-the-checkpoint), and it is driven by the job you land, not by a calendar someone wrote in advance.
 
@@ -42,9 +42,9 @@ The [main plan](../README.md) is a curriculum. This is a calendar. They do not f
 
 ### The arithmetic
 
-The fixed schedule runs from October 2026 to the end of June 2027: nine calendar months, at 2.5 hours a day, six days a week, minus the public holidays that land on study days (two December days, 1 January, 6 January, Easter Monday, 1 May, 3 and 27 May, 6 June). That comes to roughly **645 study hours**.
+The fixed schedule runs from October 2026 to the end of June 2027: nine calendar months, at 2.5 hours a day, six days a week, minus the public holidays that land on study days (two December days, 1 January, 6 January, Easter Monday, 1 May, 3 and 27 May, 6 June). That comes to roughly **570 study hours**.
 
-What has to fit in them: all of Modern C and the Stage 1 programs (done in ~325 hours over the first four months, exactly as originally planned), the rest of Kurose and Beej with three protocol programs, the full beginner-to-intermediate PortSwigger track, eJPT preparation and the exam itself, an own web application built and then broken with a published writeup, the SOC basics unit, and the checkpoint month's CV, market re-measurement and first applications. That fits — with the slack the old plan never had, because Nand to Tetris, CS:APP and OSTEP are no longer competing for the same hours.
+What has to fit in them: all of Modern C and the Stage 1 programs (done in ~240 hours over the first four months, exactly as originally planned), the rest of Kurose and Beej with three protocol programs, Windows and Active Directory fundamentals, the Sentinel learning path and the triage vocabulary, the TryHackMe SOC Level 1 path and LetsDefend practice, SC-200 preparation and the exam itself, an own web application built, attacked and detected with a published writeup, and the checkpoint month's CV, market re-measurement and first applications. That fits — with the slack the old plan never had, because Nand to Tetris, CS:APP and OSTEP are no longer competing for the same hours, and the PortSwigger track moved to the backlog.
 
 The deep curriculum that does **not** fit — because it was never going to, and because the market research says it has no junior queue to wait in — is the [backlog](../README.md#after-the-checkpoint): roughly 1,050–1,200 hours of material even after aggressive trimming.
 
@@ -57,9 +57,9 @@ Nothing here was dropped by accident. Each is a decision with a reason, and each
 - **CS:APP with the four labs** — deferred, and it is the default first pick from the backlog. It is the single largest thing the old plan carried and everything in the exploitation and RE sections assumes it.
 - **OSTEP** — deferred; the operating-systems material is met in CS:APP chapters 8, 9, 10 and 12.
 - **The whole of the old Stage 3** — Arch1001, Arch2001, ARM, RE101, Ghidra, Practical Malware Analysis, crackmes. Junior RE openings measured at zero nationally in September 2026; this material is portfolio-gated, not schedule-gated.
-- **The whole of the old Stage 4** minus the own-app project, which moved *up* into the fixed schedule (month 8) because it is the one offense item with junior market value. pwn.college, Nightmare, ROP Emporium and exploit.education are backlog.
+- **The whole of the old Stage 4** minus the own-app project, which moved *up* into the fixed schedule (month 8), now as the built-attacked-detected artifact the SOC checkpoint leans on. pwn.college, Nightmare, ROP Emporium and exploit.education are backlog.
 - **The whole of the old Stage 5** — ESP32, buses, the Hardware Hacking Handbook, Practical IoT Hacking, OWASP FSTM, Microcorruption, ChipWhisperer. Junior firmware openings measured at zero.
-- **The PortSwigger advanced track** — insecure deserialization, web cache poisoning, GraphQL, NoSQL, race conditions, WebSockets, clickjacking, CORS, web LLM attacks, API testing — deliberately not closed. Each stays free and is a week's work if a posting ever asks.
+- **The whole PortSwigger track, and eJPT with it** — deferred from Stage 2 in September 2026. Zero junior pentest openings measured on 45 live offers; the junior queue that exists is SOC operations. The beginner-to-intermediate half is the junior pentester's grounding and the advanced half — insecure deserialization, web cache poisoning, GraphQL, NoSQL, race conditions, WebSockets, clickjacking, CORS, web LLM attacks, API testing — sits above it. Each topic stays free and is a week's work if a posting ever asks.
 - **OSCP / PEN-200** — a decision, not a schedule item. It is a full-load commitment with a 24-hour exam; it cannot share a calendar with anything. Decide with a job and a re-measured market in front of you.
 - **pwn.college's deeper belts** (System Security's kernel and microarchitecture modules) — among the deepest material on the platform, post-backlog-entry by design.
 - **ChipWhisperer fault injection** and the hardware-bound side-channel labs — SCA101's simulated labs are the entry point; the rest needs the board and dedicated hours.
