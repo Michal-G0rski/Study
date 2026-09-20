@@ -29,6 +29,7 @@
   - [Employability checkpoint — month 9](#employability-checkpoint--month-9)
   - [If the checkpoint itself doesn't land](#if-the-checkpoint-itself-doesnt-land)
 - [Market snapshot (September 2026)](#market-snapshot-september-2026)
+- [Why the profile is T-shaped](#why-the-profile-is-t-shaped)
 - [Portfolio and visibility](#portfolio-and-visibility)
 - [Certifications](#certifications)
 - [Home lab hardware](#home-lab-hardware)
@@ -270,7 +271,7 @@ Junior Penetration Tester | eJPT plus a finished PortSwigger track is the expect
 
 ### If the checkpoint itself doesn't land
 
-If neither the month 4 nor the month 9 checkpoint produces an offer, the last resort is not more study — it is widening the search: hybrid roles, adjacent titles (QA with a security flavour, junior sysadmin with the C profile), and contract work. The scheduled SOC unit already covers the SIEM vocabulary, so the only remaining gap is interview practice and volume. Do not convert this into a third program of study; the market snapshot says the constraint is the entry gap, not your skills.
+If neither the month 4 nor the month 9 checkpoint produces an offer, the last resort is not more study — it is widening the search: hybrid roles, adjacent titles (QA with a security flavour, junior sysadmin with the C profile), and contract work. Testing is the widest of those side doors on current numbers — 6.75% of all postings on justjoin.it in 2025 — and the classic junior entry title for a profile that already reads C, Linux, HTTP and an app it built and broke itself. The scheduled SOC unit already covers the SIEM vocabulary, so the only remaining gap is interview practice and volume. Do not convert this into a third program of study; the market snapshot says the constraint is the entry gap, not your skills.
 
 ---
 
@@ -295,9 +296,30 @@ Three things this data says, none of them obvious:
 
 Trend context: the Polish IT market fell from about 175 600 ads in 2022 to 99 400 in 2024, recovered 8.4% in 2025, and January–May 2026 ran roughly 70% above the same months of 2025. The recovery is not in frontend, whose share of all ads slid from 5% (2024) to 3.4% (H1 2026). Cybersecurity sits in the top three deficit competencies reported by Polish employers.
 
-Junior competition, measured as a multi-year series rather than on the snapshot date: on Just Join IT data, the average number of applications per junior IT posting fell from 44 (2024) to 24 (2025) to 21 (H1 2026). Competition for junior roles is easing, not worsening — fewer applicants per opening at the same time as there are more openings. The series and the single-day counts above are different measurements and both stand: 21 is a half-year junior average, 146 is what one popular junior frontend opening draws. The direction of the series is the part worth keeping.
+**What the 2026 report season adds** (read 2026-09-19):
+
+- **The entry gap by seniority.** Juniors: 4.79% of all justjoin.it postings in 2025 (mid 43.73%, senior 51.48%); No Fluff Jobs' H1 2026 count is one junior posting in twenty, with ~60% of open recruitments senior. Applications per posting: **47 for juniors, 24 for mid, 19 for senior**. ([Just Join IT Salary Report 2026](https://justjoin.it/raport-wynagrodzen/ogloszenia-o-prace-w-liczbach); No Fluff Jobs, "Kariera w IT 2026", via [antyweb](https://antyweb.pl/rynek-pracy-it-2026))
+- **Cybersecurity is the #1 deficit competency, not merely top three.** 41% of Polish employers name it their largest skills shortage, ahead of AI/ML (33%) and IT project management (30%); NIS2 and DORA make the demand regulatory rather than cyclical. (SW Research for Scalo, via Rzeczpospolita, Dec 2025)
+- **Junior pay, and where junior openings are moving.** Median junior: 9 020 PLN netto B2B / 8 000 PLN brutto UoP; junior SOC starts around 8 000–14 000 PLN. B2B junior postings grew 42% y/y while UoP junior postings fell 8.9% — the only shrinking category on the board. (Just Join IT 2026; EITT, Mar 2026)
+- **A real but uneven recovery.** H1 2026 postings ran ~70% above H1 2025 (No Fluff Jobs); [czyjesteldorado.pl](https://czyjesteldorado.pl/raport-rynku-pracy-it) counted 29 234 active listings on 2026-09-19, +64% y/y, average pay 22 771 PLN (+6.9%). Frontend keeps sliding while backend (17.5% of offers) and data/BI (12%) lead. Competition per posting is easing across the board — the multi-year series is below — but the market is two-speed: seniors in ERP and architecture compete with four candidates, juniors in frontend with 146.
+
+Junior competition, measured as a multi-year series rather than on the snapshot date: on No Fluff Jobs data, the average number of applications per junior IT posting fell from 44 (2024) to 24 (2025) to 21 (H1 2026). Competition for junior roles is easing, not worsening — fewer applicants per opening at the same time as there are more openings. The series and the single-day counts above are different measurements and both stand: 21 is a half-year junior average, 146 is what one popular junior frontend opening draws. The direction of the series is the part worth keeping.
 
 > This is why [Target roles](#target-roles) starts at month 4 with a non-security job title, why the fixed schedule is cut to the minimum junior-market curriculum, and why [Portfolio and visibility](#portfolio-and-visibility) is not optional. There is no junior queue to join in the low-level niche — you arrive either sideways through embedded work, or with published proof.
+
+---
+
+## Why the profile is T-shaped
+
+The thesis this plan runs on, stated plainly: **when the priority is fast employment, the safer strategy is a strong, specialization-agnostic operational foundation — a T-shaped profile — with the deep niche deferred until a job is paying for it.** The market data above is what forces it. What each part means here:
+
+- **The horizontal bar — the agnostic operational foundation.** C and the UNIX toolchain, networking end to end, Linux, HTTP and the web stack, debugging, written English, published work. Every checkpoint role draws on it, and so do the fallback titles ([QA with a security flavour](#if-the-checkpoint-itself-doesnt-land), junior sysadmin, backend C). It is also the layer AI fakes worst: recruiters report candidates leaning on AI tools getting disqualified for missing fundamentals, while agentic AI multiplies the output of experienced engineers and leaves juniors with marginal gains for now. The durable junior asset is the foundation, not the framework of the month.
+- **The vertical bar — the legible specialization.** PortSwigger plus the built-and-broken app plus eJPT: security-tilted, on purpose. Cybersecurity is the [#1 deficit competency](#market-snapshot-september-2026) in the Polish market with regulatory underpinning (NIS2, DORA), so the tilt is a bet on where the horizontal bar reads best — not a return to the niche-first strategy the market research killed. It is a revisitable decision in the spirit of [Deliberately skipped](#deliberately-skipped): if the re-measured market at the checkpoint points elsewhere, the vertical re-aims cheaply because the horizontal bar transfers whole.
+- **Agnostic is not generic.** Juniors are hired into specific slots — SOC L1, junior QA, junior backend in a named stack — against ~47 competing applications. The horizontal bar without a readable vertical enters that queue with no story. The T is both bars, or it is nothing.
+- **"Safer" does not mean "safe", and the schedule owns one real tension.** Four months of pure C before the first market-facing employability content is expensive under a literal fast-employment priority. The defense is the [early checkpoint](#early-checkpoint--month-4): embedded C is the widest side door (576 openings), and C is the one prerequisite this plan treats as having no workaround. The tension is accepted deliberately, not hidden.
+- **The fastest lever costs no study hours.** Referrals convert at 5–40× cold applications; the [networking habit](#how-people-actually-get-hired) is the operational foundation of the strategy in a stricter sense than any syllabus item. No curriculum choice compensates for skipping it.
+
+> One line: build the base everything else assumes, make it legible through one security-tilted vertical, and let the job you land pick the deep material from the [backlog](#after-the-checkpoint).
 
 ---
 
