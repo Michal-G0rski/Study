@@ -1,4 +1,4 @@
-<h3>Low-Level Security Path — from OSSU to firmware, RE and exploitation</h3>
+﻿<h3>Low-Level Security Path — from OSSU to firmware, RE and exploitation</h3>
 <p>
   A nine-month, market-measured run to a first job in security operations (SOC / Detection Engineer L1),
   on a foundation of C, UNIX and networking — with the embedded / firmware security, reverse engineering
@@ -45,7 +45,7 @@ The reasoning behind the switch: classic hardware work (PCB, bring-up, FPGA, emb
 
 The [market research](#market-snapshot-september-2026) forced a second structural decision: the original target roles — Reverse Engineer, Malware Analyst, Vulnerability Researcher — have effectively **zero junior openings** (two junior offensive/low-level roles in all of Poland; every RE/VR/malware title found was mid, senior, principal or expert). So the fixed, scheduled curriculum was cut to the minimum that has real junior market demand. A third decision, made in September 2026 on fresh measurement, goes further: **one entry path, chosen on data — SOC / Detection Engineer (L1)**, the only door in security with a measured junior queue (24 junior security openings on the snapshot date, live zero-experience SOC postings; junior pentest measured at zero openings in 45 live offers). The fixed schedule is therefore **C, UNIX and networking (the foundation), Windows and Active Directory fundamentals, a SIEM with MITRE ATT&CK and triage practice, the SC-200 certificate, and an own web application built, attacked and then detected** — and it ends at the [checkpoint in month 9](#employability-checkpoint--month-9), not month 18. The full PortSwigger track, eJPT and everything deeper (assembly, reverse engineering, exploitation, embedded and firmware work) still exist in this repo, as an [unscheduled backlog](#after-the-checkpoint) you drive by whatever job you actually land, not by a calendar. If the SOC queue closes instead, the measured fallback is junior QA — see [If the checkpoint itself doesn't land](#if-the-checkpoint-itself-doesnt-land).
 
-**Assumed pace:** 15 hours/week. **Fixed schedule: 9 months (October 2026 – early July 2027).**
+**Assumed pace:** 15 hours/week. **Fixed schedule: 9 months (October 2026 – end of June 2027).**
 
 | Stage | Focus | Calendar |
 | :-- | :-- | :--: |
@@ -61,7 +61,7 @@ Two tracks run alongside the stages rather than inside them — the employabilit
 | Portfolio | from month 3 | one public artifact per stage, starting with the ELF parser writeup |
 | Networking | from month 1, outside the 15 h/week | the referral path — see [How people actually get hired](#how-people-actually-get-hired) |
 
-Both feed the [employability checkpoint](#employability-checkpoint--month-9) at month 9: the planned point to start applying.
+Both feed the [employability checkpoint](#employability-checkpoint--month-9) at month 9: the planned point to start applying — plus a narrower, optional opening at month 4, see [Early checkpoint](#early-checkpoint--month-4).
 
 To track progress, mark completed items with a ✅.
 
@@ -236,7 +236,15 @@ Hardware Security Consultant | backlog — after the checkpoint + portfolio | re
 
 > The remote gradient is the point: the closer a role sits to physical hardware, the less remote it is. Reverse engineering, vulnerability research and firmware analysis are the remote-friendly end, which is why the backlog keeps them in full — as the *second* career move, not the first application.
 
+### Early checkpoint — month 4
 
+Embedded Software Engineer (C) is the largest single row in the table above — 576 openings nationally — and the only one that needs no security knowledge, just solid C. Stage 1 (months 1–4: Modern C, the Missing Semester) closes at the end of January 2027, exactly where that bar is cleared. The plan's employability checkpoint at month 9 is aimed at SOC / Detection Engineer (L1) with SC-200 — the embedded C door is open from month 4 onward and does not wait on the backlog.
+
+Apply for | Why it fits at month 4 | Format
+:-- | :-- | :--:
+Embedded Software Engineer (C) | 576 openings nationally, no security background required, and solid C is the entire bar | hybrid
+
+> This is optional and runs alongside the plan, not instead of it — it does not require pausing Stage 2, and it changes nothing about the syllabus or the 15 h/week budget. What backs it is [January's own deliverable](plans/2027-01.md): a concurrent TCP server, a DNS resolver and a traceroute, three protocol programs built from raw sockets up, plus the Stage 1 review. That is what would go in front of an interviewer here — not a new artifact. If nothing comes of it, Stage 2 continues exactly as written. What the application travels through matters as much as what is in it — see [How people actually get hired](#how-people-actually-get-hired).
 
 ### How people actually get hired
 
@@ -262,12 +270,13 @@ Apply for | Why it fits at month 9 | Format
 :-- | :-- | :--:
 SOC Analyst / Detection Engineer (L1) — every title variant: Junior SOC Analyst, Cyber Security Analyst (SOC L1), CSIRT Analyst, Cybersecurity Operations Analyst | the plan's primary target: live zero-experience postings, and the Sentinel/ATT&CK/SC-200 track is its exact shape — shift seats are the most junior-shaped in the country | remote or hybrid
 Junior QA / Software Tester (security flavour) — the measured fallback | the widest junior door in all of IT if SOC is shut; the foundation (HTTP, Linux, scripting, a built-attacked-detected app) covers most of its bar | hybrid or remote
+Embedded Software Engineer (C) — the side door | 576 openings nationally, no security background required, and the Stage 1 protocol programs are the interview material | hybrid
 
 > The case for the checkpoint is arithmetic, not ambition. Getting hired here turns the remaining backlog from unpaid study into paid study, puts real systems in front of you, and removes the worst failure mode of a fixed plan — reaching the end of it with no work history. If nothing lands, nothing is lost: you continue into the [backlog](#after-the-checkpoint) exactly as written, on your own schedule now.
 
 ### If the checkpoint itself doesn't land
 
-If the month 9 checkpoint does not produce an offer, the last resort is not more study — it is widening the search: hybrid roles, adjacent titles (QA with a security flavour, junior sysadmin with the C profile), and contract work. Testing is the widest of those side doors on current numbers — 6.75% of all postings on justjoin.it in 2025 — and the classic junior entry title for a profile that already reads C, Linux, HTTP and an app it built and broke itself. The scheduled SOC unit already covers the SIEM vocabulary, so the only remaining gap is interview practice and volume. Do not convert this into a third program of study; the market snapshot says the constraint is the entry gap, not your skills.
+If neither the month 4 nor the month 9 checkpoint produces an offer, the last resort is not more study — it is widening the search: hybrid roles, adjacent titles (QA with a security flavour, junior sysadmin with the C profile), and contract work. Testing is the widest of those side doors on current numbers — 6.75% of all postings on justjoin.it in 2025 — and the classic junior entry title for a profile that already reads C, Linux, HTTP and an app it built and broke itself. The scheduled SOC unit already covers the SIEM vocabulary, so the only remaining gap is interview practice and volume. Do not convert this into a third program of study; the market snapshot says the constraint is the entry gap, not your skills.
 
 ---
 
@@ -312,7 +321,7 @@ The thesis this plan runs on, stated plainly: **when the priority is fast employ
 - **The horizontal bar — the agnostic operational foundation.** C and the UNIX toolchain, networking end to end, Linux and Windows, HTTP and the web stack, logs, debugging, written English, published work. Every checkpoint role draws on it, and so do the fallback titles ([QA with a security flavour](#if-the-checkpoint-itself-doesnt-land), junior sysadmin, backend C). It is also the layer AI fakes worst: recruiters report candidates leaning on AI tools getting disqualified for missing fundamentals, while agentic AI multiplies the output of experienced engineers and leaves juniors with marginal gains for now. The durable junior asset is the foundation, not the framework of the month.
 - **The vertical bar — the legible specialization.** SOC operations: Windows and AD, Sentinel, MITRE ATT&CK, triage practice, SC-200, and the built-attacked-detected app — blue-team-tilted, on purpose. Cybersecurity is the [#1 deficit competency](#market-snapshot-september-2026) in the Polish market with regulatory underpinning (NIS2, DORA), and the September 2026 measurement says the junior queue exists on the operations side only. It is a revisitable decision in the spirit of [Deliberately skipped](#deliberately-skipped): if the re-measured market at the checkpoint points elsewhere, the vertical re-aims cheaply because the horizontal bar transfers whole.
 - **Agnostic is not generic.** Juniors are hired into specific slots — SOC L1, junior QA, junior backend in a named stack — against ~47 competing applications. The horizontal bar without a readable vertical enters that queue with no story. The T is both bars, or it is nothing.
-- **"Safer" does not mean "safe", and the schedule owns one real tension.** Four months of C and protocol work before the first market-facing employability content is expensive under a literal fast-employment priority. The tension is accepted deliberately: C is the one prerequisite this plan treats as having no workaround, and the protocol programs are the differentiator in the SOC queue. No side door is promised to justify it.
+- **"Safer" does not mean "safe", and the schedule owns one real tension.** Four months of pure C before the first market-facing employability content is expensive under a literal fast-employment priority. The defense is the [early checkpoint](#early-checkpoint--month-4): embedded C is the widest side door (576 openings), and C is the one prerequisite this plan treats as having no workaround. The tension is accepted deliberately, not hidden.
 - **The fastest lever costs no study hours.** Referrals convert at 5–40× cold applications; the [networking habit](#how-people-actually-get-hired) is the operational foundation of the strategy in a stricter sense than any syllabus item. No curriculum choice compensates for skipping it.
 
 > One line: build the base everything else assumes, make it legible through one security-tilted vertical, and let the job you land pick the deep material from the [backlog](#after-the-checkpoint).
@@ -423,3 +432,4 @@ Please update this section with your personal details.
 Month-by-month scope lives in [`plans/`](plans/). Stage 1: [October 2026](plans/2026-10.md), [November](plans/2026-11.md), [December](plans/2026-12.md), [January 2027](plans/2027-01.md). Stage 2 and the run to the checkpoint: [February](plans/2027-02.md), [March](plans/2027-03.md), [April](plans/2027-04.md), [May](plans/2027-05.md), and the checkpoint month itself, [June 2027](plans/2027-06.md). The fixed schedule ends there.
 
 The deep material — architecture, reverse engineering, exploitation, embedded and firmware work — is unscheduled, and [`plans/README.md`](plans/README.md#what-the-fixed-schedule-holds) does the accounting: nine months at fifteen hours a week hold roughly 570 study hours, the minimum junior-market curriculum fits in them with room for the programs and the blog, and everything deeper is deferred with reasons and a pickup order. The aim of the fixed schedule is a job and a portfolio. The backlog is the career.
+

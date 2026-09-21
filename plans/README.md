@@ -34,7 +34,7 @@ Month | Stage | The month in one line
 [May 2027](2027-05.md) | 2 | the own app built, attacked, detected
 [June 2027](2027-06.md) | 2 + checkpoint | triage practice and interview vocabulary; **the checkpoint opens, first applications sent**
 
-The plan's fixed schedule ends with June 2027 and the checkpoint. There are no monthly files after that, on purpose — what comes next is the [backlog](../README.md#after-the-checkpoint), and it is driven by the job you land, not by a calendar someone wrote in advance.
+The plan's fixed schedule ends with June 2027 and the checkpoint, spilling into early July 2027 for the final application batch. There are no monthly files after that, on purpose — what comes next is the [backlog](../README.md#after-the-checkpoint), and it is driven by the job you land, not by a calendar someone wrote in advance.
 
 ## What the fixed schedule holds
 
