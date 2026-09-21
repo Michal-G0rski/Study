@@ -239,7 +239,7 @@ Hardware Security Consultant | backlog — after the checkpoint + portfolio | re
 
 ### Early checkpoint — month 4
 
-Embedded Software Engineer (C) is the largest single row in the table above — 576 openings nationally — and the only one that needs no security knowledge, just solid C. Stage 1 (months 1–4: Systematic Program Design, Modern C, the Missing Semester) closes at the end of January 2027, exactly where that bar is cleared. The plan's other checkpoint sits at month 9, waiting on PortSwigger and eJPT; that leaves this door unused for five months for no reason tied to the C work itself.
+Embedded Software Engineer (C) is the largest single row in the table above — 576 openings nationally — and the only one that needs no security knowledge, just solid C. Stage 1 (months 1–4: Modern C, the Missing Semester) closes at the end of January 2027, exactly where that bar is cleared. The plan's employability checkpoint at month 9 is aimed at SOC / Detection Engineer (L1) with SC-200 — the embedded C door is open from month 4 onward and does not wait on the backlog.
 
 Apply for | Why it fits at month 4 | Format
 :-- | :-- | :--:

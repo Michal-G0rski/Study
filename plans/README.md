@@ -46,13 +46,13 @@ The fixed schedule runs from October 2026 to the end of June 2027: nine calendar
 
 What has to fit in them: all of Modern C and the Stage 1 programs (done in ~240 hours over the first four months, exactly as originally planned), the rest of Kurose and Beej with three protocol programs, Windows and Active Directory fundamentals, the Sentinel learning path and the triage vocabulary, the TryHackMe SOC Level 1 path and LetsDefend practice, SC-200 preparation and the exam itself, an own web application built, attacked and detected with a published writeup, and the checkpoint month's CV, market re-measurement and first applications. That fits — with the slack the old plan never had, because Nand to Tetris, CS:APP and OSTEP are no longer competing for the same hours, and the PortSwigger track moved to the backlog.
 
-The deep curriculum that does **not** fit — because it was never going to, and because the market research says it has no junior queue to wait in — is the [backlog](../README.md#after-the-checkpoint): roughly 1,050–1,200 hours of material even after aggressive trimming.
+The deep curriculum that does **not** fit — because it was never going to, and because the market research says it has no junior queue to wait in — is the [backlog](../README.md#after-the-checkpoint): roughly 1000+ hours of material even after aggressive trimming.
 
 ### What was deferred, and why
 
 Nothing here was dropped by accident. Each is a decision with a reason, and each is picked up after the checkpoint, driven by the job.
 
-- **Mathematics for Computer Science (MIT 6.042J)** — deferred from Stage 1. None of the target junior postings (SOC, pentest, embedded C) name discrete math or number theory, so the roughly 5 hours/week it used to take go to Modern C instead. It is not gone — the algorithms extras still assume it, and February's TLS material now teaches RSA straight from Kurose instead of leaning on a proof already done.
+- **Mathematics for Computer Science (MIT 6.042J)** — deferred from Stage 1. None of the target junior postings (SOC, pentest, embedded C) name discrete math or number theory, so the roughly 5 hours/week it used to take go to Modern C instead. It is not gone — the algorithms extras still assume it, and February's TLS material teaches RSA from Kurose.
 - **Nand to Tetris Part I and II** — deferred from Stage 2. Part I is the highest-value single backlog item for embedded-C roles; Part II (compiler and OS) further still, since its stack-machine payoff is met in CS:APP chapter 3.
 - **CS:APP with the four labs** — deferred, and it is the default first pick from the backlog. It is the single largest thing the old plan carried and everything in the exploitation and RE sections assumes it.
 - **OSTEP** — deferred; the operating-systems material is met in CS:APP chapters 8, 9, 10 and 12.
@@ -70,3 +70,4 @@ Nothing here was dropped by accident. Each is a decision with a reason, and each
 After the checkpoint, the job picks. The reasoning and the role-by-role order are in the [main plan](../README.md#the-order-to-pick-them-up-in); the one default worth repeating here: if nothing has landed and you want the single most-leveraged item, it is **CS:APP with the labs**.
 
 It is not an unfinished plan. It is a nine-month plan that ends in applications, and a backlog that begins with a job.
+
