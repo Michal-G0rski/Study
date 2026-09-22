@@ -1,8 +1,9 @@
-﻿<h3>SOC Fast-Track — 9 months to Security Operations (L1) with Low-Level Backlog</h3>
+﻿<h3>SOC Fast-Track — 11 months to Security Operations (L1) with Low-Level Backlog</h3>
 <p>
-  A nine-month, market-measured run to a first job in security operations (SOC / Detection Engineer L1),
+  An eleven-month, market-measured run to a first job in security operations (SOC / Detection Engineer L1),
   built entirely on the tooling and vocabulary that junior postings actually require — Linux, Windows, networking,
-  Python/PowerShell scripting, Microsoft Sentinel, KQL, Defender XDR, Entra ID, MITRE ATT&CK.
+  Python/PowerShell scripting, Microsoft Sentinel, KQL, Defender XDR, Entra ID, MITRE ATT&CK, and a self-hosted
+  Wazuh SIEM run in parallel so the detection work never depends on one vendor or one billable subscription.
   The embedded / firmware security, reverse engineering and binary exploitation career is kept in full
   as the backlog that follows the hire.
 </p>
@@ -28,7 +29,7 @@
 - [Hands-on Practice](#hands-on-practice)
 - [Target roles](#target-roles)
   - [How people actually get hired](#how-people-actually-get-hired)
-  - [Employability checkpoint — month 9](#employability-checkpoint--month-9)
+  - [Employability checkpoint — month 11](#employability-checkpoint--month-11)
   - [If the checkpoint itself doesn't land](#if-the-checkpoint-itself-doesnt-land)
 - [Market snapshot (September 2026)](#market-snapshot-september-2026)
 - [Why this shape](#why-this-shape)
@@ -43,7 +44,7 @@
 
 This plan replaces the previous low-level-first path. The target is **Security Operations Center Analyst / Detection Engineer (L1)** — the only security role in Poland with a measured junior queue (24 junior security openings, live zero-experience postings at BNP Paribas, Aon, PwC in Kraków; junior pentest measured at zero openings in 45 live offers, September 2026).
 
-The fixed, scheduled curriculum is cut to the minimum that has real junior market demand: **Linux CLI & scripting, networking end-to-end, Python for log parsing & threat intel, Windows Internals & Active Directory, PowerShell for triage, Microsoft Sentinel & KQL, MITRE ATT&CK, Microsoft Defender XDR/Endpoint & Entra ID, a Purple-Team project (Build → Attack → Detect with Sysmon, KQL & Sigma), and the SC-200 certificate**. It ends at the [employability checkpoint in month 9](#employability-checkpoint--month-9) — June/July 2027 — when applications are sent.
+The fixed, scheduled curriculum is cut to the minimum that has real junior market demand: **Linux CLI & scripting, networking end-to-end, Python for log parsing & threat intel, Windows Internals & Active Directory, PowerShell for triage, Microsoft Sentinel & KQL (learned entirely on Microsoft's free sandbox labs), a self-hosted Wazuh SIEM, MITRE ATT&CK, phishing/email-header triage, Microsoft Defender XDR/Endpoint & Entra ID, a Purple-Team project (Build → Attack → Detect, in both KQL/Sigma and Wazuh), and the SC-200 certificate**. It ends at the [employability checkpoint in month 11](#employability-checkpoint--month-11) — August 2027 — when applications are sent.
 
 The deep low-level curriculum — C, assembly, CS:APP, Nand to Tetris, Ghidra, pwn.college, firmware, ChipWhisperer — still exists in this repo, as an [unscheduled backlog](#after-the-checkpoint) you drive by whatever job you actually land, not by a calendar. The aim of the fixed schedule is a job and a portfolio. The backlog is the career.
 
@@ -51,14 +52,14 @@ The deep low-level curriculum — C, assembly, CS:APP, Nand to Tetris, Ghidra, p
 
 ## Curriculum
 
-**Assumed pace:** 15 hours/week. **Fixed schedule: 9 months (October 2026 – June 2027).**
+**Assumed pace:** 15 hours/week. **Fixed schedule: 11 months (October 2026 – August 2027).**
 
 | Stage | Focus | Calendar |
 | :-- | :-- | :-- |
 | 1 — Foundations for SOC | Linux CLI, networking, Python scripting, Windows basics, PowerShell | Months 1–4 |
-| 2 — SOC Operations & Checkpoint | Active Directory, KQL, Sentinel, Defender XDR, Entra ID, MITRE ATT&CK, Purple-Team project, SC-200 | Months 5–9 |
+| 2 — SOC Operations & Checkpoint | Active Directory, KQL, Sentinel, self-hosted Wazuh, MITRE ATT&CK, phishing triage, Defender XDR, Entra ID, Purple-Team project (two detection engines), SC-200 | Months 5–11 |
 
-Both stages feed the [employability checkpoint](#employability-checkpoint--month-9) at month 9: the planned point to start sending applications. The [networking habit](#how-people-actually-get-hired) starts in month 1, outside the 15 h/week budget.
+Both stages feed the [employability checkpoint](#employability-checkpoint--month-11) at month 11: the planned point to start sending applications. The [networking habit](#how-people-actually-get-hired) starts in month 1, outside the 15 h/week budget.
 
 ---
 
@@ -84,12 +85,11 @@ PowerShell for Triage — see [M3 detail](#month-3--windows--powershell) | 2 wee
 
 Courses | Duration | Effort | Prerequisites
 :-- | :--: | :--: | :--
-Active Directory deep dive (Kerberos, LDAP, attack mapping) | 4 weeks | 8–12 h/week | Windows basics
-[Microsoft Sentinel learning path](https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/) + KQL | 4 weeks | 10–15 h/week | Networking, Windows/AD
-[MITRE ATT&CK](https://attack.mitre.org/) as vocabulary + [LetsDefend](https://letsdefend.io/) labs | 3 weeks | 8–12 h/week | Sentinel basics
-Microsoft Defender XDR / Endpoint + Entra ID | 3 weeks | 8–12 h/week | Sentinel, KQL
-Purple-Team project: Build → Attack → Detect (Sysmon, KQL, Sigma) | 4 weeks | 10–15 h/week | All above
-[SC-200 — Microsoft Security Operations Analyst](https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-200/) | 2 weeks focused | 10–15 h/week | Sentinel, Defender XDR, Entra ID
+Active Directory deep dive (Kerberos, LDAP, attack mapping) + consolidation week | 5 weeks | 8–15 h/week | Windows basics
+[Microsoft Sentinel learning path](https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/) + KQL, entirely on Microsoft Learn's free sandbox; self-hosted [Wazuh](https://wazuh.com/) installed in parallel | 6 weeks | 10–15 h/week | Networking, Windows/AD
+[MITRE ATT&CK](https://attack.mitre.org/) as vocabulary + [LetsDefend](https://letsdefend.io/) labs + phishing/email-header triage module (SPF/DKIM/DMARC, sandboxed samples, PyTriage `.eml` parsing) | 6 weeks | 8–15 h/week | Sentinel basics
+Microsoft Defender XDR / Endpoint + Defender for Cloud + Entra ID, on Learn sandbox; SC-200 exam | 7 weeks | 10–15 h/week | Sentinel, KQL
+Purple-Team project: Build → Attack → Detect, twice over — KQL/Sigma, then native Wazuh rules | 6 weeks | 10–15 h/week | All above
 
 ---
 
@@ -100,14 +100,16 @@ Month | Stage | One-line summary
 [October 2026](plans/2026-10.md) | 1 | Missing Semester, Linux CLI, networking ch. 1–2
 [November 2026](plans/2026-11.md) | 1 | Networking ch. 3–6, Python for log parsing & threat intel
 [December 2026](plans/2026-12.md) | 1 | Windows Fundamentals, PowerShell basics
-[January 2027](plans/2027-01.md) | 1 | Active Directory, Kerberos, attack mapping
-[February 2027](plans/2027-02.md) | 2 | Microsoft Sentinel, KQL deep-dive
-[March 2027](plans/2027-03.md) | 2 | MITRE ATT&CK, LetsDefend, first incident end-to-end
-[April 2027](plans/2027-04.md) | 2 | Defender XDR/Endpoint, Entra ID, Advanced Hunting
-[May 2027](plans/2027-05.md) | 2 | Purple-Team project: Build → Attack → Detect → Sigma
-[June 2027](plans/2027-06.md) | 2 | SC-200, checkpoint: CV, market re-measure, applications sent
+[January 2027](plans/2027-01.md) | 1 | Active Directory, Kerberos, attack mapping, consolidation week
+[February 2027](plans/2027-02.md) | 2 | Microsoft Sentinel & KQL begin, on Learn's free sandbox; Wazuh installed
+[March 2027](plans/2027-03.md) | 2 | Sentinel/KQL finishes; MITRE ATT&CK begins
+[April 2027](plans/2027-04.md) | 2 | ATT&CK finishes, phishing/email-triage module, incident #2, SC-200 booked
+[May 2027](plans/2027-05.md) | 2 | SC-200 exam prep: Defender XDR, Defender for Cloud, Entra ID
+[June 2027](plans/2027-06.md) | 2 | Exam prep finishes, SC-200 sat, Purple-Team build begins
+[July 2027](plans/2027-07.md) | 2 | Purple-Team: Attack → Detect twice over — KQL/Sigma, then native Wazuh
+[August 2027](plans/2027-08.md) | 2 + Checkpoint | Triage practice, interview vocab, CV, market re-measure, applications sent
 
-The fixed schedule ends with June 2027. What comes next is the [backlog](#after-the-checkpoint), driven by the job you land.
+The fixed schedule ends with August 2027. What comes next is the [backlog](#after-the-checkpoint), driven by the job you land.
 
 ---
 
@@ -193,9 +195,9 @@ The fixed schedule is ordered around exactly one door: **SOC / Detection Enginee
 
 Role title (as it appears in job ads) | Unlocked after | Remote in PL? | Notes
 :-- | :--: | :--: | :--
-SOC Analyst / Detection Engineer (L1) | [Checkpoint (month 9)](#employability-checkpoint--month-9) | Remote or hybrid | **Primary target** — live zero-experience postings, Sentinel/ATT&CK/SC-200 track is exact fit
-Junior QA / Software Tester (security flavour) | [Checkpoint (month 9)](#employability-checkpoint--month-9) — measured fallback | Hybrid or remote | Widest junior door in IT if SOC closes; foundation covers most of the bar
-Junior SOC Engineer / Detection Engineer | [Checkpoint (month 9)](#employability-checkpoint--month-9) — stretch | Remote or hybrid | Requires deeper KQL/SQL, Python automation, CI/CD for detection rules
+SOC Analyst / Detection Engineer (L1) | [Checkpoint (month 11)](#employability-checkpoint--month-11) | Remote or hybrid | **Primary target** — live zero-experience postings, Sentinel/ATT&CK/SC-200 track is exact fit
+Junior QA / Software Tester (security flavour) | [Checkpoint (month 11)](#employability-checkpoint--month-11) — measured fallback | Hybrid or remote | Widest junior door in IT if SOC closes; foundation covers most of the bar
+Junior SOC Engineer / Detection Engineer | [Checkpoint (month 11)](#employability-checkpoint--month-11) — stretch | Remote or hybrid | Requires deeper KQL/SQL, Python automation, CI/CD for detection rules
 Junior Penetration Tester | Backlog — after checkpoint | Usually remote | eJPT + full PortSwigger track; zero junior openings measured (45 live offers)
 Application Security Engineer | Backlog — after checkpoint | Usually remote | Portfolio-gated; the Purple-Team project is its seed
 Reverse Engineer / Vulnerability Researcher | Backlog — after checkpoint | Remote is standard | Portfolio-gated; writeups > certificates
@@ -215,15 +217,15 @@ The habit is a [standing rule](plans/README.md#standing-rules): **15–20 minute
 
 ---
 
-### Employability checkpoint — month 9
+### Employability checkpoint — month 11
 
-**June 2027.** The fixed curriculum is finished: Linux, networking, Python, Windows, AD, PowerShell, Sentinel, KQL, MITRE ATT&CK, Defender XDR, Entra ID, Purple-Team project, SC-200. This is the planned moment to start sending applications.
+**August 2027.** The fixed curriculum is finished: Linux, networking, Python, Windows, AD, PowerShell, Sentinel, KQL, self-hosted Wazuh, MITRE ATT&CK, phishing triage, Defender XDR, Entra ID, Purple-Team project (two detection engines), SC-200. This is the planned moment to start sending applications.
 
-By June the [networking habit](#how-people-actually-get-hired) has eight months behind it: the people a referral would come from have been seeing your name since October, long before you had anything to ask of them.
+By August the [networking habit](#how-people-actually-get-hired) has ten months behind it: the people a referral would come from have been seeing your name since October, long before you had anything to ask of them.
 
 **Lead with SOC / Detection Engineer (L1) — and only that.** This is the door the whole fixed schedule was rebuilt around (the September 2026 decision, [data in the snapshot](#market-snapshot-september-2026)). BNP Paribas and Aon both have live Kraków postings for it right now that explicitly say no experience is needed and training is provided; PwC runs SOC L1 seats in Kraków; 24/7 SOC operations hire juniors for shift triage because that is the seat seniors do not want.
 
-Apply for | Why it fits at month 9 | Format
+Apply for | Why it fits at month 11 | Format
 :-- | :-- | :--:
 SOC Analyst / Detection Engineer (L1) — every title variant: Junior SOC Analyst, Cyber Security Analyst (SOC L1), CSIRT Analyst, Cybersecurity Operations Analyst | The plan\'s primary target: live zero-experience postings, and the Sentinel/ATT&CK/SC-200 track is its exact shape — shift seats are the most junior-shaped in the country | Remote or hybrid
 Junior QA / Software Tester (security flavour) — the measured fallback | The widest junior door in all of IT if SOC is shut; the foundation (HTTP, Linux, scripting, a built-attacked-detected app) covers most of its bar | Hybrid or remote
@@ -234,7 +236,7 @@ Junior QA / Software Tester (security flavour) — the measured fallback | The w
 
 ### If the checkpoint itself doesn\'t land
 
-If the month 9 checkpoint does not produce an offer, the last resort is not more study — it is widening the search: hybrid roles, adjacent titles (QA with a security flavour, junior sysadmin with the scripting profile), and contract work. Testing is the widest of those side doors on current numbers — 6.75% of all postings on justjoin.it in 2025 — and the classic junior entry title for a profile that already reads Linux, HTTP, Python, PowerShell and an app it built and broke itself. The scheduled SOC unit already covers the SIEM vocabulary, so the only remaining gap is interview practice and volume. Do not convert this into a third program of study; the market snapshot says the constraint is the entry gap, not your skills.
+If the month 11 checkpoint does not produce an offer, the last resort is not more study — it is widening the search: hybrid roles, adjacent titles (QA with a security flavour, junior sysadmin with the scripting profile), and contract work. Testing is the widest of those side doors on current numbers — 6.75% of all postings on justjoin.it in 2025 — and the classic junior entry title for a profile that already reads Linux, HTTP, Python, PowerShell and an app it built and broke itself. The scheduled SOC unit already covers the SIEM vocabulary, so the only remaining gap is interview practice and volume. Do not convert this into a third program of study; the market snapshot says the constraint is the entry gap, not your skills.
 
 ---
 
@@ -279,11 +281,12 @@ Milestone | Where | What it proves
 Blog live, first lab writeup published | Stage 1, month 2 | You can document technical work clearly
 Python log parser / threat intel enrichment script | Stage 1, month 3 | You can automate analyst grunt work
 AD attack mapping document (Kerberoasting, AS-REP, DCSync) | Stage 1, month 4 | You understand identity telemetry
-KQL query library (10+ detections mapped to MITRE ATT&CK) | Stage 2, month 6 | You speak the SIEM language
+KQL + Wazuh detection library (10+ detections, two engines, mapped to MITRE ATT&CK) | Stage 2, months 5–6 | You speak the SIEM language in more than one dialect
 LetsDefend incident report published | Stage 2, month 6 | You can run triage end-to-end and write it up
-Defender XDR / Entra ID investigation writeup | Stage 2, month 7 | You pivot across endpoint → identity → cloud
-**Purple-Team project: Build → Attack → Detect (Sysmon, KQL, Sigma) + Runbook** | Stage 2, month 8 | **Flagship artifact** — build, attack, detect in one document
+Phishing triage playbook (SPF/DKIM/DMARC, sandboxed samples, PyTriage `.eml` parsing) | Stage 2, month 7 | You can triage the single most common initial-access vector
+Defender XDR / Entra ID investigation writeup | Stage 2, month 8 | You pivot across endpoint → identity → cloud
 SC-200 passed | Stage 2, month 9 | The certificate the checkpoint leans on
+**Purple-Team project: Build → Attack → Detect, twice over (Sysmon, KQL, Sigma + native Wazuh) + Runbook** | Stage 2, month 10 | **Flagship artifact** — build, attack, detect in two engines, in one document
 
 > Cheap IoT firmware is full of real bugs. A first CVE is a realistic long-term goal once the embedded backlog is worked, not before.
 
@@ -357,14 +360,14 @@ Please update this section with your personal details.
 
 ## How to use
 
-1. Work through Stage 1, then Stage 2, in order. The fixed schedule ends in month 9 — that is deliberate.
-2. The employability content *is* Stage 2: Active Directory, KQL, Sentinel, Defender XDR, Entra ID, MITRE ATT&CK, the Purple-Team project, and SC-200. It costs the bulk of the five months after Stage 1, and it is the whole reason the month 9 checkpoint is possible.
+1. Work through Stage 1, then Stage 2, in order. The fixed schedule ends in month 11 — that is deliberate.
+2. The employability content *is* Stage 2: Active Directory, KQL, Sentinel, self-hosted Wazuh, MITRE ATT&CK, phishing triage, Defender XDR, Entra ID, the Purple-Team project, and SC-200. It costs the bulk of the seven months after Stage 1, and it is the whole reason the month 11 checkpoint is possible.
 3. Mark finished items with ✅ directly in the tables.
-4. Publishing is part of the curriculum, not an extra — the blog post in month 2, the Purple-Team writeup in month 8.
-5. **Stop at the [employability checkpoint](#employability-checkpoint--month-9) and actually apply.** Carrying on studying is the comfortable option, not the right one.
+4. Publishing is part of the curriculum, not an extra — the blog post in month 2, the Purple-Team writeup in month 10.
+5. **Stop at the [employability checkpoint](#employability-checkpoint--month-11) and actually apply.** Carrying on studying is the comfortable option, not the right one.
 6. After the checkpoint, work the [backlog](#after-the-checkpoint) in the order the job you landed demands — not in the order this file lists it.
 7. Revisit [Deliberately skipped](#deliberately-skipped) once a year; some of it becomes worth doing after the first job.
 
-Month-by-month scope lives in [`plans/`](plans/). Stage 1: [October 2026](plans/2026-10.md), [November](plans/2026-11.md), [December](plans/2026-12.md), [January 2027](plans/2027-01.md). Stage 2 and the run to the checkpoint: [February](plans/2027-02.md), [March](plans/2027-03.md), [April](plans/2027-04.md), [May](plans/2027-05.md), and the checkpoint month itself, [June 2027](plans/2027-06.md). The fixed schedule ends there.
+Month-by-month scope lives in [`plans/`](plans/). Stage 1: [October 2026](plans/2026-10.md), [November](plans/2026-11.md), [December](plans/2026-12.md), [January 2027](plans/2027-01.md). Stage 2 and the run to the checkpoint: [February](plans/2027-02.md), [March](plans/2027-03.md), [April](plans/2027-04.md), [May](plans/2027-05.md), [June](plans/2027-06.md), [July](plans/2027-07.md), and the checkpoint month itself, [August 2027](plans/2027-08.md). The fixed schedule ends there.
 
-The deep material — architecture, reverse engineering, exploitation, embedded and firmware work — is unscheduled, and [`plans/README.md`](plans/README.md#what-the-fixed-schedule-holds) does the accounting: nine months at fifteen hours a week hold roughly 570 study hours, the minimum junior-market curriculum fits in them with room for the programs and the blog, and everything deeper is deferred with reasons and a pickup order. The aim of the fixed schedule is a job and a portfolio. The backlog is the career.
+The deep material — architecture, reverse engineering, exploitation, embedded and firmware work — is unscheduled, and [`plans/README.md`](plans/README.md#what-the-fixed-schedule-holds) does the accounting: eleven months at fifteen hours a week hold roughly 680 study hours, the minimum junior-market curriculum fits in them with room for the programs and the blog, and everything deeper is deferred with reasons and a pickup order. The aim of the fixed schedule is a job and a portfolio. The backlog is the career.

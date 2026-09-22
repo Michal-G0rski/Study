@@ -27,24 +27,26 @@ Month | Stage | The month in one line
 [October 2026](2026-10.md) | 1 — Foundations for SOC | Missing Semester, Linux CLI, networking ch. 1–3
 [November 2026](2026-11.md) | 1 — Foundations for SOC | Networking ch. 4–6, Python log parsing & threat intel
 [December 2026](2026-12.md) | 1 — Foundations for SOC | Windows Fundamentals, PowerShell, Sysmon, AD basics
-[January 2027](2027-01.md) | 1 — Foundations for SOC | Active Directory deep dive, Kerberos, attack detection mapping
-[February 2027](2027-02.md) | 2 — SOC Operations | Microsoft Sentinel, KQL deep-dive, first incidents
-[March 2027](2027-03.md) | 2 — SOC Operations | MITRE ATT&CK, LetsDefend incident #2, SC-200 booked
-[April 2027](2027-04.md) | 2 — SOC Operations | Defender XDR, Defender for Cloud, Entra ID, SC-200 exam
-[May 2027](2027-05.md) | 2 — SOC Operations | Purple-Team project: Build → Attack → Detect (Sysmon, KQL, Sigma)
-[June 2027](2027-06.md) | 2 + Checkpoint | Triage practice, interview vocab, CV, market re-measure, applications sent
+[January 2027](2027-01.md) | 1 — Foundations for SOC | Active Directory deep dive, Kerberos, attack mapping, consolidation week
+[February 2027](2027-02.md) | 2 — SOC Operations | Sentinel & KQL begin, entirely in Microsoft Learn's free sandbox; Wazuh installed
+[March 2027](2027-03.md) | 2 — SOC Operations | Sentinel/KQL finishes; MITRE ATT&CK begins
+[April 2027](2027-04.md) | 2 — SOC Operations | ATT&CK finishes, phishing/email-analysis module, incident #2, SC-200 booked
+[May 2027](2027-05.md) | 2 — SOC Operations | SC-200 exam prep: Defender XDR, Defender for Cloud, Entra ID (Learn sandbox)
+[June 2027](2027-06.md) | 2 — SOC Operations | Exam prep finishes, **SC-200 sat**, Purple-Team build begins
+[July 2027](2027-07.md) | 2 — SOC Operations | Purple-Team: Attack → Detect twice over — KQL/Sigma, then native Wazuh
+[August 2027](2027-08.md) | 2 + Checkpoint | Triage practice, interview vocab, CV, market re-measure, applications sent
 
-The plan\'s fixed schedule ends with June 2027 and the checkpoint, spilling into early July 2027 for the final application batch. There are no monthly files after that, on purpose — what comes next is the [backlog](../README.md#after-the-checkpoint), and it is driven by the job you land, not by a calendar someone wrote in advance.
+The plan\'s fixed schedule ends with August 2027 and the checkpoint. There are no monthly files after that, on purpose — what comes next is the [backlog](../README.md#after-the-checkpoint), and it is driven by the job you land, not by a calendar someone wrote in advance.
 
 ## What the fixed schedule holds
 
 The [main plan](../README.md) is a curriculum. This is a calendar. They do not fit each other, and this section is the honest accounting.
 
-Nine months at 15 h/week = 570–585 hours. The fixed schedule spends them on:
+Eleven months at 15 h/week ≈ 680 hours. The fixed schedule spends them on:
 
-- **Stage 1 (months 1–4, ~240 h):** Missing Semester, Kurose networking (ch. 1–6), Python for log parsing & threat intel, Windows Fundamentals, PowerShell, Sysmon, Active Directory, Kerberos, three AD attacks reproduced and detected.
-- **Stage 2 (months 5–9, ~330 h):** Sentinel workspace + connectors, KQL fluency, analytics rules, workbooks, hunting, MITRE ATT&CK mapping, LetsDefend incidents (2 full end-to-end), Defender XDR (Endpoint, Email, Identity), Defender for Cloud, Entra ID (Identity Protection, Conditional Access), SC-200 certificate, Purple-Team project (Build → Attack → Detect with Sysmon, KQL, Sigma).
-- **Artifacts produced:** PyTriage CLI (GitHub), Windows cheat sheet (blog), AD attack mapping (blog), KQL detection library (blog + GitHub), 2 incident reports (blog), Purple-Team flagship writeup (blog + GitHub with Sigma rules), SC-200 certificate.
+- **Stage 1 (months 1–4, ~257.5 h):** Missing Semester, Kurose networking (ch. 1–6), Python for log parsing & threat intel, Windows Fundamentals, PowerShell, Sysmon, Active Directory, Kerberos, three AD attacks reproduced and detected, a consolidation week before Stage 2 opens.
+- **Stage 2 (months 5–11, ~425 h):** Sentinel + KQL fluency (entirely in Microsoft Learn's free sandbox, no personal Azure subscription), analytics rules, workbooks, hunting, a detection library built in parallel in self-hosted [Wazuh](https://wazuh.com/), MITRE ATT&CK mapping, LetsDefend incidents (3 full end-to-end), a phishing/email-analysis module (SPF/DKIM/DMARC, sandboxed sample analysis, PyTriage extended with `.eml` parsing), Defender XDR (Endpoint, Email, Identity), Defender for Cloud, Entra ID (Identity Protection, Conditional Access), SC-200 certificate, Purple-Team project (Build → Attack → Detect, with detections written twice — KQL/Sigma and native Wazuh).
+- **Artifacts produced:** PyTriage CLI with `.eml` parsing (GitHub), Windows cheat sheet (blog), AD attack mapping (blog), KQL + Wazuh detection library (blog + GitHub), phishing triage playbook (blog), 3 incident reports (blog), Purple-Team flagship writeup across two detection engines (blog + GitHub with KQL, Sigma and Wazuh rules), SC-200 certificate.
 
 The deep curriculum that does **not** fit — because it was never going to, and because the market research says it has no junior queue to wait in — is the [backlog](../README.md#after-the-checkpoint): roughly 1000+ hours of material even after aggressive trimming.
 
@@ -64,9 +66,10 @@ Nothing here was dropped by accident. Each is a decision with a reason, and each
 - **pwn.college\'s deeper belts** (System Security\'s kernel and microarchitecture modules) — among the deepest material on the platform, post-backlog-entry by design.
 - **ChipWhisperer fault injection** and the hardware-bound side-channel labs — SCA101\'s simulated labs are the entry point; the rest needs the board and dedicated hours.
 - **Practical Binary Analysis, exploit.education** — already optional in the old plan; still optional.
+- **Splunk (Free tier)** — not scheduled. The detection library already exists in two engines (KQL/Sigma and Wazuh), which answers the "is this just a Microsoft-tools plan?" question without adding a third paid-adjacent tool on a calendar that does not need one. Splunk Free (500 MB/day, no expiration, no card required) is a same-day addition if a specific posting names it — translating the existing KQL library to SPL is a few hours' work, not a new module.
 
 ### The order to pick them up in
 
 After the checkpoint, the job picks. The reasoning and the role-by-role order are in the [main plan](../README.md#the-order-to-pick-them-up-in); the one default worth repeating here: if nothing has landed and you want the single most-leveraged item, it is **CS:APP with the labs**.
 
-It is not an unfinished plan. It is a nine-month plan that ends in applications, and a backlog that begins with a job.
+It is not an unfinished plan. It is an eleven-month plan that ends in applications, and a backlog that begins with a job.
