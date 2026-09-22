@@ -1,4 +1,4 @@
-# Monthly plans
+﻿# Monthly plans
 
 One file per calendar month. Each file says **what has to be worked through**, week by week and day by day — the reading, the exercises, the programs that have to exist by Sunday.
 
@@ -12,39 +12,39 @@ Fifteen hours: **2.5 h a day, Monday to Saturday, Sunday off.** Sunday is the ch
 
 ## Standing rules
 
-- The C track never slips two days running. In Stage 1 it is Modern C; from Stage 2 on it is the networking and security work the month carries. It is the one prerequisite in this plan with no workaround.
+- The SOC track never slips two days running. In Stage 1 it is networking and Windows; in Stage 2 it is Sentinel, KQL, and the Purple-Team project. It is the one prerequisite in this plan with no workaround.
 - When a week is short, the order things get dropped is: lectures first, then second-pass reading. **Never the programs.** Reading about this transfers badly; writing it transfers.
 - A missed day moves to Sunday, at most once a month.
 - Do not run ahead. Work scheduled for Thursday that you reach on Tuesday gets *read* on Tuesday and *done* on Thursday.
 - One commit per study day. An empty day is visible in `git log` and that is the point.
-- **The source's own order wins** — for the backlog material in the [main plan](../README.md#after-the-checkpoint) too, whenever you get to it: where a course's internal sequence disagrees with your plans, follow the course. Belts are earned sequentially on pwn.college, Arch1001's chapters are ordered, PortSwigger topics build on each other.
-- **Job-search networking runs from month 1, outside the 15 hours: 15–20 minutes a day.** Comment usefully on posts from people actually working in the target roles before you ever message any of them; from month 4, send connection requests that reference something specific and real about the recipient's work — never a template — and if one goes unanswered, follow up once after 3–5 days, then stop. It lives outside the study budget on purpose, so it never competes with the programs for hours, and it starts in month 1 rather than at month 4 because the arithmetic is lopsided: cold applications convert at 0.1–2%, referrals at roughly 30%, with interviews at 10–20 times the rate. The [main plan](../README.md#how-people-actually-get-hired) carries the full numbers and the reasoning.
+- **The source\'s own order wins** — for the backlog material in the [main plan](../README.md#after-the-checkpoint) too, whenever you get to it: where a course\'s internal sequence disagrees with your plans, follow the course. Belts are earned sequentially on pwn.college, Arch1001\'s chapters are ordered, PortSwigger topics build on each other.
+- **Job-search networking runs from month 1, outside the 15 hours: 15–20 minutes a day.** Comment usefully on posts from people actually working in the target roles before you ever message any of them; from month 4, send connection requests that reference something specific and real about the recipient\'s work — never a template — and if one goes unanswered, follow up once after 3–5 days, then stop. It lives outside the study budget on purpose, so it never competes with the programs for hours, and it starts in month 1 rather than at month 4 because the arithmetic is lopsided: cold applications convert at 0.1–2%, referrals at roughly 30%, with interviews at 10–20 times the rate. The [main plan](../README.md#how-people-actually-get-hired) carries the full numbers and the reasoning.
 
 ## Index
 
 Month | Stage | The month in one line
 :-- | :-- | :--
-[October 2026](2026-10.md) | 1 — Foundations | Modern C through Level 2, Missing Semester finished
-[November 2026](2026-11.md) | 1 — Foundations | Modern C finished; first binary-format work
-[December 2026](2026-12.md) | 1 + 2 opens | networking starts, the blog goes live
-[January 2027](2027-01.md) | 1 closes + 2 | networking through the link layer, Stage 1 ends
-[February 2027](2027-02.md) | 2 | the networking book finishes; Windows and AD fundamentals open
-[March 2027](2027-03.md) | 2 | Sentinel, MITRE ATT&CK, the SOC Level 1 path opens
-[April 2027](2027-04.md) | 2 | the SC-200 exam sat
-[May 2027](2027-05.md) | 2 | the own app built, attacked, detected
-[June 2027](2027-06.md) | 2 + checkpoint | triage practice and interview vocabulary; **the checkpoint opens, first applications sent**
+[October 2026](2026-10.md) | 1 — Foundations for SOC | Missing Semester, Linux CLI, networking ch. 1–3
+[November 2026](2026-11.md) | 1 — Foundations for SOC | Networking ch. 4–6, Python log parsing & threat intel
+[December 2026](2026-12.md) | 1 — Foundations for SOC | Windows Fundamentals, PowerShell, Sysmon, AD basics
+[January 2027](2027-01.md) | 1 — Foundations for SOC | Active Directory deep dive, Kerberos, attack detection mapping
+[February 2027](2027-02.md) | 2 — SOC Operations | Microsoft Sentinel, KQL deep-dive, first incidents
+[March 2027](2027-03.md) | 2 — SOC Operations | MITRE ATT&CK, LetsDefend incident #2, SC-200 booked
+[April 2027](2027-04.md) | 2 — SOC Operations | Defender XDR, Defender for Cloud, Entra ID, SC-200 exam
+[May 2027](2027-05.md) | 2 — SOC Operations | Purple-Team project: Build → Attack → Detect (Sysmon, KQL, Sigma)
+[June 2027](2027-06.md) | 2 + Checkpoint | Triage practice, interview vocab, CV, market re-measure, applications sent
 
-The plan's fixed schedule ends with June 2027 and the checkpoint, spilling into early July 2027 for the final application batch. There are no monthly files after that, on purpose — what comes next is the [backlog](../README.md#after-the-checkpoint), and it is driven by the job you land, not by a calendar someone wrote in advance.
+The plan\'s fixed schedule ends with June 2027 and the checkpoint, spilling into early July 2027 for the final application batch. There are no monthly files after that, on purpose — what comes next is the [backlog](../README.md#after-the-checkpoint), and it is driven by the job you land, not by a calendar someone wrote in advance.
 
 ## What the fixed schedule holds
 
-The [main plan](../README.md) is a curriculum. This is a calendar. They do not fit each other, and this section is the honest accounting of the gap rather than a pretence that there isn't one.
+The [main plan](../README.md) is a curriculum. This is a calendar. They do not fit each other, and this section is the honest accounting.
 
-### The arithmetic
+Nine months at 15 h/week = 570–585 hours. The fixed schedule spends them on:
 
-The fixed schedule runs from October 2026 to the end of June 2027: nine calendar months, at 2.5 hours a day, six days a week, minus the public holidays that land on study days (two December days, 1 January, 6 January, Easter Monday, 1 May, 3 and 27 May, 6 June). That comes to roughly **570 study hours**.
-
-What has to fit in them: all of Modern C and the Stage 1 programs (done in ~240 hours over the first four months, exactly as originally planned), the rest of Kurose and Beej with three protocol programs, Windows and Active Directory fundamentals, the Sentinel learning path and the triage vocabulary, the TryHackMe SOC Level 1 path and LetsDefend practice, SC-200 preparation and the exam itself, an own web application built, attacked and detected with a published writeup, and the checkpoint month's CV, market re-measurement and first applications. That fits — with the slack the old plan never had, because Nand to Tetris, CS:APP and OSTEP are no longer competing for the same hours, and the PortSwigger track moved to the backlog.
+- **Stage 1 (months 1–4, ~240 h):** Missing Semester, Kurose networking (ch. 1–6), Python for log parsing & threat intel, Windows Fundamentals, PowerShell, Sysmon, Active Directory, Kerberos, three AD attacks reproduced and detected.
+- **Stage 2 (months 5–9, ~330 h):** Sentinel workspace + connectors, KQL fluency, analytics rules, workbooks, hunting, MITRE ATT&CK mapping, LetsDefend incidents (2 full end-to-end), Defender XDR (Endpoint, Email, Identity), Defender for Cloud, Entra ID (Identity Protection, Conditional Access), SC-200 certificate, Purple-Team project (Build → Attack → Detect with Sysmon, KQL, Sigma).
+- **Artifacts produced:** PyTriage CLI (GitHub), Windows cheat sheet (blog), AD attack mapping (blog), KQL detection library (blog + GitHub), 2 incident reports (blog), Purple-Team flagship writeup (blog + GitHub with Sigma rules), SC-200 certificate.
 
 The deep curriculum that does **not** fit — because it was never going to, and because the market research says it has no junior queue to wait in — is the [backlog](../README.md#after-the-checkpoint): roughly 1000+ hours of material even after aggressive trimming.
 
@@ -52,17 +52,17 @@ The deep curriculum that does **not** fit — because it was never going to, and
 
 Nothing here was dropped by accident. Each is a decision with a reason, and each is picked up after the checkpoint, driven by the job.
 
-- **Mathematics for Computer Science (MIT 6.042J)** — deferred from Stage 1. None of the target junior postings (SOC, pentest, embedded C) name discrete math or number theory, so the roughly 5 hours/week it used to take go to Modern C instead. It is not gone — the algorithms extras still assume it, and February's TLS material teaches RSA from Kurose.
-- **Nand to Tetris Part I and II** — deferred from Stage 2. Part I is the highest-value single backlog item for embedded-C roles; Part II (compiler and OS) further still, since its stack-machine payoff is met in CS:APP chapter 3.
+- **C, Effective C, assembly** — deferred. The fixed schedule spends zero hours on them. They are the prerequisite for CS:APP, pwn.college, Ghidra, and firmware work. They live in the backlog.
+- **Mathematics for Computer Science (MIT 6.042J)** — deferred from Stage 1. None of the target junior postings (SOC, QA, Detection Engineer) name discrete math or number theory, so the roughly 5 hours/week it used to take go to Python/KQL instead. It is not gone — Cryptopals still assumes it.
+- **Nand to Tetris Part I and II** — deferred. Part I is the highest-value single backlog item for embedded-C roles; Part II (compiler and OS) further still, since its stack-machine payoff is met in CS:APP chapter 3.
 - **CS:APP with the four labs** — deferred, and it is the default first pick from the backlog. It is the single largest thing the old plan carried and everything in the exploitation and RE sections assumes it.
 - **OSTEP** — deferred; the operating-systems material is met in CS:APP chapters 8, 9, 10 and 12.
-- **The whole of the old Stage 3** — Arch1001, Arch2001, ARM, RE101, Ghidra, Practical Malware Analysis, crackmes. Junior RE openings measured at zero nationally in September 2026; this material is portfolio-gated, not schedule-gated.
-- **The whole of the old Stage 4** minus the own-app project, which moved *up* into the fixed schedule (month 8), now as the built-attacked-detected artifact the SOC checkpoint leans on. pwn.college, Nightmare, ROP Emporium and exploit.education are backlog.
-- **The whole of the old Stage 5** — ESP32, buses, the Hardware Hacking Handbook, Practical IoT Hacking, OWASP FSTM, Microcorruption, ChipWhisperer. Junior firmware openings measured at zero.
-- **The whole PortSwigger track, and eJPT with it** — deferred from Stage 2 in September 2026. Zero junior pentest openings measured on 45 live offers; the junior queue that exists is SOC operations. The beginner-to-intermediate half is the junior pentester's grounding and the advanced half — insecure deserialization, web cache poisoning, GraphQL, NoSQL, race conditions, WebSockets, clickjacking, CORS, web LLM attacks, API testing — sits above it. Each topic stays free and is a week's work if a posting ever asks.
+- **The whole of the old low-level Stages** — Arch1001, Arch2001, ARM, RE101, Ghidra, Practical Malware Analysis, crackmes. Junior RE openings measured at zero nationally in September 2026; this material is portfolio-gated, not schedule-gated.
+- **The whole of the old firmware/embedded Stages** — ESP32, buses, Hardware Hacking Handbook, Practical IoT Hacking, OWASP FSTM, Microcorruption, ChipWhisperer. Junior firmware openings measured at zero.
+- **The whole PortSwigger track, and eJPT with it** — deferred from Stage 2 in September 2026. Zero junior pentest openings measured on 45 live offers; the junior queue that exists is SOC operations. The beginner-to-intermediate half is the junior pentester\'s grounding and the advanced half — insecure deserialization, web cache poisoning, GraphQL, NoSQL, race conditions, WebSockets, clickjacking, CORS, web LLM attacks, API testing — sits above it. Each topic stays free and is a week\'s work if a posting ever asks.
 - **OSCP / PEN-200** — a decision, not a schedule item. It is a full-load commitment with a 24-hour exam; it cannot share a calendar with anything. Decide with a job and a re-measured market in front of you.
-- **pwn.college's deeper belts** (System Security's kernel and microarchitecture modules) — among the deepest material on the platform, post-backlog-entry by design.
-- **ChipWhisperer fault injection** and the hardware-bound side-channel labs — SCA101's simulated labs are the entry point; the rest needs the board and dedicated hours.
+- **pwn.college\'s deeper belts** (System Security\'s kernel and microarchitecture modules) — among the deepest material on the platform, post-backlog-entry by design.
+- **ChipWhisperer fault injection** and the hardware-bound side-channel labs — SCA101\'s simulated labs are the entry point; the rest needs the board and dedicated hours.
 - **Practical Binary Analysis, exploit.education** — already optional in the old plan; still optional.
 
 ### The order to pick them up in
@@ -70,4 +70,3 @@ Nothing here was dropped by accident. Each is a decision with a reason, and each
 After the checkpoint, the job picks. The reasoning and the role-by-role order are in the [main plan](../README.md#the-order-to-pick-them-up-in); the one default worth repeating here: if nothing has landed and you want the single most-leveraged item, it is **CS:APP with the labs**.
 
 It is not an unfinished plan. It is a nine-month plan that ends in applications, and a backlog that begins with a job.
-
