@@ -17,8 +17,8 @@ Fifteen hours: **2.5 h a day, Monday to Saturday, Sunday off.** Sunday is the ch
 - A missed day moves to Sunday, at most once a month.
 - Do not run ahead. Work scheduled for Thursday that you reach on Tuesday gets *read* on Tuesday and *done* on Thursday.
 - One commit per study day. An empty day is visible in `git log` and that is the point.
-- **The source\'s own order wins** — for the backlog material in the [main plan](../README.md#after-the-checkpoint) too, whenever you get to it: where a course\'s internal sequence disagrees with your plans, follow the course. Belts are earned sequentially on pwn.college, Arch1001\'s chapters are ordered, PortSwigger topics build on each other.
-- **Job-search networking runs from month 1, outside the 15 hours: 15–20 minutes a day.** Comment usefully on posts from people actually working in the target roles before you ever message any of them; from month 4, send connection requests that reference something specific and real about the recipient\'s work — never a template — and if one goes unanswered, follow up once after 3–5 days, then stop. It lives outside the study budget on purpose, so it never competes with the programs for hours, and it starts in month 1 rather than at month 4 because the arithmetic is lopsided: cold applications convert at 0.1–2%, referrals at roughly 30%, with interviews at 10–20 times the rate. The [main plan](../README.md#how-people-actually-get-hired) carries the full numbers and the reasoning.
+- **The source's own order wins** — for the backlog material in the [main plan](../README.md#after-the-checkpoint) too, whenever you get to it: where a course's internal sequence disagrees with your plans, follow the course. Belts are earned sequentially on pwn.college, Arch1001's chapters are ordered, PortSwigger topics build on each other.
+- **Job-search networking runs from month 1, outside the 15 hours: 15–20 minutes a day.** Comment usefully on posts from people actually working in the target roles before you ever message any of them; from month 4, send connection requests that reference something specific and real about the recipient's work — never a template — and if one goes unanswered, follow up once after 3–5 days, then stop. It lives outside the study budget on purpose, so it never competes with the programs for hours, and it starts in month 1 rather than at month 4 because the arithmetic is lopsided: cold applications convert at 0.1–2%, referrals at roughly 30%, with interviews at 10–20 times the rate. The [main plan](../README.md#how-people-actually-get-hired) carries the full numbers and the reasoning.
 
 ## Index
 
@@ -27,16 +27,16 @@ Month | Stage | The month in one line
 [October 2026](2026-10.md) | 1 — Foundations for SOC | Missing Semester, Linux CLI, networking ch. 1–3
 [November 2026](2026-11.md) | 1 — Foundations for SOC | Networking ch. 4–6, Python log parsing & threat intel
 [December 2026](2026-12.md) | 1 — Foundations for SOC | Windows Fundamentals, PowerShell, Sysmon, AD basics
-[January 2027](2027-01.md) | 1 — Foundations for SOC | Active Directory deep dive, Kerberos, attack mapping, consolidation week
-[February 2027](2027-02.md) | 2 — SOC Operations | Sentinel & KQL begin, entirely in Microsoft Learn's free sandbox; Wazuh installed
+[January 2027](2027-01.md) | 1 — Foundations for SOC | Active Directory deep dive, Kerberos, attack mapping, consolidation week + market spot-check
+[February 2027](2027-02.md) | 2 — SOC Operations | Sentinel concepts & KQL begin (Log Analytics demo environment); Wazuh installed
 [March 2027](2027-03.md) | 2 — SOC Operations | Sentinel/KQL finishes; MITRE ATT&CK begins
 [April 2027](2027-04.md) | 2 — SOC Operations | ATT&CK finishes, phishing/email-analysis module, incident #2, SC-200 booked
-[May 2027](2027-05.md) | 2 — SOC Operations | SC-200 exam prep: Defender XDR, Defender for Cloud, Entra ID (Learn sandbox)
+[May 2027](2027-05.md) | 2 — SOC Operations | SC-200 exam prep: Defender XDR, Defender for Cloud, Entra ID (Learn modules + docs, concept); Defender/Entra writeup
 [June 2027](2027-06.md) | 2 — SOC Operations | Exam prep finishes, **SC-200 sat**, Purple-Team build begins
 [July 2027](2027-07.md) | 2 — SOC Operations | Purple-Team: Attack → Detect twice over — KQL/Sigma, then native Wazuh
 [August 2027](2027-08.md) | 2 + Checkpoint | Triage practice, interview vocab, CV, market re-measure, applications sent
 
-The plan\'s fixed schedule ends with August 2027 and the checkpoint. There are no monthly files after that, on purpose — what comes next is the [backlog](../README.md#after-the-checkpoint), and it is driven by the job you land, not by a calendar someone wrote in advance.
+The plan's fixed schedule ends with August 2027 and the checkpoint. There are no monthly files after that, on purpose — what comes next is the [backlog](../README.md#after-the-checkpoint), and it is driven by the job you land, not by a calendar someone wrote in advance.
 
 ## What the fixed schedule holds
 
@@ -45,8 +45,8 @@ The [main plan](../README.md) is a curriculum. This is a calendar. They do not f
 Eleven months at 15 h/week ≈ 680 hours. The fixed schedule spends them on:
 
 - **Stage 1 (months 1–4, ~257.5 h):** Missing Semester, Kurose networking (ch. 1–6), Python for log parsing & threat intel, Windows Fundamentals, PowerShell, Sysmon, Active Directory, Kerberos, three AD attacks reproduced and detected, a consolidation week before Stage 2 opens.
-- **Stage 2 (months 5–11, ~425 h):** Sentinel + KQL fluency (entirely in Microsoft Learn's free sandbox, no personal Azure subscription), analytics rules, workbooks, hunting, a detection library built in parallel in self-hosted [Wazuh](https://wazuh.com/), MITRE ATT&CK mapping, LetsDefend incidents (3 full end-to-end), a phishing/email-analysis module (SPF/DKIM/DMARC, sandboxed sample analysis, PyTriage extended with `.eml` parsing), Defender XDR (Endpoint, Email, Identity), Defender for Cloud, Entra ID (Identity Protection, Conditional Access), SC-200 certificate, Purple-Team project (Build → Attack → Detect, with detections written twice — KQL/Sigma and native Wazuh).
-- **Artifacts produced:** PyTriage CLI with `.eml` parsing (GitHub), Windows cheat sheet (blog), AD attack mapping (blog), KQL + Wazuh detection library (blog + GitHub), phishing triage playbook (blog), 3 incident reports (blog), Purple-Team flagship writeup across two detection engines (blog + GitHub with KQL, Sigma and Wazuh rules), SC-200 certificate.
+- **Stage 2 (months 5–11, ~425 h):** KQL fluency (practised free in the Log Analytics demo environment and a free Azure Data Explorer cluster, no personal Azure subscription), Sentinel analytics-rule/workbook/hunting concepts, a detection library built in parallel in self-hosted [Wazuh](https://wazuh.com/), MITRE ATT&CK mapping, LetsDefend incidents (3 full end-to-end), a phishing/email-analysis module (SPF/DKIM/DMARC, sandboxed sample analysis, PyTriage extended with `.eml` parsing), Defender XDR / Defender for Cloud / Entra ID studied as concept from free Learn modules and docs (no live tenant), SC-200 certificate, Purple-Team project (Instrument → Attack → Detect, with detections written twice — KQL/Sigma and native Wazuh).
+- **Artifacts produced:** PyTriage CLI with `.eml` parsing (GitHub + blog writeup), Windows cheat sheet (blog), AD attack mapping (blog), KQL + Wazuh detection library (blog + GitHub), MITRE ATT&CK page (blog), phishing triage playbook (blog), Defender XDR/Entra investigation writeup (blog), 3 incident reports (blog), Purple-Team flagship writeup across two detection engines (blog + GitHub with KQL, Sigma and Wazuh rules), SC-200 certificate. The blog carries eight technical writeups; the incident reports and the certificate sit alongside them.
 
 The deep curriculum that does **not** fit — because it was never going to, and because the market research says it has no junior queue to wait in — is the [backlog](../README.md#after-the-checkpoint): roughly 1000+ hours of material even after aggressive trimming.
 
@@ -61,10 +61,10 @@ Nothing here was dropped by accident. Each is a decision with a reason, and each
 - **OSTEP** — deferred; the operating-systems material is met in CS:APP chapters 8, 9, 10 and 12.
 - **The whole of the old low-level Stages** — Arch1001, Arch2001, ARM, RE101, Ghidra, Practical Malware Analysis, crackmes. Junior RE openings measured at zero nationally in September 2026; this material is portfolio-gated, not schedule-gated.
 - **The whole of the old firmware/embedded Stages** — ESP32, buses, Hardware Hacking Handbook, Practical IoT Hacking, OWASP FSTM, Microcorruption, ChipWhisperer. Junior firmware openings measured at zero.
-- **The whole PortSwigger track, and eJPT with it** — deferred from Stage 2 in September 2026. Zero junior pentest openings measured on 45 live offers; the junior queue that exists is SOC operations. The beginner-to-intermediate half is the junior pentester\'s grounding and the advanced half — insecure deserialization, web cache poisoning, GraphQL, NoSQL, race conditions, WebSockets, clickjacking, CORS, web LLM attacks, API testing — sits above it. Each topic stays free and is a week\'s work if a posting ever asks.
+- **The whole PortSwigger track, and eJPT with it** — deferred from Stage 2 in September 2026. Zero junior pentest openings measured on 45 live offers; the junior queue that exists is SOC operations. The beginner-to-intermediate half is the junior pentester's grounding and the advanced half — insecure deserialization, web cache poisoning, GraphQL, NoSQL, race conditions, WebSockets, clickjacking, CORS, web LLM attacks, API testing — sits above it. Each topic stays free and is a week's work if a posting ever asks.
 - **OSCP / PEN-200** — a decision, not a schedule item. It is a full-load commitment with a 24-hour exam; it cannot share a calendar with anything. Decide with a job and a re-measured market in front of you.
-- **pwn.college\'s deeper belts** (System Security\'s kernel and microarchitecture modules) — among the deepest material on the platform, post-backlog-entry by design.
-- **ChipWhisperer fault injection** and the hardware-bound side-channel labs — SCA101\'s simulated labs are the entry point; the rest needs the board and dedicated hours.
+- **pwn.college's deeper belts** (System Security's kernel and microarchitecture modules) — among the deepest material on the platform, post-backlog-entry by design.
+- **ChipWhisperer fault injection** and the hardware-bound side-channel labs — SCA101's simulated labs are the entry point; the rest needs the board and dedicated hours.
 - **Practical Binary Analysis, exploit.education** — already optional in the old plan; still optional.
 - **Splunk (Free tier)** — not scheduled. The detection library already exists in two engines (KQL/Sigma and Wazuh), which answers the "is this just a Microsoft-tools plan?" question without adding a third paid-adjacent tool on a calendar that does not need one. Splunk Free (500 MB/day, no expiration, no card required) is a same-day addition if a specific posting names it — translating the existing KQL library to SPL is a few hours' work, not a new module.
 

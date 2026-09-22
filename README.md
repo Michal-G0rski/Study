@@ -44,7 +44,7 @@
 
 This plan replaces the previous low-level-first path. The target is **Security Operations Center Analyst / Detection Engineer (L1)** — the only security role in Poland with a measured junior queue (24 junior security openings, live zero-experience postings at BNP Paribas, Aon, PwC in Kraków; junior pentest measured at zero openings in 45 live offers, September 2026).
 
-The fixed, scheduled curriculum is cut to the minimum that has real junior market demand: **Linux CLI & scripting, networking end-to-end, Python for log parsing & threat intel, Windows Internals & Active Directory, PowerShell for triage, Microsoft Sentinel & KQL (learned entirely on Microsoft's free sandbox labs), a self-hosted Wazuh SIEM, MITRE ATT&CK, phishing/email-header triage, Microsoft Defender XDR/Endpoint & Entra ID, a Purple-Team project (Build → Attack → Detect, in both KQL/Sigma and Wazuh), and the SC-200 certificate**. It ends at the [employability checkpoint in month 11](#employability-checkpoint--month-11) — August 2027 — when applications are sent.
+The fixed, scheduled curriculum is cut to the minimum that has real junior market demand: **Linux CLI & scripting, networking end-to-end, Python for log parsing & threat intel, Windows Internals & Active Directory, PowerShell for triage, Microsoft Sentinel & KQL (practised free in the Log Analytics demo environment and a free Azure Data Explorer cluster), a self-hosted Wazuh SIEM, MITRE ATT&CK, phishing/email-header triage, Microsoft Defender XDR/Endpoint & Entra ID, a Purple-Team project (Instrument → Attack → Detect, in both KQL/Sigma and Wazuh), and the SC-200 certificate**. It ends at the [employability checkpoint in month 11](#employability-checkpoint--month-11) — August 2027 — when applications are sent.
 
 The deep low-level curriculum — C, assembly, CS:APP, Nand to Tetris, Ghidra, pwn.college, firmware, ChipWhisperer — still exists in this repo, as an [unscheduled backlog](#after-the-checkpoint) you drive by whatever job you actually land, not by a calendar. The aim of the fixed schedule is a job and a portfolio. The backlog is the career.
 
@@ -56,8 +56,8 @@ The deep low-level curriculum — C, assembly, CS:APP, Nand to Tetris, Ghidra, p
 
 | Stage | Focus | Calendar |
 | :-- | :-- | :-- |
-| 1 — Foundations for SOC | Linux CLI, networking, Python scripting, Windows basics, PowerShell | Months 1–4 |
-| 2 — SOC Operations & Checkpoint | Active Directory, KQL, Sentinel, self-hosted Wazuh, MITRE ATT&CK, phishing triage, Defender XDR, Entra ID, Purple-Team project (two detection engines), SC-200 | Months 5–11 |
+| 1 — Foundations for SOC | Linux CLI, networking, Python scripting, Windows basics, PowerShell, Active Directory & Kerberos | Months 1–4 |
+| 2 — SOC Operations & Checkpoint | KQL, Sentinel, self-hosted Wazuh, MITRE ATT&CK, phishing triage, Defender XDR, Entra ID, Purple-Team project (two detection engines), SC-200 | Months 5–11 |
 
 Both stages feed the [employability checkpoint](#employability-checkpoint--month-11) at month 11: the planned point to start sending applications. The [networking habit](#how-people-actually-get-hired) starts in month 1, outside the 15 h/week budget.
 
@@ -70,10 +70,11 @@ Both stages feed the [employability checkpoint](#employability-checkpoint--month
 Courses | Duration | Effort | Prerequisites
 :-- | :--: | :--: | :--
 [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) | 2 weeks | 5–10 h/week | —
-[Computer Networking: a Top-Down Approach (online lectures)](https://gaia.cs.umass.edu/kurose_ross/online_lectures.htm) — ch. 1–6 | 6 weeks | 4–12 h/week | basic CS, algebra
-Python for Security Tooling — see [M2 detail](#month-2--python--log-parsing) | 4 weeks | 8–12 h/week | Missing Semester, basic programming
+[Computer Networking: a Top-Down Approach (online lectures)](https://gaia.cs.umass.edu/kurose_ross/online_lectures.htm) — ch. 1–6 | 7 weeks | 4–12 h/week | basic CS, algebra
+Python for Security Tooling — see [November detail](plans/2026-11.md) | 4 weeks | 8–12 h/week | Missing Semester, basic programming
 [Windows Fundamentals (TryHackMe)](https://tryhackme.com/) — rooms 1–3, Active Directory Basics | 3 weeks | 5–10 h/week | Linux comfort, networking
-PowerShell for Triage — see [M3 detail](#month-3--windows--powershell) | 2 weeks | 8–12 h/week | Windows basics
+PowerShell for Triage — see [December detail](plans/2026-12.md) | 2 weeks | 8–12 h/week | Windows basics
+Active Directory deep dive (Kerberos, LDAP, attack mapping) + consolidation week — see [January detail](plans/2027-01.md) | 5 weeks | 8–15 h/week | Windows basics
 
 > Networking starts in month 1 and continues through month 4 — it is the base layer for every security role in the [target table](#target-roles), and a SOC L1 interview is a networking interview wearing a badge.
 
@@ -85,11 +86,10 @@ PowerShell for Triage — see [M3 detail](#month-3--windows--powershell) | 2 wee
 
 Courses | Duration | Effort | Prerequisites
 :-- | :--: | :--: | :--
-Active Directory deep dive (Kerberos, LDAP, attack mapping) + consolidation week | 5 weeks | 8–15 h/week | Windows basics
-[Microsoft Sentinel learning path](https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/) + KQL, entirely on Microsoft Learn's free sandbox; self-hosted [Wazuh](https://wazuh.com/) installed in parallel | 6 weeks | 10–15 h/week | Networking, Windows/AD
+[Microsoft Sentinel learning path](https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/) concepts + KQL practised free in the Log Analytics demo environment; self-hosted [Wazuh](https://wazuh.com/) installed in parallel as the permanent detection home | 6 weeks | 10–15 h/week | Networking, Windows/AD
 [MITRE ATT&CK](https://attack.mitre.org/) as vocabulary + [LetsDefend](https://letsdefend.io/) labs + phishing/email-header triage module (SPF/DKIM/DMARC, sandboxed samples, PyTriage `.eml` parsing) | 6 weeks | 8–15 h/week | Sentinel basics
-Microsoft Defender XDR / Endpoint + Defender for Cloud + Entra ID, on Learn sandbox; SC-200 exam | 7 weeks | 10–15 h/week | Sentinel, KQL
-Purple-Team project: Build → Attack → Detect, twice over — KQL/Sigma, then native Wazuh rules | 6 weeks | 10–15 h/week | All above
+Microsoft Defender XDR / Endpoint + Defender for Cloud + Entra ID studied as concept from free Learn modules + docs (no live tenant); SC-200 exam | 7 weeks | 10–15 h/week | Sentinel, KQL
+Purple-Team project: Instrument → Attack → Detect, twice over — KQL/Sigma, then native Wazuh rules | 6 weeks | 10–15 h/week | All above
 
 ---
 
@@ -97,11 +97,11 @@ Purple-Team project: Build → Attack → Detect, twice over — KQL/Sigma, then
 
 Month | Stage | One-line summary
 :-- | :-- | :--
-[October 2026](plans/2026-10.md) | 1 | Missing Semester, Linux CLI, networking ch. 1–2
-[November 2026](plans/2026-11.md) | 1 | Networking ch. 3–6, Python for log parsing & threat intel
+[October 2026](plans/2026-10.md) | 1 | Missing Semester, Linux CLI, networking ch. 1–3
+[November 2026](plans/2026-11.md) | 1 | Networking ch. 4–6, Python for log parsing & threat intel
 [December 2026](plans/2026-12.md) | 1 | Windows Fundamentals, PowerShell basics
-[January 2027](plans/2027-01.md) | 1 | Active Directory, Kerberos, attack mapping, consolidation week
-[February 2027](plans/2027-02.md) | 2 | Microsoft Sentinel & KQL begin, on Learn's free sandbox; Wazuh installed
+[January 2027](plans/2027-01.md) | 1 | Active Directory, Kerberos, attack mapping, consolidation week + market spot-check
+[February 2027](plans/2027-02.md) | 2 | Microsoft Sentinel concepts & KQL begin (demo environment); Wazuh installed
 [March 2027](plans/2027-03.md) | 2 | Sentinel/KQL finishes; MITRE ATT&CK begins
 [April 2027](plans/2027-04.md) | 2 | ATT&CK finishes, phishing/email-triage module, incident #2, SC-200 booked
 [May 2027](plans/2027-05.md) | 2 | SC-200 exam prep: Defender XDR, Defender for Cloud, Entra ID
@@ -121,7 +121,7 @@ The deep low-level curriculum — the career this plan was originally built for 
 
 Course | Effort | Prerequisites
 :-- | :--: | :--
-[Computer Systems: A Programmer\'s Perspective + CMU 15-213](https://www.cs.cmu.edu/~213/) (all 4 labs: Data, Bomb, Attack, Malloc) | 12 weeks, 10–15 h/week | Solid C
+[Computer Systems: A Programmer's Perspective + CMU 15-213](https://www.cs.cmu.edu/~213/) (all 4 labs: Data, Bomb, Attack, Malloc) | 12 weeks, 10–15 h/week | Solid C
 [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) | 8 weeks, 8–12 h/week | CS:APP ch. 8–10
 [Nand to Tetris Part I & II](https://www.nand2tetris.org/) | 10 weeks, 8–12 h/week | Logic gates, CS:APP ch. 3–4
 
@@ -179,6 +179,7 @@ Run these in parallel with the curriculum, not after it.
 Platform | When to start | Effort | Prerequisites
 :-- | :--: | :--: | :--
 [TryHackMe](https://tryhackme.com/) — Windows Fundamentals 1–3, Active Directory Basics | Stage 1 (M3–M4) | 3–5 h/week | Networking, OS
+[TryHackMe](https://tryhackme.com/) — SOC Level 1 path *(mostly Premium; free rooms suffice — see [Certifications](#certifications))* | Stage 2 (M7–M9) | 3–5 h/week | Windows/AD, Sentinel
 [LetsDefend](https://letsdefend.io/) / [CyberDefenders](https://cyberdefenders.org/) — blue-team incident practice | Stage 2 (M6) | 3–5 h/week | SOC vocabulary
 [picoCTF](https://picoctf.org/) / [CyLab Security Academy](https://cylabacademy.org) | Backlog | 3–5 h/week | Basic Linux
 [Web Security Academy (PortSwigger)](https://portswigger.net/web-security) | Backlog — with junior pentester move | 5–12 h/week | HTTP basics
@@ -212,7 +213,7 @@ The checkpoint says when to start applying. The hiring research is blunt: cold a
 The habit is a [standing rule](plans/README.md#standing-rules): **15–20 minutes a day, outside the 15 h/week budget**, from month 1. It never competes with programs for hours.
 
 - **Engage before you message.** Comment usefully on posts from people working in target roles. A first message to someone whose content you engaged with gets ~2× reply rate (8% → 14%).
-- **Personalize, specifically.** A connection request referencing something real about the recipient\'s work gets ~9–10% replies vs 5–6% generic; specific shared context reaches ~27%.
+- **Personalize, specifically.** A connection request referencing something real about the recipient's work gets ~9–10% replies vs 5–6% generic; specific shared context reaches ~27%.
 - **Follow up once, then stop.** One follow-up after 3–5 days roughly triples reply rate (5% → 14%). A second is noise.
 
 ---
@@ -227,14 +228,14 @@ By August the [networking habit](#how-people-actually-get-hired) has ten months 
 
 Apply for | Why it fits at month 11 | Format
 :-- | :-- | :--:
-SOC Analyst / Detection Engineer (L1) — every title variant: Junior SOC Analyst, Cyber Security Analyst (SOC L1), CSIRT Analyst, Cybersecurity Operations Analyst | The plan\'s primary target: live zero-experience postings, and the Sentinel/ATT&CK/SC-200 track is its exact shape — shift seats are the most junior-shaped in the country | Remote or hybrid
+SOC Analyst / Detection Engineer (L1) — every title variant: Junior SOC Analyst, Cyber Security Analyst (SOC L1), CSIRT Analyst, Cybersecurity Operations Analyst | The plan's primary target: live zero-experience postings, and the Sentinel/ATT&CK/SC-200 track is its exact shape — shift seats are the most junior-shaped in the country | Remote or hybrid
 Junior QA / Software Tester (security flavour) — the measured fallback | The widest junior door in all of IT if SOC is shut; the foundation (HTTP, Linux, scripting, a built-attacked-detected app) covers most of its bar | Hybrid or remote
 
 > The case for the checkpoint is arithmetic, not ambition. Getting hired here turns the remaining backlog from unpaid study into paid study, puts real systems in front of you, and removes the worst failure mode of a fixed plan — reaching the end of it with no work history. If nothing lands, nothing is lost: you continue into the [backlog](#after-the-checkpoint) exactly as written, on your own schedule now.
 
 ---
 
-### If the checkpoint itself doesn\'t land
+### If the checkpoint itself doesn't land
 
 If the month 11 checkpoint does not produce an offer, the last resort is not more study — it is widening the search: hybrid roles, adjacent titles (QA with a security flavour, junior sysadmin with the scripting profile), and contract work. Testing is the widest of those side doors on current numbers — 6.75% of all postings on justjoin.it in 2025 — and the classic junior entry title for a profile that already reads Linux, HTTP, Python, PowerShell and an app it built and broke itself. The scheduled SOC unit already covers the SIEM vocabulary, so the only remaining gap is interview practice and volume. Do not convert this into a third program of study; the market snapshot says the constraint is the entry gap, not your skills.
 
@@ -247,7 +248,7 @@ All figures from a single-day sweep of Polish job boards (justjoin.it, LinkedIn,
 Category | Count | Notes
 :-- | :--: | :--
 Junior security openings (all titles) | 24 | Of which SOC L1: ~14, Junior QA (sec): ~6, Other: ~4
-Live zero-experience SOC postings (Kraków) | 3 | BNP Paribas, Aon, PwC — explicit \"no experience, training provided\"
+Live zero-experience SOC postings (Kraków) | 3 | BNP Paribas, Aon, PwC — explicit "no experience, training provided"
 Junior pentest openings (45 live pentest offers) | 0 | Every title Mid, Senior, Principal, Expert
 Embedded C openings (all levels) | 576 | Largest single row; junior firmware measured separately at 0
 Junior RE / Malware / VR | 2 | Both required 2+ years commercial experience
@@ -255,6 +256,8 @@ Junior RE / Malware / VR | 2 | Both required 2+ years commercial experience
 Trend (Poland, junior security openings, single-day snapshots): 2023 — 44, 2024 — 24, 2025 — 21, 2026 — 24. The queue is not growing, but junior competition is easing.
 
 Regulatory tailwind: NIS2 (effective Oct 2024) and DORA (Jan 2025) mandate 24/7 monitoring and incident reporting for thousands of PL entities. The only scalable way to staff that is shift-based SOC L1 — the role this plan targets.
+
+**This snapshot is re-taken twice:** a one-hour spot-check at the end of Stage 1 ([January consolidation week](plans/2027-01.md#week-5--1-to-6-february), before the Microsoft-specific months begin) and the full re-measure at the [checkpoint](plans/2027-08.md). Same boards, same rows, so the numbers compare.
 
 ---
 
@@ -274,19 +277,19 @@ The thesis this plan runs on, stated plainly: **when the priority is fast employ
 
 ## Portfolio and visibility
 
-Portfolio beats certificates in this field. Every milestone below is a public artifact — a blog post, a repo, or an advisory. The blog goes up in Stage 1 (month 2), and the first post is a lab writeup rather than an introduction. In a niche with no junior openings, publishing *is* the application.
+Portfolio beats certificates in this field. Every milestone below is a public artifact — a blog post, a repo, or an advisory. The blog goes up in Stage 1 (month 1), and the first post is a lab writeup rather than an introduction. In a niche with no junior openings, publishing *is* the application.
 
 Milestone | Where | What it proves
 :-- | :--: | :--
-Blog live, first lab writeup published | Stage 1, month 2 | You can document technical work clearly
-Python log parser / threat intel enrichment script | Stage 1, month 3 | You can automate analyst grunt work
+Blog live, first lab writeup published | Stage 1, month 1 | You can document technical work clearly
+Python log parser / threat intel enrichment script | Stage 1, month 2 | You can automate analyst grunt work
 AD attack mapping document (Kerberoasting, AS-REP, DCSync) | Stage 1, month 4 | You understand identity telemetry
 KQL + Wazuh detection library (10+ detections, two engines, mapped to MITRE ATT&CK) | Stage 2, months 5–6 | You speak the SIEM language in more than one dialect
 LetsDefend incident report published | Stage 2, month 6 | You can run triage end-to-end and write it up
 Phishing triage playbook (SPF/DKIM/DMARC, sandboxed samples, PyTriage `.eml` parsing) | Stage 2, month 7 | You can triage the single most common initial-access vector
 Defender XDR / Entra ID investigation writeup | Stage 2, month 8 | You pivot across endpoint → identity → cloud
 SC-200 passed | Stage 2, month 9 | The certificate the checkpoint leans on
-**Purple-Team project: Build → Attack → Detect, twice over (Sysmon, KQL, Sigma + native Wazuh) + Runbook** | Stage 2, month 10 | **Flagship artifact** — build, attack, detect in two engines, in one document
+**Purple-Team project: Instrument → Attack → Detect, twice over (Sysmon, KQL, Sigma + native Wazuh) + Runbook** | Stage 2, month 10 | **Flagship artifact** — instrument, attack, detect in two engines, in one document
 
 > Cheap IoT firmware is full of real bugs. A first CVE is a realistic long-term goal once the embedded backlog is worked, not before.
 
@@ -307,6 +310,11 @@ Certification | When | Cost tier | Why
 [OSED / EXP-301 (OffSec)](https://www.offsec.com/courses/exp-301/) | Backlog — after OSCP, exploit-dev only | High | Only worth it once committed to exploit dev
 
 > OSCP used to be a month 14–18 calendar item. It is now a decision you make with a job and a re-measured market in front of you — the same three honest answers apply: go (it becomes the plan for a while), defer (it is a raise rather than a door), or drop (your roles reward the portfolio more). Write the answer down when the question becomes real.
+
+**What the fixed schedule actually costs.** The lab side is free by design — the Log Analytics demo, the free Azure Data Explorer cluster, self-hosted Wazuh, LetsDefend's free tier, Microsoft Learn — and no lab step needs a card on an account that can bill. Two things cost money, and they are known in advance rather than discovered:
+
+- **The SC-200 exam fee**, paid when it is [booked in April](plans/2027-04.md). The September 2026 retail price is $165 (US), converted per country — check the price for Poland on the [exam page](https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-200/) before April. A retake is paid in full again, so budget for two attempts and treat May's practice assessments as the thing that saves the second fee.
+- **TryHackMe Premium — optional.** Most of the [SOC Level 1 path](https://tryhackme.com/path/outline/soclevel1) (April–June) is subscriber-only (about $14/month in September 2026); only its introductory rooms are free. Free SOC rooms plus LetsDefend and CyberDefenders cover the same triage ground, so the subscription is a convenience, not a prerequisite — decide before 20 April. The same question comes up earlier for the browser-hosted AD lab in [January](plans/2027-01.md): check before 4 January whether the rooms you need are on the free tier, or budget one month.
 
 ---
 
@@ -345,7 +353,7 @@ Item | Why it was cut
 [Identifying Security Vulnerabilities (Coursera)](https://www.coursera.org/learn/identifying-security-vulnerabilities) | Same; its C/C++ variant is replaced by actually writing and breaking code in the project
 [Greedy Algorithms, MST, Dynamic Programming (Coursera)](https://www.coursera.org/learn/algorithms-greedy) | Deferred to interview preparation
 [Shortest Paths Revisited, NP-Complete Problems (Coursera)](https://www.coursera.org/learn/algorithms-npcomplete) | Deferred to interview preparation
-[Fullstack Open](https://fullstackopen.com/en/) | 12 weeks × 15 h to become a web developer. Reduced to the one self-built app of the fixed schedule
+[Fullstack Open](https://fullstackopen.com/en/) | 12 weeks × 15 h to become a web developer. Reduced to instrumenting and defending one small application in the fixed schedule
 The pentest-first Stage 2 (full PortSwigger + eJPT in fixed schedule) | The September 2026 measurement: zero junior pentest openings in 45 live offers, while the junior security queue that does exist — 24 openings — is SOC operations. Not dropped: moved to the [backlog](#after-the-checkpoint) as the second move, after the hire
 
 ---
@@ -361,9 +369,9 @@ Please update this section with your personal details.
 ## How to use
 
 1. Work through Stage 1, then Stage 2, in order. The fixed schedule ends in month 11 — that is deliberate.
-2. The employability content *is* Stage 2: Active Directory, KQL, Sentinel, self-hosted Wazuh, MITRE ATT&CK, phishing triage, Defender XDR, Entra ID, the Purple-Team project, and SC-200. It costs the bulk of the seven months after Stage 1, and it is the whole reason the month 11 checkpoint is possible.
+2. The employability content *is* Stage 2: KQL, Sentinel, self-hosted Wazuh, MITRE ATT&CK, phishing triage, Defender XDR, Entra ID, the Purple-Team project, and SC-200. It costs the bulk of the seven months after Stage 1, and it is the whole reason the month 11 checkpoint is possible.
 3. Mark finished items with ✅ directly in the tables.
-4. Publishing is part of the curriculum, not an extra — the blog post in month 2, the Purple-Team writeup in month 10.
+4. Publishing is part of the curriculum, not an extra — the first blog post in month 1, the Purple-Team writeup in month 10.
 5. **Stop at the [employability checkpoint](#employability-checkpoint--month-11) and actually apply.** Carrying on studying is the comfortable option, not the right one.
 6. After the checkpoint, work the [backlog](#after-the-checkpoint) in the order the job you landed demands — not in the order this file lists it.
 7. Revisit [Deliberately skipped](#deliberately-skipped) once a year; some of it becomes worth doing after the first job.
