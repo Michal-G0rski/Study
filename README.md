@@ -56,7 +56,7 @@ The deep low-level curriculum — C, assembly, CS:APP, Nand to Tetris, Ghidra, p
 
 | Stage | Focus | Calendar |
 | :-- | :-- | :-- |
-| 1 — Foundations for SOC | Linux CLI, networking, Python scripting, Windows basics, PowerShell, Active Directory & Kerberos | Months 1–4 |
+| 1 — Foundations for SOC | Linux CLI, networking & packet analysis, Python scripting, Windows basics & event IDs, PowerShell, Active Directory & Kerberos | Months 1–4 |
 | 2 — SOC Operations & Checkpoint | KQL, Sentinel, self-hosted Wazuh, MITRE ATT&CK, phishing triage, Defender XDR, Entra ID, Purple-Team project (two detection engines), SC-200 | Months 5–11 |
 
 Both stages feed the [employability checkpoint](#employability-checkpoint--month-11) at month 11: the planned point to start sending applications. The [networking habit](#how-people-actually-get-hired) starts in month 1, outside the 15 h/week budget.
@@ -70,13 +70,13 @@ Both stages feed the [employability checkpoint](#employability-checkpoint--month
 Courses | Duration | Effort | Prerequisites
 :-- | :--: | :--: | :--
 [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) | 2 weeks | 5–10 h/week | —
-[Computer Networking: a Top-Down Approach (online lectures)](https://gaia.cs.umass.edu/kurose_ross/online_lectures.htm) — ch. 1–6 | 7 weeks | 4–12 h/week | basic CS, algebra
+[Computer Networking: a Top-Down Approach (online lectures)](https://gaia.cs.umass.edu/kurose_ross/online_lectures.htm) — ch. 1–6, with the book's own [Wireshark labs](https://gaia.cs.umass.edu/kurose_ross/wireshark.php) | 7 weeks | 4–12 h/week | basic CS, algebra
 Python for Security Tooling — see [November detail](plans/2026-11.md) | 4 weeks | 8–12 h/week | Missing Semester, basic programming
 [Windows Fundamentals (TryHackMe)](https://tryhackme.com/) — rooms 1–3, Active Directory Basics | 3 weeks | 5–10 h/week | Linux comfort, networking
 PowerShell for Triage — see [December detail](plans/2026-12.md) | 2 weeks | 8–12 h/week | Windows basics
 Active Directory deep dive (Kerberos, LDAP, attack mapping) + consolidation week — see [January detail](plans/2027-01.md) | 5 weeks | 8–15 h/week | Windows basics
 
-> Networking starts in month 1 and continues through month 4 — it is the base layer for every security role in the [target table](#target-roles), and a SOC L1 interview is a networking interview wearing a badge.
+> Networking runs through months 1–2, read with the book's Wireshark labs and closed on a first hostile capture — it is the base layer for every security role in the [target table](#target-roles), and a SOC L1 interview is a networking interview wearing a badge.
 
 ---
 
@@ -97,8 +97,8 @@ Purple-Team project: Instrument → Attack → Detect, twice over — KQL/Sigma,
 
 Month | Stage | One-line summary
 :-- | :-- | :--
-[October 2026](plans/2026-10.md) | 1 | Missing Semester, Linux CLI, networking ch. 1–3
-[November 2026](plans/2026-11.md) | 1 | Networking ch. 4–6, Python for log parsing & threat intel
+[October 2026](plans/2026-10.md) | 1 | Missing Semester, Linux CLI, networking ch. 1–3 + Wireshark labs
+[November 2026](plans/2026-11.md) | 1 | Networking ch. 4–6 + first hostile capture, Python for log parsing & threat intel
 [December 2026](plans/2026-12.md) | 1 | Windows Fundamentals, PowerShell basics
 [January 2027](plans/2027-01.md) | 1 | Active Directory, Kerberos, attack mapping, consolidation week + market spot-check
 [February 2027](plans/2027-02.md) | 2 | Microsoft Sentinel concepts & KQL begin (demo environment); Wazuh installed
@@ -178,6 +178,8 @@ Run these in parallel with the curriculum, not after it.
 
 Platform | When to start | Effort | Prerequisites
 :-- | :--: | :--: | :--
+[Wireshark labs (Kurose & Ross)](https://gaia.cs.umass.edu/kurose_ross/wireshark.php) — the book's own, trace files included | Stage 1 (M1–M2) | with the reading | —
+[malware-traffic-analysis.net](https://www.malware-traffic-analysis.net/) — traffic-analysis exercises (PCAP + answer key) | Stage 1 (M2), again M7 and M11 | 2–3 h per exercise | Wireshark labs
 [TryHackMe](https://tryhackme.com/) — Windows Fundamentals 1–3, Active Directory Basics | Stage 1 (M3–M4) | 3–5 h/week | Networking, OS
 [TryHackMe](https://tryhackme.com/) — SOC Level 1 path *(mostly Premium; free rooms suffice — see [Certifications](#certifications))* | Stage 2 (M7–M9) | 3–5 h/week | Windows/AD, Sentinel
 [LetsDefend](https://letsdefend.io/) / [CyberDefenders](https://cyberdefenders.org/) — blue-team incident practice | Stage 2 (M6) | 3–5 h/week | SOC vocabulary
@@ -220,7 +222,7 @@ The habit is a [standing rule](plans/README.md#standing-rules): **15–20 minute
 
 ### Employability checkpoint — month 11
 
-**August 2027.** The fixed curriculum is finished: Linux, networking, Python, Windows, AD, PowerShell, Sentinel, KQL, self-hosted Wazuh, MITRE ATT&CK, phishing triage, Defender XDR, Entra ID, Purple-Team project (two detection engines), SC-200. This is the planned moment to start sending applications.
+**August 2027.** The fixed curriculum is finished: Linux, networking and packet analysis, Python, Windows, AD, PowerShell, Sentinel, KQL, self-hosted Wazuh, MITRE ATT&CK, phishing triage, Defender XDR, Entra ID, Purple-Team project (two detection engines), SC-200. This is the planned moment to start sending applications.
 
 By August the [networking habit](#how-people-actually-get-hired) has ten months behind it: the people a referral would come from have been seeing your name since October, long before you had anything to ask of them.
 
@@ -284,7 +286,7 @@ Milestone | Where | What it proves
 Blog live, first lab writeup published | Stage 1, month 1 | You can document technical work clearly
 Python log parser / threat intel enrichment script | Stage 1, month 2 | You can automate analyst grunt work
 AD attack mapping document (Kerberoasting, AS-REP, DCSync) | Stage 1, month 4 | You understand identity telemetry
-KQL + Wazuh detection library (10+ detections, two engines, mapped to MITRE ATT&CK) | Stage 2, months 5–6 | You speak the SIEM language in more than one dialect
+KQL + Wazuh detection library (ten detections, two engines, mapped to MITRE ATT&CK) | Stage 2, months 5–6 | You speak the SIEM language in more than one dialect
 LetsDefend incident report published | Stage 2, month 6 | You can run triage end-to-end and write it up
 Phishing triage playbook (SPF/DKIM/DMARC, sandboxed samples, PyTriage `.eml` parsing) | Stage 2, month 7 | You can triage the single most common initial-access vector
 Defender XDR / Entra ID investigation writeup | Stage 2, month 8 | You pivot across endpoint → identity → cloud
